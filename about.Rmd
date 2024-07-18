@@ -1,5 +1,12 @@
 ---
-title: "About This Website"
+output:
+  html_document:
+    toc: no
+    toc_depth: 2
+    toc_float: yes
+    code_folding: hide
+    theme: flatly
+    css: style.css
 ---
 
 More about this website.
