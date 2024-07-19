@@ -32,9 +32,16 @@ navbar:
           href: modulo1.html
         - text: "---------"  
         - text: "Guía 1.1"
-          href: recurso000.html        
+          href: guia11.html        
         - text: "Metodología Estadística"
-          href: recurso000.html  
+          href: recurso11.html
+        - text: "Introducción a R"
+          href: introduccionR.html
+        - text: "Código 1.1"  
+          href: codigo11.html
+        - text: "--------"
+        - text: "Monitoria 1"
+          href: monitoria1.html
  
     - text: "Módulo 2"
       menu:
@@ -53,13 +60,13 @@ navbar:
           href: modulo4.html
         - text: "---------"   
  
-    - text: "Módulo 5"
+    - text: "Proyecto"
       menu:
         - text: "Guía proyecto"
           href: recurso000.html
     - text: "Información"
       menu:
-        - text: "300MAE018A"
+        - text: "300MAE018G"
           href: about.html  
           
 output:  

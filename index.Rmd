@@ -18,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
-# knitr::include_graphics("img/banner001.png")
+knitr::include_graphics("img/modulos.png")
 ```
 
 
@@ -29,27 +29,50 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 
 
 ```{r, echo=FALSE, out.width="70%", fig.align = "center"}
-# knitr::include_graphics("img/horario-018A.png")
+knitr::include_graphics("img/horario-018A.png")
 ```
 
 </div>
 
 <br/><br/>
 
+## **Salones de clase**
+
+<div class="box2">
+
+
+|Curso     | **Grupo** | Horario       | **LUNES**  |                | **MIERCOLES** |                | **VIERNES**  |
+|:---------|:----------|:--------------|:-----------|:---------------|:--------------|:---------------|:------------|
+|          |           |               |            |                |               |                |             |
+|30MAE018  |    A      |14:00 a 14:00  | **PL 3.3** |                |  **EC3.2**    |                | **EC 3.2**  |
+|          |           |               | Sesión 1   |                |   Monitoria   |                | Sesión 2    |
+
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+ # knitr::include_graphics("img/salones.png")
+```
+
+</div>
+
+
+<br/><br/>
+
 <div class="highlight-box">
+
+<div class="box2">
 
 #### **Profesor** : Daniel Enrique González
 
 * correo : dgonzalez@javerianacali.edu.co
 * oficina : 1.28 Edificio de Ingeniería
 
-#### **Monitor** :
+#### **Monitor** : Sara Isabella  Salinas
 
 </div>
 
 <br/>
 
-<div class="highlight-box">
+<div class="box2">
 
 ### **Horarios de atención**
 
@@ -57,11 +80,13 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 # knitr::include_graphics("img/atencion.png")
 ```
 
+Seŕa publicado en la segunda semana de clases
+
 </div>
 
 <br/>
 
-<div class="highlight-box">
+<div class="box2">
 ### **Información básica**
 
 <br/>
@@ -84,7 +109,7 @@ knitr::opts_chunk$set(echo = TRUE, comment = NA)
 </div>
 
 <br/>
-<div class="highlight-box">
+<div class="box2">
 #### **Descripción de la asignatura**
 
 <br/>
@@ -98,7 +123,7 @@ En el curso Estadística para la toma de decisiones se propone aportar a los est
 
 <br/>
 
-<div class="highlight-box">
+<div class="box2">
 #### **Intencionalidades formativas**
 
 <br/>
@@ -117,7 +142,7 @@ En el curso Estadística para la toma de decisiones se propone aportar a los est
 <br/>
 
 
-<div class="highlight-box">
+<div class="box2">
 #### **Objetivos de la asignatura**    
 
 <br/>
@@ -158,7 +183,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 <br/>
 
-<div class="highlight-box">
+<div class="box2">
 
 #### **Contenidos de la asignatura** 
 
@@ -202,7 +227,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 
 <br/>
 
-<div class="highlight-box">
+<div class="box2">
 ### **Estrategias pedagógicas** 
 
 <br/>
@@ -220,7 +245,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 <br/>
 
 
-<div class="highlight-box">
+<div class="box2">
 ### **Evaluación** 
 
 <br/>
@@ -234,7 +259,7 @@ Las siguientes son las competencias que priorizan el seguimiento al aprendizaje 
 </div>
 <br/>
 
-<div class="highlight-box">
+<div class="box2">
 ### **Referencias bibliográficas** 
 
 * Anderson, D. Sweeney, D. Williams, T. (2016) Estadística para administración y economía. Décima segunda edición. México, Internacional Thomson Editores. Biblioteca General Colección Abierta Semisótano 519.5 E792e
