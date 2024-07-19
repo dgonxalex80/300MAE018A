@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#235784"> **Sumatoria**</span>  
-author: "dgonzalez "
+title: <span style="color:#235784"> </span>  
 subtitle: <span style="color:#235784">**Módulo 0**</span> 
+author: "dgonzalez "
 output:
   html_document:
     toc: no
@@ -17,8 +17,15 @@ knitr::opts_chunk$set(echo = TRUE,comment = NA)
 
 ```
 
+
+```{r, echo=FALSE, out.width="100%", fig.align = "center"}
+knitr::include_graphics("img/banner000.png")
+```
 <br/><br/>
 
+# **Sumatoria**
+
+<br/><br/>
 
 El **sumatorio** o **sumatoria** también conocida como operador de suma, notación sigma o símbolo de suma, es una notación matemática que permite representar una suma de varios sumandos, n o incluso infinitos sumandos son colocar puntos suspensivos. Se expresa mediante la letra sigma mayúscula.
 
@@ -28,7 +35,7 @@ Este operador será utilizado en el curso en la construcción de conceptos como 
 
 <br/><br/>
 
-<div class="highlight-box">
+<div class="box2">
 ## **Definición**
 
 Se define como 
@@ -57,7 +64,9 @@ sum(1:100)
 
 <br/><br/>
 
-![](img/ej1.png){width=10%}
+
+<div class="box1 with-label">
+<div class="label">Ejemplo  1</div>
 
 Si se tienen las notas de un examen de 12 estudiantes como:
 
@@ -69,6 +78,8 @@ Y se desea calcular la media de las notas, primero se deben sumar todas las nota
 $$\bar{x} = \dfrac{1}{12}\displaystyle\sum_{i=1}^{12} x_{i}$$
 En este caso $3.4$ representa el primer termino de la suma $x_1$ , el segundo término $x_2 = 4.2$, asi, hasta el final donde $4.8$ representa $x_{12}$. Lo cual equivale a :
 
+
+
 <br/><br/>
 
 $$\dfrac{(3.4 + 4.2 + 2.5 + 4.1 + 3.0 + 4.2 + 4.7 + 3.3 + 4.5 + 5.0 + 2.5 + 4.8)}{12}=\dfrac{46.2}{12}$$
@@ -78,7 +89,11 @@ x=c(3.4, 4.2, 2.5, 4.1 , 3.0, 4.2, 4.7, 3.3, 4.5, 5.0, 2.5, 4.8)
 sum(x)/12
 ```
 
+</div>
+
 <br/><br/>
+
+<div class="box2">
 
 ## **Propiedades** 
 
@@ -91,31 +106,42 @@ sum(x)/12
 
 donde $k$, $a$ y $b$ son constantes y $x_i$ y $y_{i}$ corresponden a lod terminod i-esimo de los conjuntos de datos
 
-<br/><br/>
+</div>
 
 <br/><br/>
 
-![](img/ej2.png){width=10%}
+<br/><br/>
+
+<div class="box1 with-label">
+<div class="label">Ejemplo  1</div>
 
 $\displaystyle\sum_{i=1}^{5} 3 = 15$, ¿ Porqué ?
 
-<br/><br/>
+</div>
 
 <br/><br/>
 
-![](img/ej3.png){width=10%}
+<br/><br/>
+
+<div class="box1 with-label">
+<div class="label">Ejemplo  3</div>
 
 $\displaystyle\sum_{i=1}^{10} 10x = 550$, ¿ Porqué ?
 
-<br/><br/>
+</div>
 
 <br/><br/>
 
-![](img/ej4.png){width=10%}
+<br/><br/>
+
+<div class="box1 with-label">
+<div class="label">Ejemplo  4</div>
 
  $\displaystyle\sum_{i=1}^{10} (3x_{i}+2y_{i}) =475$, ¿ Porqué ?
  
  donde  $\displaystyle\sum_{i=1}^{10} x_{i} =55$ y $\displaystyle\sum_{i=1}^{10} y_{i}=155$ 
+ 
+ </div>
  
 <br/><br/> 
 
@@ -128,6 +154,8 @@ a.  $\displaystyle\sum_{i=1}^{10} (3i+5)$
 b.  $\displaystyle\sum_{t=0}^{2} 2^{t}$
 
 c.  $\displaystyle\sum_{w=0}^{6} 3w^{2}$
+
+<br/><br/>
 
 2. Para los siguientes conjuntos de datos:
 
