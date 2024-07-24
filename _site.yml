@@ -35,6 +35,8 @@ navbar:
           href: guia11.html        
         - text: "Metodología Estadística"
           href: recurso11.html
+        - text: "Bases de datos"
+          href: basesdatos.html
         - text: "Introducción a R"
           href: introduccionR.html
         - text: "Código 1.1"  

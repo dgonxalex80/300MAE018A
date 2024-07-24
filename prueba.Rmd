@@ -1,0 +1,57 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-07-22"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Crear el data frame con la información extraída
+data <- data.frame(
+  Nombre = c("Laura Marcela Bedoya Serna", "Camila Cardenas Rojas", "Isabella Castaño Florez", 
+             "Cataño Rodriguez", "Chaguendo Mendoza", "Mariana Cortes Rengifo", 
+             "Nicolas Figueroa Eraso", "Galeano Castañeda", "Juan Gonzalez Sanchez", 
+             "Angie Guzman Espinosa", "Mendoza Vargas", "Isabela Muñoz Gonzalez", 
+             "Laura Valentina Murillo Gómez", "Natalia Parra Escandon", "Preciado Portela", 
+             "Karla Quiñones Muñoz", "Juan Ramirez Landazabal", "Luna Rivera Muñoz", 
+             "Juan Rojas Rosada", "Leonardo Jose Rojas Leon", "Juan Silva Sanchez", 
+             "Solarte Zambrano", "Juan Trujillo Escobar", "Mariana Vanegas Acosta", 
+             "Manuel Vera Orozco", "Villamizar Tasama", "Zambrano Vacca"),
+  Carrera = c("Administración de Empresas", "Mercadeo", "Mercadeo", 
+              "Negocios Internacionales", "Turismo", "Negocios Internacionales", 
+              "Administración de Empresas", "Mercadeo", "Mercadeo", 
+              "Negocios Internacionales", "Negocios Internacionales", "Turismo", 
+              "Administración de Empresas", "Mercadeo", "Mercadeo", 
+              "Negocios Internacionales", "Negocios Internacionales", "Negocios Internacionales", 
+              "Turismo", "Administración de Empresas", "Administración de Empresas Noc", 
+              "Administración de Empresas", "Negocios Internacionales", "Negocios Internacionales", 
+              "Negocios Internacionales", "Negocios Internacionales", "Negocios Internacionales"),
+  Matriculada = c(5, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1),
+  Cancelada = c(4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
+  Perdida = c(0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  Promedio = c(3.77, 3.61, 4.43, 3.96, 3.78, 4.15, 3.55, 4.3, 3.45, 3.6, 3.96, 3.79, 3.6, 4.15, 3.97, 
+               4.0, 4.04, 3.95, 4.09, 4.61, 3.73, 4.16, 3.78, 4.09, 3.69, 3.87, 4.31)
+)
+
+# Ver los primeros registros del data frame
+print(head(data))
+
+# Crear un gráfico de torta para la variable 'Carrera'
+library(ggplot2)
+ggplot(data, aes(x = "", fill = Carrera)) +
+  geom_bar(width = 1) +
+  coord_polar("y") +
+  labs(title = "Distribución de Carreras") +
+  theme_void()
+
+# Crear un gráfico de cajas para 'Promedio' por 'Carrera'
+ggplot(data, aes(x = Carrera, y = Promedio)) +
+  geom_boxplot() +
+  labs(title = "Promedio Académico por Carrera", x = "Carrera", y = "Promedio") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+

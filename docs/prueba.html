@@ -9,15 +9,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="dgonzalez" />
 
+<meta name="date" content="2024-07-22" />
 
-<title>Sobre el grupo</title>
+<title>Untitled</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -31,7 +31,6 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
@@ -221,9 +220,6 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
-<style type="text/css">
-.code-folding-btn { margin-bottom: 4px; }
-</style>
 
 
 
@@ -397,23 +393,71 @@ $(document).ready(function () {
 
 <div id="header">
 
-<div class="btn-group pull-right float-right">
-<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
-<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
-<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
-<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
-</ul>
-</div>
 
 
-
-<h1 class="title toc-ignore"><strong>Sobre el grupo</strong></h1>
-<h4 class="author">dgonzalez</h4>
+<h1 class="title toc-ignore">Untitled</h1>
+<h4 class="date">2024-07-22</h4>
 
 </div>
 
 
-<p><img src="about_files/figure-html/unnamed-chunk-1-1.png" width="672" /><img src="about_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<pre class="r"><code># Crear el data frame con la información extraída
+data &lt;- data.frame(
+  Nombre = c(&quot;Laura Marcela Bedoya Serna&quot;, &quot;Camila Cardenas Rojas&quot;, &quot;Isabella Castaño Florez&quot;, 
+             &quot;Cataño Rodriguez&quot;, &quot;Chaguendo Mendoza&quot;, &quot;Mariana Cortes Rengifo&quot;, 
+             &quot;Nicolas Figueroa Eraso&quot;, &quot;Galeano Castañeda&quot;, &quot;Juan Gonzalez Sanchez&quot;, 
+             &quot;Angie Guzman Espinosa&quot;, &quot;Mendoza Vargas&quot;, &quot;Isabela Muñoz Gonzalez&quot;, 
+             &quot;Laura Valentina Murillo Gómez&quot;, &quot;Natalia Parra Escandon&quot;, &quot;Preciado Portela&quot;, 
+             &quot;Karla Quiñones Muñoz&quot;, &quot;Juan Ramirez Landazabal&quot;, &quot;Luna Rivera Muñoz&quot;, 
+             &quot;Juan Rojas Rosada&quot;, &quot;Leonardo Jose Rojas Leon&quot;, &quot;Juan Silva Sanchez&quot;, 
+             &quot;Solarte Zambrano&quot;, &quot;Juan Trujillo Escobar&quot;, &quot;Mariana Vanegas Acosta&quot;, 
+             &quot;Manuel Vera Orozco&quot;, &quot;Villamizar Tasama&quot;, &quot;Zambrano Vacca&quot;),
+  Carrera = c(&quot;Administración de Empresas&quot;, &quot;Mercadeo&quot;, &quot;Mercadeo&quot;, 
+              &quot;Negocios Internacionales&quot;, &quot;Turismo&quot;, &quot;Negocios Internacionales&quot;, 
+              &quot;Administración de Empresas&quot;, &quot;Mercadeo&quot;, &quot;Mercadeo&quot;, 
+              &quot;Negocios Internacionales&quot;, &quot;Negocios Internacionales&quot;, &quot;Turismo&quot;, 
+              &quot;Administración de Empresas&quot;, &quot;Mercadeo&quot;, &quot;Mercadeo&quot;, 
+              &quot;Negocios Internacionales&quot;, &quot;Negocios Internacionales&quot;, &quot;Negocios Internacionales&quot;, 
+              &quot;Turismo&quot;, &quot;Administración de Empresas&quot;, &quot;Administración de Empresas Noc&quot;, 
+              &quot;Administración de Empresas&quot;, &quot;Negocios Internacionales&quot;, &quot;Negocios Internacionales&quot;, 
+              &quot;Negocios Internacionales&quot;, &quot;Negocios Internacionales&quot;, &quot;Negocios Internacionales&quot;),
+  Matriculada = c(5, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1),
+  Cancelada = c(4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0),
+  Perdida = c(0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  Promedio = c(3.77, 3.61, 4.43, 3.96, 3.78, 4.15, 3.55, 4.3, 3.45, 3.6, 3.96, 3.79, 3.6, 4.15, 3.97, 
+               4.0, 4.04, 3.95, 4.09, 4.61, 3.73, 4.16, 3.78, 4.09, 3.69, 3.87, 4.31)
+)
+
+# Ver los primeros registros del data frame
+print(head(data))</code></pre>
+<pre><code>##                       Nombre                    Carrera Matriculada Cancelada
+## 1 Laura Marcela Bedoya Serna Administración de Empresas           5         4
+## 2      Camila Cardenas Rojas                   Mercadeo           1         0
+## 3    Isabella Castaño Florez                   Mercadeo           1         0
+## 4           Cataño Rodriguez   Negocios Internacionales           1         0
+## 5          Chaguendo Mendoza                    Turismo           1         0
+## 6     Mariana Cortes Rengifo   Negocios Internacionales           1         0
+##   Perdida Promedio
+## 1       0     3.77
+## 2       0     3.61
+## 3       0     4.43
+## 4       0     3.96
+## 5       0     3.78
+## 6       0     4.15</code></pre>
+<pre class="r"><code># Crear un gráfico de torta para la variable &#39;Carrera&#39;
+library(ggplot2)
+ggplot(data, aes(x = &quot;&quot;, fill = Carrera)) +
+  geom_bar(width = 1) +
+  coord_polar(&quot;y&quot;) +
+  labs(title = &quot;Distribución de Carreras&quot;) +
+  theme_void()</code></pre>
+<p><img src="prueba_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code># Crear un gráfico de cajas para &#39;Promedio&#39; por &#39;Carrera&#39;
+ggplot(data, aes(x = Carrera, y = Promedio)) +
+  geom_boxplot() +
+  labs(title = &quot;Promedio Académico por Carrera&quot;, x = &quot;Carrera&quot;, y = &quot;Promedio&quot;) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))</code></pre>
+<p><img src="prueba_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
 
 
 
@@ -448,11 +492,6 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
-<script>
-$(document).ready(function () {
-  window.initializeCodeFolding("hide" === "show");
-});
-</script>
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
