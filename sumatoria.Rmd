@@ -40,7 +40,7 @@ Este operador será utilizado en el curso en la construcción de conceptos como 
 
 Se define como 
  
- $$\sum_{i=1}^{n} a_{i} = a_{1} + a_{2} + a_{3} + \cdots + a_{n}$$
+ $$\sum_{i=1}^{n} a_{i} = a_{1} + a_{2} + a_{3} + \cdots + a_{n}$     <<$
 </div>
 
 <br/>
