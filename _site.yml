@@ -49,7 +49,7 @@ navbar:
         - text: "Código 1.1"
           href: codigo12.html
         - text: "Caso 1"  
-          href: casa1.html        
+          href: caso1.html        
         - text: "--------"        
         - text: "Monitoria 1"
           href: monitoria1.html

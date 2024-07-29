@@ -58,11 +58,16 @@ futbol <- read_csv("data/futbol.csv")
 
 <br/><br/>
 
-<img src="img/tablero1.jpg" width="1000">
+
+```{r, echo=FALSE, out.width="70%", fig.align = "center"}
+knitr::include_graphics("img/tablero0.png")
+```
+
+
 
 <br/><br/>
 
-Cuando nos subimos a un auto  observamos un tablero con muchos indicadores que permiten al conductor validar el estado del vehículo. Todos los podemos visualizar al tiempo con el fin de darnos una idea del nivel de combustible, la temperatura, el estado de la batería, si alguna puerta esta abierta, la velocidad a la que se viaja, entre otros.
+Cuando un nos subimos a un auto  observamos un tablero con muchos indicadores que permiten al conductor validar el estado del vehículo. Todos los podemos visualizar al tiempo con el fin de darnos una idea del nivel de combustible, la temperatura, el estado de la batería, si alguna puerta esta abierta, la velocidad a la que se viaja, entre otros.
 
 <br/>
 
@@ -264,7 +269,7 @@ quantile(futbol$off, c(0.25,.50,0.75,0.10))
  
  <br/> <br/>
  
- ### **Renumen**
+### **Resumen**
  
  |                |                                                            |
  |:---------------|:-----------------------------------------------------------|
@@ -687,6 +692,8 @@ d2=density(mtcars$mpg); plot(d2)
 
 ## **Formulario**
 
+<div class="box2"> 
+
 |Estadística             | fórmula                               | código R                      |
 |:-----------------------|:--------------------------------------|:------------------------------|
 |**centro**              |                                       |                               |
@@ -711,12 +718,13 @@ d2=density(mtcars$mpg); plot(d2)
 |rango intercuartílico   |$Q_{3}-Q_{1}$                          |                          |
 
 
-
+</div>
  <br/> <br/>
 
 
 ## **Ejemplo**
 
+<div class="box2"> 
  <br/> <br/>
  
 ### **Nivel de ansiedad**
@@ -755,7 +763,7 @@ fac=c(2,1,2,2,4,3,4,2,4,2,4,1,1,1,1,1,1,2,3,3,3,3,1,2,1,2,2,1,1,2,3,2,3,2,2,3,3,
 data=data.frame(fac, nivans) # forma base de datos 
 ```
 
-
+</div> 
 <br/><br/>
 
 ### Tablas de frecuencia
@@ -833,14 +841,21 @@ Los reultados indican una mayor proporción de estudiantes de la Facultad de Ing
 </center>
 <br/><br/>
 
-<img src="img/person-1245959_1920.jpg" width="1000">
+
+### **Lo podemos lograr...**
+
+```{r, echo=FALSE, out.width="70%", fig.align = "center"}
+knitr::include_graphics("img/person-1245959_1920.jpg")
+```
+<center>
+Imagen tomada de : https://pixabay.com/es/images/search/paisaje/
+</center>
 
 <br/><br/>
 
-### **Lo podemos lograr...**
 #### Daniel Enrique González Gómez 
 
-Imagen tomada de : https://pixabay.com/es/images/search/paisaje/
+
 
 
 

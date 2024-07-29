@@ -332,7 +332,7 @@ $(document).ready(function () {
       <a href="codigo12.html">Código 1.1</a>
     </li>
     <li>
-      <a href="casa1.html">Caso 1</a>
+      <a href="caso1.html">Caso 1</a>
     </li>
     <li class="divider"></li>
     <li>
@@ -463,6 +463,12 @@ en RStudio.</p>
 frecuencia e indicadores descriptivos es summarytools, a continuación se
 comparte código para su instalación :</p>
 <p><br/></p>
+<pre>
+install.packages("remotes")        # se puede tambien utulizar el paquete devtools
+library(remotes)
+install_github("rapporter/pander") # repositorio recomendado
+install_github("dcomtois/summarytools", build_vignettes = TRUE)
+</pre>
 <pre class="r"><code># install.packages(&quot;remotes&quot;)        # se puede tambien utulizar el paquete devtools
 # library(remotes)
 # install_github(&quot;rapporter/pander&quot;) # repositorio recomendado
@@ -528,7 +534,7 @@ ft1 &lt;- ft1 %&gt;%
     width(j = 1,  width = 2) %&gt;%
     width(j = 2, width = 1)
 ft1</code></pre>
-<div class="tabwid"><style>.cl-48c1c1ba{}.cl-48bda184{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-48bf6514{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-48bf651e{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-48bf70c2{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48bf70c3{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48bf70c4{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48bf70cc{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48bf70cd{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48bf70ce{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-48c1c1ba'><thead><tr style="overflow-wrap:break-word;"><th class="cl-48bf70c2"><p class="cl-48bf6514"><span class="cl-48bda184">Tipo de tarjeta</span></p></th><th class="cl-48bf70c3"><p class="cl-48bf651e"><span class="cl-48bda184">Frecuencia Absoluta</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-48bf70c4"><p class="cl-48bf6514"><span class="cl-48bda184">American Express</span></p></td><td class="cl-48bf70cc"><p class="cl-48bf651e"><span class="cl-48bda184">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48bf70c4"><p class="cl-48bf6514"><span class="cl-48bda184">Discover</span></p></td><td class="cl-48bf70cc"><p class="cl-48bf651e"><span class="cl-48bda184">8</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48bf70c4"><p class="cl-48bf6514"><span class="cl-48bda184">MasterCard</span></p></td><td class="cl-48bf70cc"><p class="cl-48bf651e"><span class="cl-48bda184">28</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48bf70c4"><p class="cl-48bf6514"><span class="cl-48bda184">Star Card</span></p></td><td class="cl-48bf70cc"><p class="cl-48bf651e"><span class="cl-48bda184">140</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48bf70cd"><p class="cl-48bf6514"><span class="cl-48bda184">Visa</span></p></td><td class="cl-48bf70ce"><p class="cl-48bf651e"><span class="cl-48bda184">20</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e5492f1a{}.cl-e5455a2a{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e547114e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e5471158{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e5471dce{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5471dcf{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5471dd8{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5471dd9{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5471dda{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5471de2{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-e5492f1a'><thead><tr style="overflow-wrap:break-word;"><th class="cl-e5471dce"><p class="cl-e547114e"><span class="cl-e5455a2a">Tipo de tarjeta</span></p></th><th class="cl-e5471dcf"><p class="cl-e5471158"><span class="cl-e5455a2a">Frecuencia Absoluta</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e5471dd8"><p class="cl-e547114e"><span class="cl-e5455a2a">American Express</span></p></td><td class="cl-e5471dd9"><p class="cl-e5471158"><span class="cl-e5455a2a">4</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5471dd8"><p class="cl-e547114e"><span class="cl-e5455a2a">Discover</span></p></td><td class="cl-e5471dd9"><p class="cl-e5471158"><span class="cl-e5455a2a">8</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5471dd8"><p class="cl-e547114e"><span class="cl-e5455a2a">MasterCard</span></p></td><td class="cl-e5471dd9"><p class="cl-e5471158"><span class="cl-e5455a2a">28</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5471dd8"><p class="cl-e547114e"><span class="cl-e5455a2a">Star Card</span></p></td><td class="cl-e5471dd9"><p class="cl-e5471158"><span class="cl-e5455a2a">140</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5471dda"><p class="cl-e547114e"><span class="cl-e5455a2a">Visa</span></p></td><td class="cl-e5471de2"><p class="cl-e5471158"><span class="cl-e5455a2a">20</span></p></td></tr></tbody></table></div>
 <p><br/></p>
 <p>El resultado corresponde a un conteo de cada uno de los valores de la
 variable. En caso de que se requiera calcular la proporción que
@@ -553,7 +559,7 @@ ft2 &lt;- ft2 %&gt;%
     width(j = 1,  width = 2) %&gt;%
     width(j = 2, width = 1)
 ft2</code></pre>
-<div class="tabwid"><style>.cl-48dc1ad8{}.cl-48cb72dc{font-family:'Helvetica';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(51, 51, 51, 1.00);background-color:transparent;}.cl-48da3fce{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-48da3fd8{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-48da4956{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48da4960{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48da4961{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48da4962{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48da496a{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-48da496b{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-48dc1ad8'><thead><tr style="overflow-wrap:break-word;"><th class="cl-48da4956"><p class="cl-48da3fce"><span class="cl-48cb72dc">Tipo de tarjeta</span></p></th><th class="cl-48da4960"><p class="cl-48da3fd8"><span class="cl-48cb72dc">Frecuencia relativa</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-48da4961"><p class="cl-48da3fce"><span class="cl-48cb72dc">American Express</span></p></td><td class="cl-48da4962"><p class="cl-48da3fd8"><span class="cl-48cb72dc">0.02</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48da4961"><p class="cl-48da3fce"><span class="cl-48cb72dc">Discover</span></p></td><td class="cl-48da4962"><p class="cl-48da3fd8"><span class="cl-48cb72dc">0.04</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48da4961"><p class="cl-48da3fce"><span class="cl-48cb72dc">MasterCard</span></p></td><td class="cl-48da4962"><p class="cl-48da3fd8"><span class="cl-48cb72dc">0.14</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48da4961"><p class="cl-48da3fce"><span class="cl-48cb72dc">Star Card</span></p></td><td class="cl-48da4962"><p class="cl-48da3fd8"><span class="cl-48cb72dc">0.70</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-48da496a"><p class="cl-48da3fce"><span class="cl-48cb72dc">Visa</span></p></td><td class="cl-48da496b"><p class="cl-48da3fd8"><span class="cl-48cb72dc">0.10</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e5617926{}.cl-e5516bee{font-family:'Helvetica';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(51, 51, 51, 1.00);background-color:transparent;}.cl-e55fb5aa{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-e55fb5b4{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-e55fbf0a{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e55fbf0b{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e55fbf0c{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e55fbf14{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e55fbf15{width:2in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e55fbf16{width:1in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-e5617926'><thead><tr style="overflow-wrap:break-word;"><th class="cl-e55fbf0a"><p class="cl-e55fb5aa"><span class="cl-e5516bee">Tipo de tarjeta</span></p></th><th class="cl-e55fbf0b"><p class="cl-e55fb5b4"><span class="cl-e5516bee">Frecuencia relativa</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e55fbf0c"><p class="cl-e55fb5aa"><span class="cl-e5516bee">American Express</span></p></td><td class="cl-e55fbf14"><p class="cl-e55fb5b4"><span class="cl-e5516bee">0.02</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e55fbf0c"><p class="cl-e55fb5aa"><span class="cl-e5516bee">Discover</span></p></td><td class="cl-e55fbf14"><p class="cl-e55fb5b4"><span class="cl-e5516bee">0.04</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e55fbf0c"><p class="cl-e55fb5aa"><span class="cl-e5516bee">MasterCard</span></p></td><td class="cl-e55fbf14"><p class="cl-e55fb5b4"><span class="cl-e5516bee">0.14</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e55fbf0c"><p class="cl-e55fb5aa"><span class="cl-e5516bee">Star Card</span></p></td><td class="cl-e55fbf14"><p class="cl-e55fb5b4"><span class="cl-e5516bee">0.70</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e55fbf15"><p class="cl-e55fb5aa"><span class="cl-e5516bee">Visa</span></p></td><td class="cl-e55fbf16"><p class="cl-e55fb5b4"><span class="cl-e5516bee">0.10</span></p></td></tr></tbody></table></div>
 <p><br/></p>
 <p>Si utilizamos la función <code>freq</code> del paquete
 <code>summarytools</code>, la salida es una tabla más elaborada</p>
@@ -873,34 +879,382 @@ class="uri">https://www.rstudio.com/resources/cheatsheets/</a></p>
 </div>
 <div id="otros-formatos-de-tablas" class="section level2">
 <h2><strong>Otros formatos de tablas</strong></h2>
-<pre class="r"><code>df1 &lt;- data.frame(
+<pre class="r"><code>df &lt;- data.frame(
   id = 1:10,
-  name = c(&quot;Bob&quot;, &quot;Ashley&quot;, &quot;James&quot;, &quot;David&quot;, &quot;Jenny&quot;,
-    &quot;Hans&quot;, &quot;Leo&quot;, &quot;John&quot;, &quot;Emily&quot;, &quot;Lee&quot;),
-  age = c(28, 27, 30, 28, 29, 29, 27, 27, 31, 30),
-  grade = c(&quot;C&quot;, &quot;A&quot;, &quot;A&quot;, &quot;C&quot;, &quot;B&quot;, &quot;B&quot;, &quot;B&quot;, &quot;A&quot;, &quot;C&quot;, &quot;C&quot;),
-  test1_score = c(8.9, 9.5, 9.6, 8.9, 9.1, 9.3, 9.3, 9.9, 8.5, 8.6),
-  test2_score = c(9.1, 9.1, 9.2, 9.1, 8.9, 8.5, 9.2, 9.3, 9.1, 8.8),
-  final_score = c(9, 9.3, 9.4, 9, 9, 8.9, 9.25, 9.6, 8.8, 8.7),
-  registered = c(TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE),
-  stringsAsFactors = FALSE)
-df1</code></pre>
-<pre><code>   id   name age grade test1_score test2_score final_score registered
-1   1    Bob  28     C         8.9         9.1        9.00       TRUE
-2   2 Ashley  27     A         9.5         9.1        9.30      FALSE
-3   3  James  30     A         9.6         9.2        9.40       TRUE
-4   4  David  28     C         8.9         9.1        9.00      FALSE
-5   5  Jenny  29     B         9.1         8.9        9.00       TRUE
-6   6   Hans  29     B         9.3         8.5        8.90       TRUE
-7   7    Leo  27     B         9.3         9.2        9.25       TRUE
-8   8   John  27     A         9.9         9.3        9.60      FALSE
-9   9  Emily  31     C         8.5         9.1        8.80      FALSE
-10 10    Lee  30     C         8.6         8.8        8.70      FALSE</code></pre>
+  nombre = c(&quot;Juan&quot;, &quot;Carlos&quot;, &quot;James&quot;, &quot;David&quot;, &quot;Jenny&quot;, &quot;Harold&quot;, &quot;Leonardo&quot;, &quot;John&quot;, &quot;Ana&quot;, &quot;Luz&quot;),
+  edad = c(20, 25, 22, 28, 21, 23, 25, 20, 21, 20),
+  grado = c(&quot;C&quot;, &quot;A&quot;, &quot;A&quot;, &quot;C&quot;, &quot;B&quot;, &quot;B&quot;, &quot;A&quot;, &quot;C&quot;, &quot;C&quot;, &quot;C&quot;),
+  Examen1 = c(3.8, 4.1, 4.0, 3.9, 4.0, 4.3, 3.6, 3.7, 3.8, 3.8),
+  Examen2 = c(3.9, 3.9, 4.0, 3.9, 3.8, 3.6, 4.0, 4.0, 3.9, 3.8),
+  Promedio = c(3.9, 4.0, 4.1, 3.6, 3.7, 4.6, 3.5, 3.6, 3.8, 3.7),
+  Entrevista = c(TRUE, FALSE, TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, FALSE),
+  stringsAsFactors = FALSE
+)
+
+df</code></pre>
+<pre><code>   id   nombre edad grado Examen1 Examen2 Promedio Entrevista
+1   1     Juan   20     C     3.8     3.9      3.9       TRUE
+2   2   Carlos   25     A     4.1     3.9      4.0      FALSE
+3   3    James   22     A     4.0     4.0      4.1       TRUE
+4   4    David   28     C     3.9     3.9      3.6      FALSE
+5   5    Jenny   21     B     4.0     3.8      3.7       TRUE
+6   6   Harold   23     B     4.3     3.6      4.6       TRUE
+7   7 Leonardo   25     A     3.6     4.0      3.5       TRUE
+8   8     John   20     C     3.7     4.0      3.6      FALSE
+9   9      Ana   21     C     3.8     3.9      3.8      FALSE
+10 10      Luz   20     C     3.8     3.8      3.7      FALSE</code></pre>
 <p><br/><br/></p>
-<pre class="r"><code>colnames(df1)=c(&quot;Id&quot;, &quot;Nombre&quot;, &quot;Edad&quot;,&quot;grado&quot;, &quot;Nota1&quot;, &quot;Nota2&quot;, &quot;Nota Final&quot;, &quot;Registrado&quot;)
-df1=flextable(df1)
+<pre class="r"><code># colnames(df1)=c(&quot;Id&quot;, &quot;Nombre&quot;, &quot;Edad&quot;,&quot;grado&quot;, &quot;Nota1&quot;, &quot;Nota2&quot;, &quot;Nota_Final&quot;, &quot;Entrevista&quot;)
+df1=flextable(df)
 df1</code></pre>
-<div class="tabwid"><style>.cl-49162138{}.cl-49120f6c{font-family:'Helvetica';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(51, 51, 51, 1.00);background-color:transparent;}.cl-4913a138{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-4913a142{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-4913ad68{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4913ad72{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4913ad7c{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4913ad7d{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4913ad7e{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4913ad7f{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-49162138'><thead><tr style="overflow-wrap:break-word;"><th class="cl-4913ad68"><p class="cl-4913a138"><span class="cl-49120f6c">Id</span></p></th><th class="cl-4913ad72"><p class="cl-4913a142"><span class="cl-49120f6c">Nombre</span></p></th><th class="cl-4913ad68"><p class="cl-4913a138"><span class="cl-49120f6c">Edad</span></p></th><th class="cl-4913ad72"><p class="cl-4913a142"><span class="cl-49120f6c">grado</span></p></th><th class="cl-4913ad68"><p class="cl-4913a138"><span class="cl-49120f6c">Nota1</span></p></th><th class="cl-4913ad68"><p class="cl-4913a138"><span class="cl-49120f6c">Nota2</span></p></th><th class="cl-4913ad68"><p class="cl-4913a138"><span class="cl-49120f6c">Nota Final</span></p></th><th class="cl-4913ad68"><p class="cl-4913a138"><span class="cl-49120f6c">Registrado</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">1</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">Bob</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">28</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">C</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8.9</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.1</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.00</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">2</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">Ashley</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">27</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">A</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.5</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.1</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.30</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">3</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">James</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">30</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">A</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.6</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.2</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.40</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">4</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">David</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">28</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">C</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8.9</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.1</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.00</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">5</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">Jenny</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">29</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">B</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.1</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8.9</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.00</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">6</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">Hans</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">29</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">B</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.3</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8.5</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8.90</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">7</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">Leo</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">27</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">B</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.3</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.2</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.25</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">John</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">27</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">A</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.9</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.3</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.60</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">Emily</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">31</span></p></td><td class="cl-4913ad7d"><p class="cl-4913a142"><span class="cl-49120f6c">C</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8.5</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">9.1</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">8.80</span></p></td><td class="cl-4913ad7c"><p class="cl-4913a138"><span class="cl-49120f6c">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4913ad7e"><p class="cl-4913a138"><span class="cl-49120f6c">10</span></p></td><td class="cl-4913ad7f"><p class="cl-4913a142"><span class="cl-49120f6c">Lee</span></p></td><td class="cl-4913ad7e"><p class="cl-4913a138"><span class="cl-49120f6c">30</span></p></td><td class="cl-4913ad7f"><p class="cl-4913a142"><span class="cl-49120f6c">C</span></p></td><td class="cl-4913ad7e"><p class="cl-4913a138"><span class="cl-49120f6c">8.6</span></p></td><td class="cl-4913ad7e"><p class="cl-4913a138"><span class="cl-49120f6c">8.8</span></p></td><td class="cl-4913ad7e"><p class="cl-4913a138"><span class="cl-49120f6c">8.70</span></p></td><td class="cl-4913ad7e"><p class="cl-4913a138"><span class="cl-49120f6c">FALSE</span></p></td></tr></tbody></table></div>
+<div class="tabwid"><style>.cl-e594fb8e{}.cl-e59184f4{font-family:'Helvetica';font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(51, 51, 51, 1.00);background-color:transparent;}.cl-e5930356{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-e5930360{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:3pt;padding-top:3pt;padding-left:4pt;padding-right:4pt;line-height: 1;background-color:transparent;}.cl-e5930dd8{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5930de2{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 1.5pt solid rgba(190, 190, 190, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5930de3{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5930de4{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5930de5{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5930dec{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(190, 190, 190, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-e594fb8e'><thead><tr style="overflow-wrap:break-word;"><th class="cl-e5930dd8"><p class="cl-e5930356"><span class="cl-e59184f4">id</span></p></th><th class="cl-e5930de2"><p class="cl-e5930360"><span class="cl-e59184f4">nombre</span></p></th><th class="cl-e5930dd8"><p class="cl-e5930356"><span class="cl-e59184f4">edad</span></p></th><th class="cl-e5930de2"><p class="cl-e5930360"><span class="cl-e59184f4">grado</span></p></th><th class="cl-e5930dd8"><p class="cl-e5930356"><span class="cl-e59184f4">Examen1</span></p></th><th class="cl-e5930dd8"><p class="cl-e5930356"><span class="cl-e59184f4">Examen2</span></p></th><th class="cl-e5930dd8"><p class="cl-e5930356"><span class="cl-e59184f4">Promedio</span></p></th><th class="cl-e5930dd8"><p class="cl-e5930356"><span class="cl-e59184f4">Entrevista</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">1</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">Juan</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">20</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">C</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.8</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.9</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.9</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">2</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">Carlos</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">25</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">A</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.1</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.9</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.0</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">James</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">22</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">A</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.0</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.0</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.1</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">David</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">28</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">C</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.9</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.9</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.6</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">5</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">Jenny</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">21</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">B</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.0</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.8</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.7</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">6</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">Harold</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">23</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">B</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.3</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.6</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.6</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">7</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">Leonardo</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">25</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">A</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.6</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.0</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.5</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">TRUE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">8</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">John</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">20</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">C</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.7</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">4.0</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.6</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">9</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">Ana</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">21</span></p></td><td class="cl-e5930de4"><p class="cl-e5930360"><span class="cl-e59184f4">C</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.8</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.9</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">3.8</span></p></td><td class="cl-e5930de3"><p class="cl-e5930356"><span class="cl-e59184f4">FALSE</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-e5930de5"><p class="cl-e5930356"><span class="cl-e59184f4">10</span></p></td><td class="cl-e5930dec"><p class="cl-e5930360"><span class="cl-e59184f4">Luz</span></p></td><td class="cl-e5930de5"><p class="cl-e5930356"><span class="cl-e59184f4">20</span></p></td><td class="cl-e5930dec"><p class="cl-e5930360"><span class="cl-e59184f4">C</span></p></td><td class="cl-e5930de5"><p class="cl-e5930356"><span class="cl-e59184f4">3.8</span></p></td><td class="cl-e5930de5"><p class="cl-e5930356"><span class="cl-e59184f4">3.8</span></p></td><td class="cl-e5930de5"><p class="cl-e5930356"><span class="cl-e59184f4">3.7</span></p></td><td class="cl-e5930de5"><p class="cl-e5930356"><span class="cl-e59184f4">FALSE</span></p></td></tr></tbody></table></div>
+<pre class="r"><code>library(formattable)
+
+formattable(df, list(
+  edad = color_tile(&quot;white&quot;, &quot;orange&quot;),
+  grado = formatter(&quot;span&quot;, 
+                    style = x ~ ifelse(x == &quot;A&quot;, 
+                                       style(color = &quot;green&quot;, font.weight = &quot;bold&quot;), NA)),
+  area(col = c(&quot;Examen1&quot;, &quot;Examen2&quot;)) ~ normalize_bar(&quot;#C4D8F3&quot;, 0.2),
+  Promedio = formatter(&quot;span&quot;,
+                       style = x ~ style(color = ifelse(rank(-x) &lt;= 3, &quot;green&quot;, &quot;gray&quot;)),
+                       x ~ sprintf(&quot;%.2f (rank: %.2f)&quot;, x, rank(-x))),
+  Entrevista = formatter(&quot;span&quot;,
+                         style = x ~ style(color = ifelse(x, &quot;green&quot;, &quot;red&quot;)),
+                         x ~ icontext(ifelse(x, &quot;ok&quot;, &quot;remove&quot;), ifelse(x, &quot;Sí&quot;, &quot;No&quot;)))
+))</code></pre>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th style="text-align:right;">
+id
+</th>
+<th style="text-align:right;">
+nombre
+</th>
+<th style="text-align:right;">
+edad
+</th>
+<th style="text-align:right;">
+grado
+</th>
+<th style="text-align:right;">
+Examen1
+</th>
+<th style="text-align:right;">
+Examen2
+</th>
+<th style="text-align:right;">
+Promedio
+</th>
+<th style="text-align:right;">
+Entrevista
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+Juan
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffffff">20</span>
+</td>
+<td style="text-align:right;">
+<span>C</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 42.86%">3.8</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 54.29%">3.9</span>
+</td>
+<td style="text-align:right;">
+<span style="color: gray">3.90 (rank: 4.00)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Sí
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+Carlos
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffc65f">25</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green; font-weight: bold">A</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 77.14%">4.1</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 54.29%">3.9</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.00 (rank: 3.00)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> No
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+James
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffe8bf">22</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green; font-weight: bold">A</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 65.71%">4.0</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 65.71%">4.0</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.10 (rank: 2.00)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Sí
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+David
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffa500">28</span>
+</td>
+<td style="text-align:right;">
+<span>C</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 54.29%">3.9</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 54.29%">3.9</span>
+</td>
+<td style="text-align:right;">
+<span style="color: gray">3.60 (rank: 8.50)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> No
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+Jenny
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #fff3df">21</span>
+</td>
+<td style="text-align:right;">
+<span>B</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 65.71%">4.0</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 42.86%">3.8</span>
+</td>
+<td style="text-align:right;">
+<span style="color: gray">3.70 (rank: 6.50)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Sí
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+Harold
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffdd9f">23</span>
+</td>
+<td style="text-align:right;">
+<span>B</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 100.00%">4.3</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 20.00%">3.6</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green">4.60 (rank: 1.00)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Sí
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+Leonardo
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffc65f">25</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green; font-weight: bold">A</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 20.00%">3.6</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 65.71%">4.0</span>
+</td>
+<td style="text-align:right;">
+<span style="color: gray">3.50 (rank: 10.00)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Sí
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+John
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffffff">20</span>
+</td>
+<td style="text-align:right;">
+<span>C</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 31.43%">3.7</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 65.71%">4.0</span>
+</td>
+<td style="text-align:right;">
+<span style="color: gray">3.60 (rank: 8.50)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> No
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:right;">
+Ana
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #fff3df">21</span>
+</td>
+<td style="text-align:right;">
+<span>C</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 42.86%">3.8</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 54.29%">3.9</span>
+</td>
+<td style="text-align:right;">
+<span style="color: gray">3.80 (rank: 5.00)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> No
+</span>
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+Luz
+</td>
+<td style="text-align:right;">
+<span
+style="display: block; padding: 0 4px; border-radius: 4px; background-color: #ffffff">20</span>
+</td>
+<td style="text-align:right;">
+<span>C</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 42.86%">3.8</span>
+</td>
+<td style="text-align:right;">
+<span
+style="display: inline-block; direction: rtl; unicode-bidi: plaintext; border-radius: 4px; padding-right: 2px; background-color: #C4D8F3; width: 42.86%">3.8</span>
+</td>
+<td style="text-align:right;">
+<span style="color: gray">3.70 (rank: 6.50)</span>
+</td>
+<td style="text-align:right;">
+<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> No
+</span>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 

@@ -49,6 +49,7 @@ c7= "#F7F7F7" # FONDO GRIS CLARO WEB
 ```{r, echo=FALSE, out.width="100%", fig.align = "center"}
 knitr::include_graphics("img/banner001.png")
 ```
+<br/><br/>
 
 ## **Enunciado**
 
@@ -82,15 +83,15 @@ Finalmente adjunte un análisis de los resultados obtenidos.
 
 <pre>
 install.packages("devtools") # solo una vez
-devtools::install_github("dgonxalex80/paqueteDEG") # descarga paqueteDEG
-library(paqueteDEG) # activa paqueteDEG
+devtools::install_github("dgonxalex80/paquete018") # descarga paquete018
+library(paquete018) # activa paquete018
 data("beer") # carga la base beer
 </pre>
 
 ```{r, eval=FALSE}
 install.packages("devtools") # solo una vez
-devtools::install_github("dgonxalex80/paqueteDEG") # descarga paqueteDEG
-library(paqueteDEG) # activa paqueteDEG
+devtools::install_github("dgonxalex80/paquete018") # descarga paqueteDEG
+library(paquete018) # activa paqueteDEG
 data("beer") # carga la base beer
 ```
 
@@ -99,9 +100,13 @@ data("beer") # carga la base beer
 ## **Batos de datos**
 ```{r}
 library(DT)
-library(paqueteDEG)
+# Cargar los datos
 data(beer)
-DT::datatable(head(beer, 69),fillContainer = FALSE, options = list(pageLength = 8))
+# Mostrar la tabla con DataTable
+DT::datatable(
+  head(beer, fillContainer = FALSE, options = list(pageLength = 8))
+)
+
 ```
 
 <br/>
