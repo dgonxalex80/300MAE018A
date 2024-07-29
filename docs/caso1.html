@@ -34,6 +34,15 @@
 <script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.33/datatables.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
@@ -428,364 +437,68 @@ $(document).ready(function () {
 </div>
 
 
-<p><img src="img/guia1.png" width="100%" style="display: block; margin: auto;" />
-<br/><br/></p>
-<div id="introducción" class="section level1">
-<h1><strong>Introducción</strong></h1>
-<p><br/></p>
-<p>En esta unidad se presenta la <strong>Metodología
-Estadística</strong> como estrategia que permite visualizar las
-diferentes etapas presentes en una investigación o análisis de datos
-:</p>
-<p><br/><br/></p>
-<p><img src="img/metodologia1.png" width="70%" style="display: block; margin: auto;" /></p>
-<p><br/><br/></p>
-<p>Tambien se hará especial referencia a la construcción, depuración y
-documentación de las bases de datos, acciones necesarias para un buen
-análisis de datos.</p>
-<p>Con este propósito se hará uso del portal <strong>Bases de Datos
-Abiertos</strong>, del lenguaje <strong>R</strong> y su IDE
-<strong>RStudio</strong>.</p>
-<p><br/><br/></p>
-</div>
-<div id="objetivos-de-la-unidad" class="section level1">
-<h1><strong>Objetivos de la unidad</strong></h1>
-<p><br/></p>
-<p>Al finalizar la unidad los estudiantes estarán en capacidad de
-RECONOCER los pasos de la Metodología Estadística y podrán ESTRUCTURAR,
-LIMPIAR y DOCUMENTAR una base de datos con el fin de garantizar los
-elementos necesarios para realizar un procesamiento de datos. Para ello
-seleccionaran una base de datos. Adicionalmente propondrán un problema
-que les permita el desarrollo de la metodológica estadística.</p>
-<p><br/><br/></p>
-</div>
-<div id="duración" class="section level1">
-<h1><strong>Duración</strong></h1>
-<p><br/></p>
-<p>La presente unidad será desarrollada durante la primera semana del
-semestre . Ademas del material suministrado se podrá contar con el
-acompañamiento del profesor en dos sesiones (Lunes y y Viernes) y una
-tercera con un monitor (Miercoles). Los documentos requeridos para esta
-unidad deberán ser entregados a través de la plataforma
-<strong>Brightspace</strong> hasta el 29 de julio.</p>
-<p>Para alcanzar los objetivos planteados se propone realizar las
-siguientes actividades:</p>
-<p><br/><br/></p>
-</div>
-<div id="cronograma-de-trabajo" class="section level1">
-<h1><strong>Cronograma de trabajo</strong></h1>
-<p><br/></p>
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Actividad111</th>
-<th align="left">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Individual</td>
-<td align="left"><strong>Metodología estadística:</strong> : Formular un
-problema que le permita desarrollar un ejercicio académico durante el
-semestre a través de la recolección de información (primaria o
-secundaria), Ademas de establecer los objetivos y las variables de
-interés asociadas en dicho problema e identificar el tipo de variable y
-su escala de medición. El resultado de esta actividad deberá se
-entregado en <strong>archivo en formato pdf</strong> con nombre:
-<strong>actividad111.pdf</strong> en enlace ubicado en la plataforma
-Bs</td>
-</tr>
-<tr class="even">
-<td align="left">Fecha</td>
-<td align="left">29 de julio de 2024</td>
-</tr>
-<tr class="odd">
-<td align="left">Hora</td>
-<td align="left">23:59 hora local</td>
-</tr>
-</tbody>
-</table>
-<p><br/></p>
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Actividad112</th>
-<th align="left">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Individual</td>
-<td align="left"><strong>Base de datos</strong> : Cada estudiante deberá
-buscar una base de datos de su interés, depuarla y documentarla si es
-necesario. A partir de la información recolectada deberá construir la
-ficha técnica de la base. El resultado de esta actividad deberá se
-entregado en <strong>archivo en formato pdf</strong> con nombre:
-<strong>actividad112.pdf</strong></td>
-</tr>
-<tr class="even">
-<td align="left">Recurso</td>
-<td align="left">Video: <a
-href="https://youtu.be/lRftK2mL3Sw"><strong>Como descargar datos
-abiertos</strong></a></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">Formato ficha : <strong>Ficha técnica</strong></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left">Excel</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left">RStudio</td>
-</tr>
-<tr class="even">
-<td align="left">Fecha</td>
-<td align="left">29 de julio 2024</td>
-</tr>
-<tr class="odd">
-<td align="left">Hora</td>
-<td align="left">23:59 hora local</td>
-</tr>
-</tbody>
-</table>
-<p><br/></p>
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Actividad113</th>
-<th align="left">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Individual</td>
-<td align="left"><strong>Instalación de R y RStudio</strong> : Para el
-desarrollo de las actividades del curso deberán instalar <a
-href="https://www.r-project.org/">R CRAN</a> y <a
-href="https://rstudio.com/">RStudio</a>. Para su correcta instalación
-existen varios videos en YouTube que le permitirán realizarlo de una
-manera correcta</td>
-</tr>
-<tr class="even">
-<td align="left">Recursos</td>
-<td align="left"><a
-href="https://www.youtube.com/watch?v=Nmu4WPdJBRo">Descargar e instalar
-R y RStudio 2021 -Video Rafa Gonzalez Gouveia</a></td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"><a href="https://cran.r-project.org/">R
-download</a></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"><a
-href="https://rstudio.com/products/rstudio/download/">RStudio
-download</a></td>
-</tr>
-<tr class="odd">
-<td align="left">Fecha</td>
-<td align="left">29 de julio 2024</td>
-</tr>
-<tr class="even">
-<td align="left">Hora</td>
-<td align="left">23:59 hora local</td>
-</tr>
-</tbody>
-</table>
-<p><br/><br/></p>
-</div>
-<div id="criterios-de-evaluación" class="section level1">
-<h1><strong>Criterios de evaluación</strong></h1>
-<p><br/></p>
+<p><img src="img/banner001.png" width="100%" style="display: block; margin: auto;" /></p>
+<div id="enunciado" class="section level2">
+<h2><strong>Enunciado</strong></h2>
+<p><img src="img/cerveza.png" /></p>
+<p>La siguiente información recoge cinco de las principales
+características de un grupo de marcas de cerveza que fue recogida con la
+finalizad de clasificar los productos y además permita realizar un
+análisis descriptivo de las 69 marcas recogidas</p>
+<p>Inicialmente el director de investigación desea su apoyo en una
+primera etapa del análisis que consiste en resumir la información
+suministrada en tablas e indicadores que le permitan validar algunas de
+sus hipótesis.</p>
+<p>La base compartida contiene información sobre 69 marcas de cervezas
+que son distribuidas en la ciudad. Las variables recogidas corresponden
+a:</p>
 <ul>
-<li><p>Reconocer la relación existente ente la definición del problema,
-el planteamiento de los objetivos y la definición de las variables de
-interés dentro de la Metodología Estadística.</p></li>
-<li><p>Reconocer e identificar los diferentes tipos de variables y sus
-respectivas escalas de medición.</p></li>
-<li><p>Identificar la estructura de una base de datos</p></li>
+<li><p><span style="color:#b0394a"><strong>precio</strong></span> de la
+presentación en caja de seis botellas de 12 onzas,</p></li>
+<li><p>contendo de <span
+style="color:#b0394a"><strong>calorias</strong></span> congtenidas en
+una unidad de 12 onzas,</p></li>
+<li><p>porcentaje de contenido de <span
+style="color:#b0394a"><strong>alcohol</strong></span> por 12 onzas de
+contenido,</p></li>
+<li><p><span style="color:#b0394a"><strong>tipo</strong></span> de
+cerveza (1-lager artesanal, 2-clara artesanal, 3-lager importada,
+4-cerveza normal y helada, y 5-cerveza baja en calorías y sin alcohol)
+y</p></li>
+<li><p>país de <span
+style="color:#b0394a"><strong>origen</strong></span> (0-nacional, 1-
+importada).</p></li>
 </ul>
+<p>Su trabajo consiste en escribir un primer informe basado en una
+evaluación descriptiva, que contenga las tablas que resumen la
+información para cada variable de base de datos y resumen de sus
+indicadores estadísticos.</p>
+<p>Finalmente adjunte un análisis de los resultados obtenidos.</p>
 <p><br/><br/></p>
 </div>
-<div id="entregables" class="section level1">
-<h1><strong>Entregables</strong></h1>
-<p><br/></p>
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Entregable</th>
-<th align="left">Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><strong>actividad111.pdf</strong></td>
-<td align="left">Documento que contenga: Formulación de problema
-propuesto, definición de los objetivos y definición de variables de
-interés. En este último caso detallar para cada variable su tipo (
-cualitativa o cuantitativa ) y su escala de medición ( nominal, ordinal,
-de intervalo o de razón).</td>
-</tr>
-<tr class="even">
-<td align="left"><strong>actividad112.pdf</strong></td>
-<td align="left">Ficha técnica de la base seleccionada</td>
-</tr>
-<tr class="odd">
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><strong>Fecha</strong></td>
-<td align="left">29 de julio 2024</td>
-</tr>
-<tr class="odd">
-<td align="left"><strong>Hora límite</strong></td>
-<td align="left">23:59 hora local</td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-<p><br/> <br/> <br/></p>
+<div id="cargar-datos" class="section level2">
+<h2><strong>Cargar datos</strong></h2>
+<pre>
+install.packages("devtools") # solo una vez
+devtools::install_github("dgonxalex80/paqueteDEG") # descarga paqueteDEG
+library(paqueteDEG) # activa paqueteDEG
+data("beer") # carga la base beer
+</pre>
+<pre class="r"><code>install.packages(&quot;devtools&quot;) # solo una vez
+devtools::install_github(&quot;dgonxalex80/paqueteDEG&quot;) # descarga paqueteDEG
+library(paqueteDEG) # activa paqueteDEG
+data(&quot;beer&quot;) # carga la base beer</code></pre>
 <p><br/><br/></p>
 </div>
-<div id="ficha-técnica" class="section level1">
-<h1><strong>Ficha técnica</strong></h1>
+<div id="batos-de-datos" class="section level2">
+<h2><strong>Batos de datos</strong></h2>
+<pre class="r"><code>library(DT)
+library(paqueteDEG)
+data(beer)
+DT::datatable(head(beer, 69),fillContainer = FALSE, options = list(pageLength = 8))</code></pre>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-89cad0fe14c8a3d0367d" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-89cad0fe14c8a3d0367d">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69"],["m1","m2","m3","m4","m5","m6","m7","m8","m9","m10","m11","m12","m13","m14","m15","m16","m17","m18","m19","m20","m21","m22","m23","m24","m25","m26","m27","m28","m29","m30","m31","m32","m33","m34","m35","m36","m37","m38","m39","m40","m41","m42","m43","m44","m45","m46","m47","m48","m49","m50","m51","m52","m53","m54","m55","m56","m57","m58","m59","m60","m61","m62","m63","m64","m65","m66","m67","m68","m69"],[6.24,4.79,5.96,4.7,4.11,3.85,2.52,5.46,6,3.71,6.7,4.99,4.1,5.96,6.31,6.42,7.79,5.05,5.26,5.84,7.22,6.12,7.37,6.47,6.72,7.59,6.36,6.52,6.34,7.1,4.78,4.63,5.41,6.39,5.52,6.38,5.68,5.82,5.83,7.8,2.82,3.2,3.83,4.02,3.88,4.79,4,3.95,3.27,4.02,3.26,3.19,2.9,2.36,3.93,4.25,4.03,4.02,2.86,4.03,4.02,6.49,3.24,3.6,2.99,2.75,3.9,5.42,5.63],[159,160,160,162,157,151,155,135,162,142,146,148,170,160,172,170,184,201,155,170,158,159,150,177,146,151,163,186,168,142,148,150,140,150,160,160,148,148,148,160,145,142,147,148,149,155,159,148,143,137,153,143,144,133,143,143,134,110,110,105,96,95,58,82,60,72,70,71,96],[5.2,5,4.9,4.9,5.5,4.9,4.7,5.1,5.4,4.8,4.4,4.3,5.1,5,5.8,5.9,6,5.6,4.7,5.3,4.9,5.4,5.1,5.6,3.7,4.9,5.3,5.9,5.9,4.7,5,5,5,5,4.8,5,4.6,4.9,4.3,4.1,4.5,4.4,5,4.9,5.5,5.6,5,5.5,4.9,4.6,4.6,5,4.7,4.6,5,4.6,4.3,4.2,4.2,4.2,4.5,3.6,0,0,0,0,0,0,0],[1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5,5,5,5,5],[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>marca<\/th>\n      <th>precio<\/th>\n      <th>calorias<\/th>\n      <th>poralcoh<\/th>\n      <th>tipo<\/th>\n      <th>origen<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"marca","targets":1},{"name":"precio","targets":2},{"name":"calorias","targets":3},{"name":"poralcoh","targets":4},{"name":"tipo","targets":5},{"name":"origen","targets":6}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 <p><br/></p>
-<div class="box2 with-label">
-<p><br/></p>
-<p>Nombre del estudiante:</p>
-<p><br/> <br/></p>
-<div id="ficha-técnica-1" class="section level2">
-<h2><strong>Ficha técnica</strong></h2>
-<p><br/><br/> <br/></p>
-<div
-id="concepto-contexto-que-oriente-sobre-el-tema-que-aborda-la-base-de-datos"
-class="section level4">
-<h4><strong>Concepto</strong>: (contexto que oriente sobre el tema que
-aborda la base de datos)</h4>
-<p><br/> <br/></p>
-</div>
-<div id="población-población-de-la-cual-se-ha-recogido-la-información"
-class="section level4">
-<h4><strong>Población</strong>: (población de la cual se ha recogido la
-información)</h4>
-<p><br/> <br/></p>
-</div>
-<div
-id="tamaño-de-la-muestra-número-de-observaciones-recogidas-en-la-base-de-datos"
-class="section level4">
-<h4><strong>Tamaño de la muestra</strong>: (número de observaciones
-recogidas en la base de datos)</h4>
-<p><br/> <br/></p>
-</div>
-<div
-id="instrumento-de-recolección-forma-en-que-se-recoge-la-información---puede-ser-implicito-que-se-trata-de-un-instrumento-como-encuesta-planilla-formulario"
-class="section level4">
-<h4><strong>Instrumento de recolección</strong> : (forma en que se
-recoge la información - puede ser implicito que se trata de un
-instrumento como encuesta, planilla, formulario)</h4>
-<p><br/> <br/></p>
-</div>
-<div
-id="ubicación-espacio-temporal-lugar-y-tiempo-en-el-que-se-recoge-la-información"
-class="section level4">
-<h4><strong>Ubicación espacio-temporal</strong>: (lugar y tiempo en el
-que se recoge la información)</h4>
-<p><br/> <br/></p>
-</div>
-<div
-id="unidad-estadística-persona-u-objeto-del-cual-se-obtiene-la-información"
-class="section level4">
-<h4><strong>Unidad estadística</strong>: ( persona u objeto del cual se
-obtiene la información)</h4>
-<p><br/> <br/></p>
-</div>
-<div id="variables" class="section level4">
-<h4><strong>Variables</strong></h4>
-<div class="box2 with-label">
-<table>
-<colgroup>
-<col width="41%" />
-<col width="25%" />
-<col width="32%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Tipo de variable</th>
-<th>Tipo de escala</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>(nombre de la variable)</td>
-<td>(cualitativa</td>
-<td>(nominal/ordinal</td>
-</tr>
-<tr class="even">
-<td></td>
-<td>cuantitativa)</td>
-<td>de intervalo/de razón)</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
 </div>
 
 
