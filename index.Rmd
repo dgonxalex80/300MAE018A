@@ -78,7 +78,7 @@ knitr::include_graphics("img/horario-018A.png")
 * correo : dgonzalez@javerianacali.edu.co
 * oficina : 1.28 Edificio de Ingeniería
 
-#### **Monitor** : Sara Isabella  Salinas
+#### **Monitor** : José Cepeda
 
 </div>
 
