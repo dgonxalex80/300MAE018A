@@ -53,10 +53,10 @@ knitr::include_graphics("img/horario-018A.png")
 <div class="box2">
 
 
-|Curso     | **Grupo** | Horario       | **LUNES**  |                | **MIERCOLES** |                | **VIERNES**  |
+|Curso     | **Grupo** | Horario       | **LUNES**  |                | **MIERCOLES** |                | **VIERNES** |
 |:---------|:----------|:--------------|:-----------|:---------------|:--------------|:---------------|:------------|
 |          |           |               |            |                |               |                |             |
-|30MAE018  |    A      |14:00 a 14:00  | **PL 3.3** |                |  **EC3.2**    |                | **EC 3.2**  |
+|30MAE018  |    A      |14:00 a 14:00  | **SM 2.7** |                |  **PL 3.2**   |                | **AL 1.2**  |
 |          |           |               | Sesión 1   |                |   Monitoria   |                | Sesión 2    |
 
 
