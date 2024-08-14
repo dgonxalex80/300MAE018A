@@ -135,7 +135,7 @@ Este diagrama ordena los datos de manera que se puede determinar tanto en mínim
 
 ### **Histograma**
 
-```{r, fig.height=5}
+```{r, fig.height=5, fig.align='center'}
 h1=hist(nf, main = "Nota final matemáticas fundamentales", xlab = "nota", ylab="frecuencias absolutas", labels=TRUE, col=c6, ylim = c(0,30))
 abline(v=3,col="#f6b915", lwd=2)
 ```
