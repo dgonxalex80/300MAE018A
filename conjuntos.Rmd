@@ -28,7 +28,10 @@ En pesaremos con su definición
 
 <br/><br/>
 
-<div class="highlight-box">
+
+<div class="box1 with-label">
+<div class="label">Definición:</div>
+
 # **Conjunto**
 
 Un conjunto es una colección de objetos que se denota con una letra mayúscula (comúnmente las primeras letras del alfabeto A,B,C..) . 
@@ -56,7 +59,9 @@ Unión del $A$ con el conjunto $B$.\hspace{.4cm} $A \cup B$, $\overline{A}$ ,$A 
 ![](img/union.png){width=50%}
 
 
- ![](img/ej1.png){width=10%}
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 1</div> 
 
 Supongamos los siguientes conjuntos  
 
@@ -64,6 +69,9 @@ Supongamos los siguientes conjuntos
 * $B = \{1,2,3,4,5,6,7,8,9,0\}$ 
 
 $$A \cup B = \{a,e,i,o,u, 1,2,3,4,5,6,7,8,9,0 \}$$  
+
+
+</div>
  
 <br/><br/><br/>
 
@@ -77,7 +85,9 @@ La intersección entre el conjunto $A$ y el $B$ se denota por : $A \cap B$ y se 
 
 <br/><br/>
 
-![](img/ej2.png){width=10%}
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 2</div> 
 
 
 Supongamos los siguientes conjuntos: 
@@ -86,6 +96,9 @@ Supongamos los siguientes conjuntos:
 * $B = \{2,4,6,8,10,12,14,16,18,20 \}$
 
  $$A \cap B = \{ 2,4,6 \}$$             
+
+
+</div>
 
 <br/><br/><br/>
 
@@ -99,7 +112,9 @@ El complemento del conjunto $A$ se escribe como: $\overline{A}$ y se representa 
 
 <br/><br/>
 
-![](img/ej3.png){width=10%}
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 3</div> 
 
 
 Supongamos los siguientes conjuntos: 
@@ -108,6 +123,9 @@ Supongamos los siguientes conjuntos:
 * $A = \{1,2,3,4,5,6 \}$ y            
 
  $$\overline{A}  = \{0, 7, 8, 9 \}$$  
+ 
+</div> 
+ 
 <br/><br/><br/>
 
 # **Resta**
@@ -120,7 +138,9 @@ La resta del conjunto $B$ menos el conjunto $A$ : $B-A$ , está representada por
 
 <br/><br/>
 
-![](img/ej4.png){width=10%}
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 4</div> 
 
 Supongamos los siguientes conjuntos 
 
@@ -129,6 +149,7 @@ Supongamos los siguientes conjuntos
 
 
 $$B-A =\{ 8,10,12,14,16,18,20 \}$$
+</div>
 
 <br/><br/>
 

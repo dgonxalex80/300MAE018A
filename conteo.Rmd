@@ -29,11 +29,15 @@ Supongamos que un  procedimiento, designado con $P_1$, se puede hacer de $n_1$ m
 <br/><br/>
 
 
-![](img/ej1.png){width=10%}
+<div class="box1 with-label">
+<div class="label">Ejemplo 1</div> 
 
 Un estudiante tiene dos posibilidades de ir de su casa a la universidad: En transporte público o en transporte particular. Para el caso del transporte público existen 5 alternativas. Para el caso de transporte particular tienen 6 alternativas. En este caso $n_{1}=5$ y $n_{2}=6$. El número de maneras como se puede transportar de la casa a la universidad será $n=n_{1}+n_{2}=11$ formas diferentes de ir a la U. 
 
+</div>
+
 <br/>
+
 
 ![](img/psuma.png){width=50%}
 <br/><br/>
@@ -45,9 +49,14 @@ Supongamos que un  procedimiento $P1$ , se  puede realizar de $n_1$ maneras dife
 <br/><br/>
 
 
-![](img/ej2.png){width=10%}
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 2</div> 
+
 
 En el proceso de fabricación de una silla se diferencian las siguientes etapas: El diseño de la silla ($P_{1}$) y el proceso de pintado ($P_{2}$). El proceso $P_{1}$ se puede realizar de 3 formas diferentes. Para el proceso $P_{2}$ se puede optar por 4 formas diferentes. ¿De cuantas formas diferentes se puede construir una silla? 
+
+</div>
 
 <br/><br/>
 
@@ -113,13 +122,15 @@ El numero de  maneras diferentes como  se  puede extraer  una  muestra de tamañ
  
 <br/><br/>
  
-![](img/ej3.png){width=10%}
+<div class="box1 with-label">
+<div class="label">Ejemplo 3</div> 
 
 Un Ingeniero debe realizar  visitas a 6 aéreas de trabajo diferentes durante el día. A fin de impedir a los funcionarios que sepan cuando realizara su visita, varía el orden de sus visitas. De cuantas maneras puede hacerlo? 
 
 <br/><br/>
 
 $$ _{6}\mathcal{P}_{6} = \dfrac{6!}{(6-6)!}=6! =720$$
+</div>
 
 <br/><br/>
 
@@ -132,10 +143,13 @@ El número de  maneras diferentes como  se  puede extraer  una  muestra de tama�
 
 <br/><br/>
 
-![](img/ej4.png){width=10%}
+<div class="box1 with-label">
+<div class="label">Ejemplo 4</div> 
 
  El juego del Baloto está conformado por una urna que contiene 45 bolas numeradas del 1 al 46. ¿De cuantas formas diferentes puede salir el resultado un sorteo? 
  
+</div> 
+
  <br/><br/>
 
 De las 46 bolas se pueden eligen 6 sin importar el orden y sin que ninguna de las bolas se repita. Este experimento cumple con las condiciones de una combinación.  
@@ -228,7 +242,10 @@ Problemas tomados y basados en  Meyer(1986)
 
 <br/><br/>
 
-### **Códigos en R** 
+
+<div class="box3 with-label">
+<div class="label">Código R</div> 
+
 
 |               |                                                      |
 |:--------------|:-----------------------------------------------------|
@@ -236,7 +253,7 @@ Problemas tomados y basados en  Meyer(1986)
 |combinación    | `nCk=function(a,b){choose(n,k)}`                     |
 |               |                                                      |
 
-
+</div>
 
 
 
