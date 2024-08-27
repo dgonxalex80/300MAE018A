@@ -95,7 +95,36 @@ knitr::include_graphics("img/horario-018A.png")
 
 </div>
 
-<br/>
+<br/><br/><br/>
+
+## **Información supletorios**
+<div class="box2">
+
+### **DPTO. DE CIENCIAS NATURALES Y MATEMÁTICAS**
+#### **EXÁMENES SUPLETORIOS - 1er corte**
+
+**DIURNOS**
+
+- **Fecha:** Lunes 9 de septiembre de 2024
+- **Hora:** 4:00 P.m. a 6:00 P.m.
+- **Lugar:** Edificio Lago, salón 2.4 (Fac. Ing.) - salón 2.7 (demás Facultades)
+
+**NOCTURNOS (solo carreras nocturnas)**
+
+- **Fecha:** Lunes 9 de septiembre de 2024
+- **Hora:** 6:30 p.m. a 8:30 p.m.
+- **Lugar:** Edificio Lago, Salón 2.7
+
+
+```{r, echo=FALSE, out.width="70%", fig.align = "center"}
+ # knitr::include_graphics("img/supletorio1.png")
+```
+
+</div>
+
+
+
+
 
 <div class="box2">
 ### **Información básica**
