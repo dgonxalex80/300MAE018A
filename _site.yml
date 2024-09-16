@@ -81,9 +81,19 @@ navbar:
           href: recurso22.html
         - text: "Taller 221"
           href: taller221.html
-        - text: "--------"            
+        - text: "--------"
+        - text: "Guía 2.3"
+          href: guia23.html        
+        - text: "Variable aleatoria"
+          href: recurso23.html
+        - text: "Taller 231"
+          href: taller231.html
+        - text: "--------"       
         - text: "Monitoria 2"
           href: monitoria2.html
+          
+          
+          
     - text: "Módulo 3"
       menu:
         - text: "Módulo 3"
