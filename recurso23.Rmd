@@ -270,13 +270,13 @@ data.frame(x,fx,Fx)
 <div class="box1 with-label">
 <div class="label">Ejemplo 4</div>
 
-El restaurante "Asados y algo más"  solo da servicio mediante reservas. De acuerdo con los registros diarios en los últimos diez años se sabe que el treinta por ciento de las personas que reservan no llegan al restaurante. El restaurante tiene veinte  puestos y acepta cuarenta reservas. La función de distribución probabilidad que modela el número de personas que llegan al restaurante es $f$, dada por:
+El restaurante "Asados y algo más"  solo da servicio mediante reservas. De acuerdo con los registros diarios en los últimos diez años se sabe que el treinta por ciento de las personas que reservan no llegan al restaurante. El restaurante tiene veinte  puestos y acepta 25 reservas. La función de distribución probabilidad que modela el número de personas que llegan al restaurante es $f$, dada por:
 
 <br/>
 
 $$f_{_{X}}(x) = \left \{
 				\begin{matrix}
-				\displaystyle\binom{20}{x}(0.7)^{x}(0.3)^{20-x} & \mbox{si }	x=0,1,2,\ldots,20\\
+				\displaystyle\binom{25}{x}(0.7)^{x}(0.3)^{25-x} & \mbox{si }	x=0,1,2,\ldots,25\\
 				& \\
 				0  & \mbox{en otro caso }
 				\end{matrix}\right.
