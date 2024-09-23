@@ -88,7 +88,14 @@ navbar:
           href: recurso23.html
         - text: "Taller 231"
           href: taller231.html
-        - text: "--------"       
+        - text: "--------"      
+        - text: "Guía 2.4"
+          href: guia24.html        
+        - text: "Modelos discretos"
+          href: recurso24.html
+        - text: "Taller 241"
+          href: taller241.html
+        - text: "--------"        
         - text: "Monitoria 2"
           href: monitoria2.html
           
