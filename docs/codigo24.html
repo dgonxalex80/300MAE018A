@@ -14,13 +14,13 @@
 
 <title>Unidad 2.4</title>
 
-<script src="site_libs/header-attrs/header-attrs.js"></script>
-<script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap/css/flatly.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap/shim/respond.min.js"></script>
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <style>h1 {font-size: 34px;}
        h1.title {font-size: 38px;}
        h2 {font-size: 30px;}
@@ -30,12 +30,12 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/navigation/tabsets.js"></script>
-<script src="site_libs/navigation/codefolding.js"></script>
-<link href="site_libs/highlightjs/default.css" rel="stylesheet" />
-<script src="site_libs/highlightjs/highlight.js"></script>
-<link href="site_libs/font-awesome/css/all.min.css" rel="stylesheet" />
-<link href="site_libs/font-awesome/css/v4-shims.min.css" rel="stylesheet" />
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -475,210 +475,252 @@ $(document).ready(function () {
 </div>
 
 
-<p></br></br></br></p>
-<p><img src="img/banner002.png" width="100%" style="display: block; margin: auto auto auto 0;" />
-</br></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 1
-</div>
-<p>Para una variable con distribución bonomial <span
-class="math inline">\(X \sim binom(x, n=10, p=0.40)\)</span>, Determinar
-utilizando la función de distribución de probabilidad asociada a <span
-class="math inline">\(X\)</span> las siguientes probabilidades: .</p>
-<ul>
-<li>(a.) <span class="math inline">\(P(X = 5)\)</span></li>
-<li>(b.) <span class="math inline">\(P(X \leq 2)\)</span></li>
-<li>(c.) <span class="math inline">\(P(3 \leq X \leq 5 )\)</span></li>
-<li>(d.) <span class="math inline">\(P(X \geq 8)\)</span></li>
-<li>(e.) Coonstruya una gráfica para <span
-class="math inline">\(f(x)\)</span></li>
-</ul>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 2
-</div>
-<p>Suponga que <span class="math inline">\(X\)</span> tiene una
-distriubución Posson con media <span class="math inline">\(\lambda =
-4\)</span> , <span class="math inline">\(X \sim pois(x, \lambda
-=4)\)</span></p>
-<ul>
-<li>(a.) <span class="math inline">\(P(X = 0)\)</span></li>
-<li>(b.) <span class="math inline">\(P(X = 4)\)</span></li>
-<li>(c.) <span class="math inline">\(P(X \geq 2 )\)</span></li>
-<li>(d.) <span class="math inline">\(P(X \leq 2)\)</span></li>
-<li>(e.) Construya una gráfica para <span
-class="math inline">\(f(x)\)</span></li>
-</ul>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 3
-</div>
-<p>Sea una variable geométrica <span class="math inline">\(X \sim
-geomn,(x,p=0.05)\)</span> . Determine :</p>
-<ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 1)\)</span></li>
-<li><span class="math inline">\(P(X \leq 2)\)</span></li>
-<li><span class="math inline">\(P(X = 8)\)</span></li>
-<li><span class="math inline">\(P(X \geq 2)\)</span></li>
-<li>Construya la gráfica de <span
-class="math inline">\(f(x)\)</span></li>
-</ol>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 4
-</div>
-<p>Suponga que <span class="math inline">\(X\)</span> tiene una
-distribución hipergeometrica con <span
-class="math inline">\(N=100\)</span>, <span
-class="math inline">\(n=4\)</span> y <span
-class="math inline">\(K=20\)</span>. (<span class="math inline">\(X\sim
-hyper(x,N=100,n=4,k=20)\)</span>) Determine:</p>
-<ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 1)\)</span></li>
-</ol>
-<pre class="r"><code># dhyper(x,   # valor de x
-#        m,   # casos existoros : k = 20
-#        n,   # casos no exitosos : N-k = 80
-#        k)   # muestra que se extrae  :n = 4
-# m*n = N : total de la urna  : 100
-#
-dhyper(1, m=20, n=80, k=4 )</code></pre>
-<ol start="2" style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 6)\)</span></li>
-<li><span class="math inline">\(P(X \geq 1)\)</span></li>
-<li><span class="math inline">\(P(X = 4)\)</span></li>
-<li>Construya la gráfica de <span
-class="math inline">\(f(x)\)</span></li>
-</ol>
+<p><img src="img/codigo2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><br/><br/></p>
+<div id="funciones-modelos" class="section level1">
+<h1><strong>Funciones modelos</strong></h1>
+<p><br/><br/></p>
+<div id="código-r" class="section level4">
+<h4><strong>Código R</strong></h4>
+<p>Existe un grupo de modelos identificados para las variables
+aleatorias tanto discretas como continuas que son utilizadas con
+frecuencia en diferentes contextos. A continuación se relacionan los
+principales modelos:</p>
 <p><br/><br/></p>
 </div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 5
-</div>
-<p><strong>5. Modelo binomial negativo</strong> Sea la variable <span
-class="math inline">\(X\)</span> con distribución binomial negativa con
-<span class="math inline">\(p=0.20\)</span> y <span
-class="math inline">\(k=3\)</span>, <span
-class="math inline">\(n=5\)</span>. Determine:</p>
-<ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 3)\)</span></li>
-</ol>
-<pre class="r"><code># dnbinom(x,     # valor de x
-#         size,  # numero de exitos requeridos
-#         prob)  # probabilidad de exito
-
-dnbinom(3,3,0.20)</code></pre>
-<ol start="2" style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 6)\)</span></li>
-<li><span class="math inline">\(P(X \geq 10)\)</span></li>
-<li><span class="math inline">\(P(X \leq 12)\)</span></li>
-<li><span class="math inline">\(EX\)</span> y <span
-class="math inline">\(VX\)</span></li>
-<li>Construya la gráfica de <span
-class="math inline">\(f(x)\)</span></li>
-</ol>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 6
-</div>
-<p>Los clientes llegan al mostrador de una tienda de acuerdo con una
-variable aleatoria Poisson con una frecuencia promedio de ocho clientes
-por hora.</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Calcule la probabilidad de que entre las 8 AM y las 9 AM lleguen
-exactamente cinco clientes.</p></li>
-<li><p>Calcule la probabilidad de que entre las 2:30 PM y las 3:30 PM no
-lleguen más de tres clientes.</p></li>
-<li><p>Calcule la probabilidad de que lleguen exactamente dos clientes
-dentro de un intervalo de dos horas continuas, por ejemplo entre 10 AM y
-12 M.</p></li>
-<li><p>Calcule el valor esperado del número de personas que llegan a la
-tienda entre las 2 PM y las 4:30 PM.</p></li>
-</ol>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 7
-</div>
-<p>El gerente de una compañia especializada en encuestas de opinión
-afirma que al rededor del 70% de las personas a quienes la agencia envía
-un cuestrionario responden llenando y devolviendo el cuestionario. Se
-envian 20 cuestionarios. Ante lo anterior el grupo de directivos hacen
-la siguiente apuesta:</p>
+<div id="modelos-discretos" class="section level4">
+<h4><strong>Modelos discretos</strong>:</h4>
 <ul>
-<li>Carlos afirma que exactamente retornaran 10 formularios llenos</li>
-<li>Juan no mas de 12 seran llenados</li>
-<li>Ana indica que a los sumo 10 seran llenados</li>
-<li>Carolina que todos entregaran el formulario lleno</li>
-<li>Andres indica que ninguno entregará el formulario</li>
+<li>Bernoulli,</li>
+<li>binomial,</li>
+<li>Poisson,</li>
+<li>geometrico,</li>
+<li>hipergeometrico,</li>
+<li>binomial negativo.</li>
 </ul>
-<p>Quien tiene mayor probabilidad de acertar?</p>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
+<p><br/><br/></p>
+<p>En <span class="math inline">\(R\)</span> los nombre de las funciones
+diseñadas para los cálculos requeridos están conformadas por dos
+partes:</p>
+<p>La primera parte es una letra que identifica el propósito de la
+función. <br/><br/></p>
+<ul>
+<li><p><em>d</em> : función de distribución de probabilidad <span
+class="math inline">\(f(x)= P(X=x)\)</span>, para el caso discreto. En
+el caso de las variables continuas representa la función de densidad de
+probabilidad <span class="math inline">\(f(x)\)</span></p></li>
+<li><p><em>p</em> : función de probbilidad acumulada <span
+class="math inline">\(F(x) = P(X \leq x)\)</span></p></li>
+<li><p><em>q</em> : percentil <span
+class="math inline">\(X_p\)</span></p></li>
+<li><p><em>r</em> : generador de números aleatorios</p></li>
+</ul>
+<p><br/><br/></p>
+<p>La siguiene tabla presenta estas las funciones para los principales
+modelos tanto discretos como continuos</p>
+<p><br/><br/></p>
+<table>
+<thead>
+<tr class="header">
+<th><em>modelo</em></th>
+<th><span class="math inline">\(F(x)\)</span></th>
+<th><span class="math inline">\(X_{p}\)</span></th>
+<th><span class="math inline">\(f(x)\)</span></th>
+<th>aleatorio</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>binomial</td>
+<td>pbinom</td>
+<td>qbinom</td>
+<td>dbinom</td>
+<td>rbinom</td>
+</tr>
+<tr class="even">
+<td>gometrico</td>
+<td>pgeom</td>
+<td>qgeom</td>
+<td>dgeom</td>
+<td>rgeom</td>
+</tr>
+<tr class="odd">
+<td>hipergeometrico</td>
+<td>phyper</td>
+<td>qhyper</td>
+<td>dhyper</td>
+<td>rhyper</td>
+</tr>
+<tr class="even">
+<td>Poisson</td>
+<td>ppois</td>
+<td>qpois</td>
+<td>dpois</td>
+<td>rpois</td>
+</tr>
+<tr class="odd">
+<td>binomial negativo</td>
+<td>pnbinom</td>
+<td>qnbinom</td>
+<td>dnbionom</td>
+<td>rnbinom</td>
+</tr>
+</tbody>
+</table>
+<p><br/><br/></p>
+<p>En <strong>R</strong> los nombres de las funciones diseñadas para los
+cálculos requeridos están conformadas por dos partes: la primera parte
+con el propósito de la función (primera letra) y la segunda parte hace
+referencia al modelo a utilizar (<strong>d</strong>
+<strong>binom</strong> para el calculo de probabilidad de una variable
+aleatoria con distribución binomial)</p>
+<p>En cada caso si no recuerda las sintaxis de la función puede hacer
+uso de las ayudas de R así:</p>
+<p><br/><br/></p>
+<pre class="r"><code> help(&quot;pbinom&quot;)</code></pre>
+<p><br/><br/></p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="center">p</td>
+<td align="left">función de distribución acumulada <span
+class="math inline">\(F(x)\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">q</td>
+<td align="left">percentil</td>
+</tr>
+<tr class="odd">
+<td align="center">d</td>
+<td align="left">densidad de probabilidad <span
+class="math inline">\(P(X=x)\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">r</td>
+<td align="left">variable aleatoria</td>
+</tr>
+</tbody>
+</table>
+<p><br/><br/></p>
+<p><br/><br/></p>
+<div class="box2 with-label">
 <div class="label">
-Problema 8
+Ejemplo 1
 </div>
-<p>Una empresa de servicios ha implementado nuevas estrategias para
-mejorar la satisfacción de sus clientes. Basándose en encuestas
-anteriores, la empresa sabe que el 80% de los clientes solían quedar
-satisfechos antes de los cambios. Como parte de su política de
-evaluación, la empresa tiene como objetivo que al menos el 85% de los
-clientes seleccionados al azar muestren satisfacción para considerar que
-las nuevas estrategias son efectivas.</p>
-<p>Para evaluar el éxito de las estrategias, la empresa selecciona 10
-clientes al azar y registra cuántos de ellos están satisfechos.</p>
-<p>Si 8 de los 10 clientes seleccionados están satisfechos, ¿debería la
-empresa concluir que las nuevas estrategias están funcionando, o debe
-realizar cambios adicionales para alcanzar su objetivo?</p>
+<p>Sea una variables con distribución binomial con parámetros <span
+class="math inline">\(n=20\)</span> y <span
+class="math inline">\(p=0.30\)</span> , lo cual se puede simbolizar como
+: <span class="math inline">\(X\sim b(x; 20,0.30)\)</span></p>
+<p>En este caso se requieren realizar los siguientes procesos:</p>
+<ol style="list-style-type: decimal">
+<li>Calcular la probabilidad de $ P(X=7)$</li>
+<li>Calcular la probabilidad acumulada <span class="math inline">\(P(X
+\leq 7)\)</span></li>
+<li>Construir la tabla de los valores de <span
+class="math inline">\(f(x)\)</span> y <span
+class="math inline">\(F(x)\)</span> para todo el rango de la
+variable</li>
+<li>Generar 15 números aleatorios a partir de esta distribución</li>
+<li>Construir la gráfica de la función de distribución de probabilidad
+<span class="math inline">\(f(x)\)</span> para <span
+class="math inline">\(X\)</span></li>
+<li>Construir la gráfica de la función de distribución acumulada <span
+class="math inline">\(F(x)\)</span></li>
+</ol>
 </div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 9
+<p><br/><br/><br/></p>
 </div>
-<p>Una empresa de mercadeo está realizando una campaña de telemercadeo
-para promocionar un nuevo producto. Basado en experiencias anteriores,
-la empresa sabe que la probabilidad de cerrar una venta en una llamada
-es del 10%. Dado que el equipo de ventas debe realizar llamadas
-consecutivas hasta conseguir una venta, están interesados en saber
-cuántas llamadas, en promedio, se deben realizar antes de lograr la
-primera venta.</p>
-<p>El equipo conformado por 3 vendedores obtuvo el siguiente
-resultado</p>
-<p>Jose debió de realizar 5 llamada antes de obtener la primera venta
-Miguel en cambio realizó 3 antes de obtener la primer venta Adriana
-debió realizar 4 llamadas para porder realizar la primera venta</p>
-<p>Que modelo se ajusta a este problema?</p>
-<p>Determine el orden de efectividad de los 3 vendedores, indicando en
-cada caso su respectiva probabilidad</p>
+<div id="solución" class="section level3">
+<h3><strong>Solución</strong></h3>
+<ol style="list-style-type: decimal">
+<li>Calcular la probabilidad de <span class="math display">\[ P(X=7) =
+\dbinom{20}{7} 0.30^{7} (10.30)^{(20-7)}\]</span></li>
+</ol>
+<pre class="r"><code>dbinom(7, 20, 0.30)</code></pre>
+<pre><code>[1] 0.164262</code></pre>
+<p><br/></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Calcular la probabilidad acumulada <span class="math display">\[P(X
+\leq 7) = \displaystyle\sum_{x=0}^{x=7} \dbinom{20}{x} 0.30^{x}
+(1-0.30)^{(20-x)}\]</span></li>
+</ol>
+<pre class="r"><code>pbinom(7, 20, 0.30)</code></pre>
+<pre><code>[1] 0.7722718</code></pre>
+<p><br/></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Construir la tabla de los valores de <span
+class="math inline">\(f(x)\)</span> y <span
+class="math inline">\(F(x)\)</span> para todo el rango de la
+variable</li>
+</ol>
+<pre class="r"><code>x=0:20                     # genera secuencia 0 al 20
+fx=dbinom(x, 20, 0.30)     # evalua f(x)
+fx=round(fx,4)             # redondea a 4 decimales
+Fx=pbinom(x, 20, 0.30)     # evalua en F(x)
+Fx=round(Fx,4)             # redondea a 4 decimales
+data.frame(x,fx,Fx)        # construye tabla</code></pre>
+<pre><code>    x     fx     Fx
+1   0 0.0008 0.0008
+2   1 0.0068 0.0076
+3   2 0.0278 0.0355
+4   3 0.0716 0.1071
+5   4 0.1304 0.2375
+6   5 0.1789 0.4164
+7   6 0.1916 0.6080
+8   7 0.1643 0.7723
+9   8 0.1144 0.8867
+10  9 0.0654 0.9520
+11 10 0.0308 0.9829
+12 11 0.0120 0.9949
+13 12 0.0039 0.9987
+14 13 0.0010 0.9997
+15 14 0.0002 1.0000
+16 15 0.0000 1.0000
+17 16 0.0000 1.0000
+18 17 0.0000 1.0000
+19 18 0.0000 1.0000
+20 19 0.0000 1.0000
+21 20 0.0000 1.0000</code></pre>
+<p><br/></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Generar 15 números aleatorios a partir de esta distribución</li>
+</ol>
+<pre class="r"><code>rbinom(15,20,0.30)</code></pre>
+<pre><code> [1] 3 5 7 6 6 7 6 6 7 7 3 5 4 5 6</code></pre>
+<p><br/></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Construir la gráfica de la función de distribución de probabilidad
+<span class="math inline">\(f(x)\)</span> para <span
+class="math inline">\(X\)</span></li>
+</ol>
+<pre class="r"><code>plot(x,dbinom(x,20,0.30), pch=19,las=1,  
+    ylab=&quot;f(x)&quot;, col=c3)
+grid()</code></pre>
+<p><img src="codigo24_files/figure-html/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Construir la gráfica de la función de distribución acumulada <span
+class="math inline">\(F(x)\)</span></li>
+</ol>
+<pre class="r"><code>x=0:20
+    plot(x,pbinom(x,20,0.30), pch=19, &quot;s&quot;,las=1,
+    ylab=&quot;f(x)&quot;, col=c3)</code></pre>
+<p><img src="codigo24_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/></p>
+<p><span class="math inline">\(f(x)\)</span></p>
+<pre class="r"><code>library(ggplot2)
+x=0:20
+fx=dbinom(x,20,0.30)
+dat=data.frame(x,fx)
+    
+ggplot(dat) + geom_point(aes(x, fx),colour = c3, size = 2) +
+        scale_x_continuous(limits = c(0, 20),
+          breaks = 0:20, 
+        labels = c(&#39;0&#39;,&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;,&#39;6&#39;,&#39;7&#39;,&#39;8&#39;,&#39;9&#39;,&#39;10&#39;,&#39;11&#39;,&#39;12&#39;,&#39;13&#39;,&#39;14&#39;, &#39;15&#39;,&#39;16&#39;,&#39;17&#39;,&#39;18&#39;,&#39;19&#39;,&#39;20&#39;))</code></pre>
+<p><img src="codigo24_files/figure-html/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
 </div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 10
-</div>
-<p>Una empresa de mercadeo está lanzando una campaña de ventas
-telefónicas para un nuevo producto. Según su experiencia, la
-probabilidad de cerrar una venta en cada llamada es del 15%. La empresa
-se ha propuesto cerrar 3 ventas por cada equipo de telemercadeo y quiere
-saber cuántas llamadas, en promedio, tendrá que hacer un equipo para
-alcanzar esas 3 ventas.</p>
-<p>¿Cuántas llamadas debe esperar realizar un equipo de ventas antes de
-alcanzar 3 ventas exitosas, si la probabilidad de cerrar una venta en
-cada llamada es del 15%?</p>
 </div>
 
 

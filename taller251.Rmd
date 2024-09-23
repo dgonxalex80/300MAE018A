@@ -1,7 +1,7 @@
 
 ---
-title: <span style="color:#235784"> </span>  
-subtitle: <span style="color:#235784">**Unidad 2.3**</span> 
+title: <span style="color:#235784">**Unidad 2.4**</span>  
+subtitle: <span style="color:#235784">**Módulo 2**</span> 
 author: "dgonzalez "
 output:
   html_document:
@@ -45,7 +45,7 @@ library(ggplot2)
 library(gridExtra)
 library(cowplot)
 library(summarytools)
-
+set.seed(1234)
 #library(dviz.supp)
 ```
 
@@ -87,18 +87,21 @@ Suponga que $X$ tiene una distriubución Posson con media $\lambda = 4$ , $X \si
 
 </div>
 
+
+
 </br></br>
 
 <div class="box1 with-label">
 <div class="label">Problema 3</div>
 
-Para una variable aleatória $X \sim unif(x,a,b)$, con $a=10$ y $b=20$, determine :
+Sea una variable geométrica $X \sim geomn,(x,p=0.05)$ . Determine :
 
-* (a.) Construya la gráfica de $f(x)$
-* (b.) $P(X \leq 12)$
-* (c.) $P(13 \leq X \leq 15)$
-* (d.) $P(X \geq 18)$
-* (e.) $E[X]$ y $V[X]$
+a. $P(X = 1)$
+b. $P(X \leq 2)$
+c. $P(X = 8)$
+d. $P(X \geq 2)$
+e. Construya la gráfica de $f(x)$
+
 
 </div>
 
@@ -107,29 +110,25 @@ Para una variable aleatória $X \sim unif(x,a,b)$, con $a=10$ y $b=20$, determin
 <div class="box1 with-label">
 <div class="label">Problema 4</div>
 
-Para una variable $Z\sim N(0,1)$ determine el área:
+Suponga que $X$ tiene una distribución hipergeometrica con $N=100$, $n=4$ y $K=20$. ($X\sim hyper(x,N=100,n=4,k=20)$) Determine:
 
-* (a.) a la derecha de $z = 0.56$ 
-* (b.) entre $z = -2.93$ y $z = -2.06$
-* (c.) entre $z = -1.08$ y $z = 0.70$
-* (d.) entre $z = 0.96$ y $z = 1.62$
-* (e.) representa las anteriores áreas gráficamente
+a. $P(X = 1)$
+```{r, eval=FALSE}
+# dhyper(x,   # valor de x
+#        m,   # casos existoros : k = 20
+#        n,   # casos no exitosos : N-k = 80
+#        k)   # muestra que se extrae  :n = 4
+# m*n = N : total de la urna  : 100
+#
+dhyper(1, m=20, n=80, k=4 )
+```
+b. $P(X = 6)$
+c. $P(X \geq 1)$
+d. $P(X = 4)$
+e. Construya la gráfica de $f(x)$
 
-</div>
+<br/><br/>
 
-</br></br>
-
-<div class="box1 with-label">
-<div class="label">Problema 5</div>
-
-
-Para una variable $Z\sim N(150,1000)$ determine :
-
-* (a.) $P(X < 100)$ 
-* (b.) $P(130 < X < 140$
-* (c.) $P(X \geq 200)$
-* (d.) $P(-k < X < k) = 0.95$
-* (e.) representa las anteriores áreas gráficamente
 
 </div>
 
@@ -138,22 +137,45 @@ Para una variable $Z\sim N(150,1000)$ determine :
 <div class="box1 with-label">
 <div class="label">Problema 5</div>
 
-Sea una variable  con función exponencial, $X \sim exp(\lambda=2)$, determine:
+**5. Modelo binomial negativo** Sea la variable $X$ con distribución binomial negativa con $p=0.20$ y $k=3$, $n=5$.	Determine:
 
-* (a.) $P(X \leq 0)$
-* (b.) $P(X \geq 2)$
-* (c.) $P(1 < X <2)$
-* (d.) $Me$
-* (e.) $P_{90}$
+a. $P(X = 3)$
+
+```{r, eval=FALSE}
+# dnbinom(x,     # valor de x
+#         size,  # numero de exitos requeridos
+#         prob)  # probabilidad de exito
+
+dnbinom(3,3,0.20)
+```
+
+
+b. $P(X = 6)$
+c. $P(X \geq 10)$
+d. $P(X \leq 12)$
+e. $EX$ y $VX$
+f. Construya la gráfica de $f(x)$
+
 
 </div>
 
 </br></br>
+
+
 
 <div class="box1 with-label">
 <div class="label">Problema 6</div>
 
-Una aereolínea nacional tiene aviones de 100 asientos para transporte nacional. se estima que la probabilidad de que una persona llegue al vuelo es de $0.90$, debido a lo cual la aereolínea vende $105$ tiquetes con el fin de minimizare la partida del avión con sillas vaciás. Por otro lado la administración del aeropuerto penaliza con una multa significativa a las aereolíneas que por esta practica deje un pasajero que habiendo comprado su tiquete no pueda viajar porque el avión ya tiene ocupado todos sus asientos. ¿Qué tan probable es que la aereolínea sea multada por la administración del aereopuerto?
+Los clientes llegan al mostrador de una tienda de acuerdo con una variable aleatoria Poisson con una frecuencia promedio de ocho clientes por hora.
+
+a. Calcule la probabilidad de que entre las 8 AM y las 9 AM lleguen exactamente cinco clientes.
+
+b. Calcule la probabilidad de que entre las 2:30 PM y las 3:30 PM no lleguen más de tres clientes.
+
+c. Calcule la probabilidad de que lleguen exactamente dos clientes dentro de un intervalo de dos horas continuas, por ejemplo entre 10 AM y 12 M.
+
+d. Calcule el valor esperado del número de personas que llegan a la tienda entre las 2 PM y las 4:30 PM.
+
 
 </div>
 
@@ -161,60 +183,67 @@ Una aereolínea nacional tiene aviones de 100 asientos para transporte nacional.
 
 <div class="box1 with-label">
 <div class="label">Problema 7</div>
+El gerente de una compañia especializada en encuestas de opinión afirma que al rededor del 70% de las personas a quienes la agencia envía un cuestrionario responden llenando y devolviendo el cuestionario. Se envian 20 cuestionarios.  Ante lo anterior el grupo de directivos hacen la siguiente apuesta:
 
-Suponga que la estatura de las personas en una población sigue la curva normal con media de $64.3$ pulgadas y desviación estáandar de $2.6$ pulgadas. 
+* Carlos afirma que exactamente retornaran 10 formularios llenos
+* Juan no mas de 12 seran llenados
+* Ana indica que a los sumo 10 seran llenados 
+* Carolina que todos entregaran el formulario lleno
+* Andres indica que ninguno entregará el formulario 
 
-* (a.) ¿Qué proporción de personas en esa región tiene estatura entre $60$ y $66$ pulgadas? 
-* (b.) La estatura de Juan es $0.5$ de desviación estándar mayor a la media. ¿Qué proporción de personas miden más que Juan? 
-* (c.) ¿Cuánto mide una persona cuya estatura se encuentra en el  percentil $P_{90}$? 
-* (d.) Se elige aleatoriamente una persona de esta población. ¿Cuál es la probabilidad de que ella mida más de $67$ pulgadas? 
-* (e.) Se elige aleatoriamente a cinco personas de esta población. ¿Cuál es la probabilidad de que sólo una de ellas mida más de 67 pulgadas?
+Quien tiene mayor probabilidad de acertar?
 
 </div>
+
 
 </br></br>
 
 <div class="box1 with-label">
 <div class="label">Problema 8</div>
 
-Uno de los productos mas vendidos en IK, fabricantes de cocinas integrales, corresponde a un novedoso modelo de puertas para los gabinetes de cocinas. Cada una de las puertas se construye con el ensamble de tres partes de madera: $P_1$, $P_2$ y $P_3$, que son cortadas y procesadas por tres operarios en tres máquinas distintas. Un estudio realizado recientemente en estos tres procesos determinó que el ancho de cada una de las piezas se distribuye aproximadamente normal con medias: $10.4$ cm,  $7.2$ cm y  $12.2$ cm y con desviaciones estándar : $0.2$ cm, $0.1$ cm y $0.3$ cm.  Para pegar las tres piezas el fabricante utiliza una cinta doble faz de espesor constante de $0.1$ cm, la cual se puede suponer constante.  Para garantizar la calidad de los gabinetes se debe obtener un ancho en las puertas entre 29.6 y 30.3 cm. El producto que esté por debajo de este valor de ser desechado y no podrá ser reutilizado. Por el contrario los productos por encima de estas especificaciones descritas deberán ser reutilizadas para luego ser medidas nuevamente.
+Una empresa de servicios ha implementado nuevas estrategias para mejorar la satisfacción de sus clientes. Basándose en encuestas anteriores, la empresa sabe que el 80% de los clientes solían quedar satisfechos antes de los cambios. Como parte de su política de evaluación, la empresa tiene como objetivo que al menos el 85% de los clientes seleccionados al azar muestren satisfacción para considerar que las nuevas estrategias son efectivas.
 
+Para evaluar el éxito de las estrategias, la empresa selecciona 10 clientes al azar y registra cuántos de ellos están satisfechos.
 
-Se podrá afirmar que el proceso está bajo control siempre y cuando el porcentaje de material desechado no supere el $5$% de la prodicción y el material reporecesado solo sea de hasta el $2$%.
-
-* (a.)  Basados en la información anterior, es posible establecer si el proceso de fabricación de las puertas está bajo control?. En caso de poder hacerlo, realice los cálculos y determine el estado del proceso. En todos los casos justifique su respuesta.
-
-* (b.) Actualmente en la fabrica se procesan diariamente 120 puertas y se tiene como meta realizar por lo menos $100$ puertas dentro de los estándares de producción establecidos. Si se supone que la producción mantiene sus característica estables, que tan cerca o alejado está poder cumplir este requerimiento?
+Si 8 de los 10 clientes seleccionados están satisfechos, ¿debería la empresa concluir que las nuevas estrategias están funcionando, o debe realizar cambios adicionales para alcanzar su objetivo?
 
 </div>
 
 
-<div class="box3 with-label">
-<div class="label">Nota:</div>
-
-Las siguientes son propuedades del valor esperado ($E[X]$) y la varianza $V[X]$ y la suma de dos variables $X$ y $Y$
-* $E[k] =k$, siendo $k$ es una constante
-* $E[aX] = a E[X]$
-* $E[aX + bY] = a E[X] + b E[Y]$
-
-* $V[k] =0$, donde $k$ es una constante
-* $V[aX] = a^2 E[X]$
-* $V[aX + bY] = a^2 V[X] + b^2 V[Y] + 2ab Cov[XY]$
-
-* En caso de ser $X$ y $Y$ dos variables independientes, $Cov[XY]=0$
-</div>
 
 </br></br>
 
 <div class="box1 with-label">
 <div class="label">Problema 9</div>
 
-Un profesor encontró que el tiempo promedio requerido para completar una prueba de clasificación de conocimientos en estadística que realiza la maestría en ciencias de datos era de 70 minutos con una desviación estándar de 12 minutos, con distribución aproximadamente normal.
+Una empresa de mercadeo está realizando una campaña de telemercadeo para promocionar un nuevo producto. Basado en experiencias anteriores, la empresa sabe que la probabilidad de cerrar una venta en una llamada es del 10%. Dado que el equipo de ventas debe realizar llamadas consecutivas hasta conseguir una venta, están interesados en saber cuántas llamadas, en promedio, se deben realizar antes de lograr la primera venta.
 
-* (a.) ¿Cuanto tiempo deberá dar el profesor para el desarrollo de la prueba si desea que por lo menos 90% de los estudiantes terminen la prueba completamente?.Justifique su respuesta.
+El equipo conformado por 3 vendedores obtuvo el siguiente resultado
 
-* (b.) Si un estudiante termina en un tiempo de 20 minutos, podría ser sospechoso de haber cometido fraude?, Justifique su respuesta.
+Jose debió de realizar 5 llamada antes de obtener  la primera venta
+Miguel en cambio realizó 3 antes de obtener la primer venta
+Adriana debió realizar 4 llamadas para porder realizar la primera venta
+
+Que modelo se ajusta a este problema?
+
+Determine el orden de efectividad de los 3 vendedores, indicando en cada caso su respectiva probabilidad
 
 </div>
 
+
 </br></br>
+
+<div class="box1 with-label">
+<div class="label">Problema 10</div>
+
+Una empresa de mercadeo está lanzando una campaña de ventas telefónicas para un nuevo producto. Según su experiencia, la probabilidad de cerrar una venta en cada llamada es del 15%. La empresa se ha propuesto cerrar 3 ventas por cada equipo de telemercadeo y quiere saber cuántas llamadas, en promedio, tendrá que hacer un equipo para alcanzar esas 3 ventas.
+
+¿Cuántas llamadas debe esperar realizar un equipo de ventas antes de alcanzar 3 ventas exitosas, si la probabilidad de cerrar una venta en cada llamada es del 15%?
+
+</div>
+
+
+
+
+
+
