@@ -1,6 +1,6 @@
 ---
-title: <span style="color:#2C5697">**Unidad 2.4**</span>
-subtitle: <span style="color:#2C5697">**Módulo 2**</span>
+title: <span style="color:#2C5697"> </span>
+subtitle: <span style="color:#2C5697">**Estadística para la toma de decisiones**</span>
 author: "dgonzalez "
 output:
   html_document:
@@ -150,25 +150,27 @@ $$V[X]= pq$$
 <div class="box1 with-label">
 <div class="label">Ejemplo 1</div> 
 
-Un biólogo realiza una salida de campo para estudiar el comportamiento del cucarachero común. Se considera éxito si puede filmar al animal y fracaso si no puede hacerlo. Por información suministrada en artículos científicos la probabilidad de lograrlo se estima en 0.20. 
+Un gerente de ventas realiza una visita a diferentes empresas para presentar un nuevo producto. Se considera éxito si logra concretar una reunión con un decisor clave de la empresa y fracaso si no puede agendar la reunión. Con base en estudios previos de mercado, la probabilidad de lograr agendar una reunión se estima en 0.20.
+
+El gerente desea saber la probabilidad de éxito al contactar a un conjunto de empresas durante su campaña.
 
 </div>
 <br/><br/>
 
 **Solución** 
 
-Se requiere examinar si dentro de este contexto existe una variable que proceda de un experimento Bernoulli y ese caso como se podría caracterizar.
+Se requiere examinar si dentro de este contexto existe una variable que provenga de un experimento de Bernoulli y cómo se podría caracterizar en términos administrativos.
 
- Primero es necesario revisar las características de un experimento Bernoulli y confrontarlas contra el contexto presentado en el ejemplo. 
+Primero, es necesario revisar las características de un experimento de Bernoulli y confrontarlas contra el contexto presentado en el ejemplo.
 
-Primero existe un solo ensayo o salida de campo, durante después de la salida de campo se pueden obtener dos resultados posibles: lograr el objetivo de visualizar y filmar al animal (Éxito) y por otro lado el no lograrlo (Fracaso). También se posee la probabilidad de éxito ($0.20$), este caso establecida mediante el enfoque subjetivo de un experto en un artículo científico. Lo anterior nos permite poder asociar la variable que llamaremos $X$ asociada con el poder o no realizar la filmación.
+En este caso, existe un solo intento de contactar a una empresa, durante el cual se pueden obtener dos resultados posibles: lograr concretar una reunión con el decisor clave (éxito) o no lograrlo (fracaso). Además, se posee la probabilidad de éxito ($0.20$), establecida mediante el análisis de estudios previos de mercado. Lo anterior nos permite poder asociar la variable que llamaremos $X$ con la capacidad o no de concretar la reunión.
 
 La variable aleatoria se define en este caso como:
 
 $$X =\left\lbrace
 \begin{array}{lll}
-	1 & \mbox{si se realiza la filmación del ave}   \\
-	0 & \mbox{si no se logra realizar la filmación}
+	1 & \mbox{si logra concretar una reunión con el decisor clave (éxito)}   \\
+	0 & \mbox{si no logra concretar una reunión con el decisor clave (fracaso)}
 \end{array}
 \right.$$
 
@@ -247,25 +249,28 @@ ggplot(dat) + geom_point(aes(x, fx),colour = c2, size = 2) +
 <div class="box1 with-label">
 <div class="label">Ejemplo 2</div> 
 
-Un sistema de seguridad para casas está diseñado para tener una confiabilidad del 90% . Suponga que nueve casas equipadas con este dispositivo sufrieron tentativa de robo. Se requiere calcular la probabilidad de que en siete de las nueve, la alarma se activará. 
-
+Una empresa ha lanzado una campaña de marketing para promocionar su nuevo software de gestión de clientes (CRM), y la efectividad de esta campaña se ha estimado en un 90% en cuanto a captar el interés de los clientes potenciales. Supongamos que la campaña fue presentación a nueve empresas diferentes. Se requiere calcular la probabilidad de que exactamente siete de estas empresas muestren interés en el producto y acepten una reunión de demostración con el equipo de técnico de la empresa.
 </div>
 
 <br/><br/>
 
 **Solución**
 
-En este caso la variable $X$ se define como el número de casas de las nueve en las que se activa el sistema de alarma. Observe que en cada caso se puede presentar dos posibles resultados frente a la tentativa de robo : 
+En este caso la variable $X$ se define como el número de empresas que 
+muestren interés en el producto y acepten una reunión de demostración con el equipo de técnico de la empresa.
+Observe que en cada caso se puede presentar dos posibles resultados frente a la tentativa de robo : 
 
-* La alarma se active (E) o que el sistema falle y no se active (F), los cuales conforman los eventos de exito (E) y fracaso (F).
+* Muestran interés en el producto y acepten una reunión de demostración con el equipo de técnico de la empresa o que no muestran interés en el producto, los cuales conforman los eventos de exito (E) y fracaso (F).
 
-* Los sistemas operan de manera independiente y se pueden considerar como idénticos.
+* Las empresas conforman eventos independiente y se pueden considerar como idénticos, dado que todas tienen la misma necesidad.
 
-* La probabilidad de que un equipo se active frente a una tentativa de robo es de 0.9 ($p$) y por tanto la probabilidad de que no funcione será de 0.1 ($q$)
+* La probabilidad de que 
+una empresa muestre interes en el software es 
+de 0.9 ($p$) y mientras que no muestre interes es de 0.1 ($q$)
 
-* Se tienen nueve casas, que representaría la realización de nueve ensayos, bajo las mismas condiciones.
+* Se tienen nueve empresas, que representaría la realización de nueve ensayos, bajo las mismas condiciones.
 
-Por las anteriores razones, el proceso enunciado corresponde a un experimento binomial y por tanto podemos afirmar que la variable X: número de sistemas que se activan ante la tentativa de robo, es una variable con distribución binomial con parámetros $n=9$ y $p=0.90$.
+Por las anteriores razones, el proceso enunciado corresponde a un experimento binomial y por tanto podemos afirmar que la variable X: número de em`resas que muesrtan interes en el software, corresponde a una variable con distribución binomial con parámetros $n=9$ y $p=0.90$.
 
 Para calcular la probabilidad requerida utilizamos la función de distribución de probabilidad del modelo Binomial
 
@@ -393,243 +398,347 @@ dpois(0,2)
 
 <br/><br/><br/>
 
------------------------------------------------------------------------
+
+# **Modelos continuos**
 
 <br/><br/>
 
-## **hipergeometrico**
+## **Algunos modelos continuos**
 
-Este modelo nace de la necesidad de modelar eventos Bernoulli con probabilidad no constante generados en elecciones sin repetición. 
+Las variables continuas proceden en su mayoría de la medición y se clasifican así debido a que su rango esta formado por un conjunto infinito no numerable. 
+<br/>
+
+|                 |                 |                 |                 |                 |                 | 
+|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|:---------------:|
+| **Uniforme**        |   **Normal**        |  **Exponencial**    |  Gamma          |  Weibull        | Cauchy          |
+| Lognormal       |   Beta          | Erlang          |  Gumbel         |  Kernel	        |                 |
+|                 |                 |                 |                 |                 |                 |
+
+
+<br/><br/>
+
+A continuación se presentan los principales modelos continuos.
+
+
+## **uniforme**
 
 <br/>
 
 <div class="box2 with-label">
-<div class="label">Distribución hipergeometrica</div> 
+<div class="label">Distribución uniforme</div>
 	
-Se tiene un conjunto de $N$ objetos que contiene $K$ objetos clasificados como éxitos y $N-K$ objetos clasificados como fracasos. Una muestra de tamaño $n$ objetos es seleccionada al azar (sin reemplazo) de la población de $N$ objetos, donde $K \leq N$ y $n \leq N $. La variable de interés $X$ corresponde al **número de éxitos obtenidos en la muestra**. 
-	
-Su función de masa de probabilidad esta dada por 
-	
-$$\begin{equation*}
-		f(x)=\left\lbrace
-		\begin{array}{lll}
-			\dfrac{\displaystyle\binom{K}{x} \displaystyle\binom{N-K}{n-x}}{\displaystyle\binom{N}{n}} &, {\text{ si }\max(0,K+n-N) \leq x \leq \min(n,K) }&   \\
-			&\\
-			0, \mbox{en otro caso}
-		\end{array}
-		\right.
-	\end{equation*}$$
-	
-	
-$$E[X]=\dfrac{nK}{N}$$
-$$V[X]=n\Bigg(\frac{K}{N}\Bigg) \Bigg(1-\dfrac{K}{N}\Bigg)\Bigg(\dfrac{N-n}{N-1}\Bigg)$$
-	
-</div> 
-
-**Distribución binomial hipergeometrica ($m=95, n=5, k=10$)**
-
-```{r, echo=FALSE, fig.height=3.5, fig.align='center'}
-# hyper ok
-library(ggplot2)
-x=5:10
-fx=dhyper(x,95,5,10)
-dat=data.frame(x,fx)
-
-
-ggplot(dat) + geom_point(aes(x, fx),colour = c3, size = 2) +
-  scale_x_continuous(limits = c(5, 10),
-                     breaks = c(5,6,7,8,9,10), 
-                     labels = c('5','6','7','8','9','10'))
-```
-
-<br/><br/>
-
-
-<br/>
-
-
-<div class="box1 with-label">
-<div class="label">Ejemplo 4</div>
-
-Las tarjetas de circuito impreso se someten a una prueba de funcionamiento antes de ser ensambladas en un dispositivo de seguridad, después de ser rellenado con chips semiconductores. Un lote de estas tarjetas contiene 140 unidades y se seleccionan aleatoriamente 20 sin reemplazo para realizar una prueba de control de calidad internacional. Si 5 tarjetas son defectuosas, ¿cuál es la probabilidad de que al menos 1 tarjeta defectuosa aparezca en la muestra? (3-92.  Mongomery) 
-
-</div>
-
-### **Solución** 
-
-$\begin{eqnarray*}
-	P(X\geq 1)=1-P(X=0)
-	&=& 1 - \dfrac{\displaystyle\binom{5}{0}\displaystyle\binom{135}{20}}{\displaystyle\binom{140}{20}}\\
-	&=& 1-\big[ 0.4570594  \big] \\
-	&=& 0.5429406
-\end{eqnarray*}$
-
-
-```{r}
-
-phyper(0,5,135,20, lower.tail = FALSE)
-```
-
-<br/><br/>
-
-## **geométrico o de Pascal**
-
-La distribución geométrica también conocida como distribución de Pascal, fue esbozada en el escrito El arte de la conjetura, escrita por Jakob Bernoulli. Esta distribución modela el número de ensayos Bernoulli necesarios para obtener el primer éxito. Los valores que puede tomar esta variable son:
-
-<br/>
-
-|	$x$   | eventos          |  $f(x)$       |                
-|:------|:-----------------|:--------------|
-|	$1$   |  $E$             | $p$           |
-|	$2$   |  $FE$            | $p(1-p)$      |
-|	$3$   |  $FFE$           | $p(1-p)^{2}$  |
-|	$4$   |  $FFFE$          | $p(1-p)^{3}$  |
-|	$5$   |  $FFFFE$         | $p(1-b)^{4}$  |
-|       |                  |               |
-|	$x$   |  $FFFF \ldots FE | $p(1-p)^{x-1}$| 
-
-<br/>
-
-La variable $X$ toma el valor de $1$ cuando el éxito ocurre en el primer intento. Cuando el primer éxito ocurre en el evento dos, $X$ es igual a $2$, es decir que la variable con distribución geométrica corresponde al **número del evento donde ocurre el primer éxito**.
-
-<br/>
-
-<div class="box2 with-label">
-<div class="label">Distribución geométrica</div>
+Se caracteriza porque su función de densidad es constante en su recorrido o dominio de definición (intervalo [a,b])
 
 $$\begin{equation*}
 		f(x)=\left\lbrace
 		\begin{array}{lll}
-			p(1-p)^{x-1}	 &,& x \geq 1   \\
+			\dfrac{1}{b-a}	 &,& a \leq x \leq b   \\
 			&&\\
 			0 &,& \mbox{en otro caso}
 		\end{array}
 		\right.
-\end{equation*}$$
-	
-	
-$$E[X]=\dfrac{1}{p}$$
-
-$$V[X]=\dfrac{1-p}{p^{2}} $$
+	\end{equation*}$$
 
 </div> 
 
-Nota: En R la variable corresponde al **número de fracasos necesarios para obtener el primer exito**
 <br/><br/>
 
+**Distribución uniforme ($0,1$)**
 
-
-**Distribución geométrica o de Pascal ($p=0.5$)**
-
-```{r, echo=FALSE, fig.height=3.5, fig.align='center'}
-# geom 
+```{r, echo=FALSE, fig.height=3.5, warning=FALSE, message=FALSE, fig.align='center'}
+# uniforme
 library(ggplot2)
-x=1:10
-fx=dgeom(x,0.5)
+x= c(0.95,1.05) 
+fx=c(1,1) 
 dat=data.frame(x,fx)
-
-
-ggplot(dat) + geom_point(aes(x, fx),colour = c3, size = 2) +
-  scale_x_continuous(limits = c(1, 10),
-                     breaks = c(1,2,3,4,5,6,7,8,9,10), 
-                     labels = c('1','2','3','4','5','6','7','8','9','10'))
+ggplot(data=dat,aes(x=x, y=fx))+ 
+  scale_y_continuous(limits=c(0,1.2))+
+  geom_line(size = 1, color= c2) 
 ```
- 
- 
-<br/><br/>
+
 
 <div class="box1 with-label">
-<div class="label">Ejemplo 5</div>
+<div class="label">Ejemplo 4</div> 
 
-En un estudio realizado en peces, los animales son sometidos a pruebas para determinar si poseen o no un gen que aumenta el riesgo de una enfermedad mortal. la probabilidad de que una animal de la especie en estudio tenga el gen es 0,5. Cuál es la probabilidad de que 3 o más animales deban ser sometidos a pruebas antes de detectar el primer pez con el gen objeto de estudio? 
+Una empresa de producción de tabletas de chocolate gourmet se enfoca en garantizar la uniformidad del grosor de sus productos para cumplir con los estándares de calidad. Cada tableta se fabrica con un grosor nominal de 1 cm, pero debido a variaciones en el proceso de producción, el grosor real ($X$) puede variar uniformemente entre 0,95 cm y 1,05 cm. Una de las preocupaciones del departamento de calidad es evitar que las tabletas sean demasiado gruesas, ya que esto podría generar un incremento en los costos de insumos y empa.
+
+Se requiere calcular la probabilidad de que una tableta seleccionada al azar tenga un grosor superior a 1.|          
 
 </div>
 
 <br/><br/>
 
-### **Solución** 
+**Solución** 
+
+ $$P(X\geq 1.03)= (1.05-1.03) \times \frac{1}{0.10}=0.20 $$
+
+<br/><br/>
+
+## **Distribución normal**
+
+La distribución normal es uno de los modelos más utilizados en las aplicaciones de la Estadística. Estas aplicaciones están relacionadas con:
+
+Usos de la distribución normal
+
+* La mayoría de variables en la naturaleza, se distribuyen aproximadamente de manera normal
+
+* A partir de la distribución normal se originan las distribuciones $t-student$, $\chi^{2}$ y $F$-Fisher, utilizadas en inferencia estadística
+
+* En general la media muestral de variables que no tienen distribución normal, tiende a aproximarse a una distribución normal, a medida que el tamaño de muestra aumenta. (Teorema del Límite Central) 
+
+* La regla empírica establece que:
+
+    *	Aproximadamente el 68\% de la población se encuentra en el intervalo centrado $$(\mu - \sigma ; \mu + \sigma)$$
+
+		* Aproximadamente el 95\% de la población se encuentra en el intervalo centrado $$(\mu - 2\sigma ; \mu + 2\sigma)$$
+
+		* Aproximadamente el 99.7\% de la población se encuentra en el intervalo centrado $$(\mu - 3\sigma ; \mu + 3\sigma)$$
+
+Su distribución fué planteada por el matemático francés del siglo 18, Abraham de Moivre, quien a partir de la distribución Binomial, con $n=2$ empezó a aumentar su tamaño hasta observar que se formaba una distribución en forma de campana. Este mismo comportamiento fué detectado por Galileo en el siglo 17, al observar los errores producto de sus mediciones en astronomía. El modelo como se conoce actualmente fue propuesto de manera simultánea por los cientificos Robert Adrain y Carl Friedrich Gauss, quien finalmente le dió el nombre.
+
+Su función de densidad esta dada por:
+
+<br/>
+
+<div class="box2 with-label">
+<div class="label">Distribución normal</div>
+	
+$$f(x)= \dfrac{1}{\sqrt{2\pi \sigma^{2}}} \hspace{.1cm} e^{-\big(\frac{1}{2\sigma^{2}}(x-\mu)^{2}\big)}	 \hspace{.5cm}  -\infty \leq  x \leq \infty $$  
+	
+$$E[X]=\mu$$
+$$V[X]=\sigma^{2}$$
+
+</div> 
+
+
+<br/><br/>
+
+En la siguente gráfica se muestra el efecto en la curva normal, producto de cambios en la media o en la varianza. A mayor valor de la media la curva se desplaza a la derecha, mientras que a menor varianza la curva se vuelve mas angosta o puntiaguda 
+
+Distribuciones normales : <span style="color:#2C5697">$N(0,1)$</span>, <span style="color:#E1286F"> $N(0,1.5)$</span> y <span style="color:#FFAD42"> $N(2,1.5)$</span>
+
+```{r, echo=FALSE, fig.height=3.5, fig.align='center'}
+# Distribucion normal
+library(ggfortify)
+
+p=ggdistribution(dnorm, seq(-4, 8, 0.1), mean = 0, sd = 1,colour = c6)
+p=ggdistribution(dnorm, seq(-4, 8, 0.1), mean = 0, sd = 1.5,colour = c3, p=p)
+ggdistribution(dnorm, seq(-4, 8, 0.1),   mean = 2, sd = 1.5,colour = c1, p=p)
+```
+
+
+
+
+Dentro del sin número de posibles curvas que se pueden obtener con los parámetros $\mu$ y $\sigma^{2}$, existe una muy especial. Normal estándar ($N(0,1)$) con $\mu=0$ y $\sigma^{2}=1$.  La gran mayoría de libros de Estadística poseen tablas de la función de distribución acumulada de la normal estándar.\\
+
+
+<div class="box2 with-label">
+<div class="label">Distribución normal estandar N(0,1)</div>
+
+Su función de distribución esta dada por :
+
+$$f(x)= \dfrac{1}{\sqrt{2\pi}} \hspace{.1cm} e^{-\big(\frac{1}{2}(x)^{2}\big)}	 \hspace{.5cm}  -\infty \leq  x \leq \infty $$ 
+
+Si $X \sim N(\mu, \sigma^{2})$, entonces $Z= \dfrac{X-\mu}{\sigma} \sim N(0,1)$ 
+
+a este proceso se le llama comúnmente estandarizar.
+
+</div> 
+
+<br/><br/>
+
+
+```{r, echo=FALSE, fig.height=3.5, fig.align='center'}
+library(ggfortify)
+ggdistribution(dnorm, seq(-3.6, 3.5, 0.1), mean = 0, sd = 1,fill = c6)
+```
+
+<br/><br/>
+
+
+
+La propiedad empírica de la distribución normal es de gran ayuda cuando una variable  de interés se  puede aproximar al modelo normal. Ella establece un intervalo formado por la media mas o menos una desviación estándar contiene el 68\% de los datos. Si el intervalo tiene un ancho de 4 desviaciones estándar contendrá el 95\% de los datos y si este intervalo corresponde a los valores de la media mas o menos 3 desviaciones estándar contendrá el 99\% de los datos que se representa en la siguiente gráfica.
+
+
+<div class="box2 with-label">
+<div class="label">Propiedad empírica de la distribución normal estandar</div>
+
+* $P(\mu - \sigma \leq X \leq \mu + \sigma) = 0.68$
+* $P(\mu - 2\sigma \leq X \leq \mu + 2\sigma) = 0.95$
+* $P(\mu - 3\sigma \leq X \leq \mu + 3\sigma) = 0.99$
+
+<br/><br/>
+
+
+
+```{r, echo=FALSE, out.width="60%", fig.align = "left", fig.align='center'}
+ knitr::include_graphics("img/norm01.png")
+```
+
+
+
+</div>
+
+<br/><br/>
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 5</div>  
+El tiempo que tarda un gerente en revisar y aprobar solicitudes de reembolso para los empleados se distribuye normalmente con una media de 60 minutos y una desviación estándar de 4 minutos. Debido a la alta carga de trabajo, la gerencia desea calcular la probabilidad de que una solicitud específica se apruebe en un tiempo de 70 minutos o más, con el fin de evaluar si es necesario implementar mejoras en el proceso de aprobación.
+
+</div>
+
+<br/><br/>
+
+**Solución** 
+
+Para una variable $X$ con distribución $N(60,16)$, debemos calcular la probabilidad $P(X \geq 70)$ \\
 
 $$\begin{eqnarray*}
-	P(X\geq 3)&=& 1-P(X\leq 2)\\
-	&=& 1-[p(1)+p(2)] \\
-	&=& 1-[0.5+0.5 \times 0.5] \\
-	&=&0.25 
+	P(X \geq 70)&=&P\Bigg(\dfrac{X-\mu}{\sigma} \geq \dfrac{70-60}{4}\Bigg)\\
+	&=& P\Bigg(Z \geq \dfrac{70-60}{4}\Bigg)\\
+	&=& P(Z\geq 2.5)=1-P(Z < 2.5 )\\
+	&=& 1-0.9938=0.0062
 \end{eqnarray*}$$
 
-```{r}
-dgeom(2, 0.50)
-0.50*0.50
+<br/><br/>
+
+```{r, echo=FALSE, fig.height=3.5, fig.align='center'}
+# Instalar librerías si no están instaladas
+if(!require(ggplot2)) install.packages("ggplot2")
+if(!require(ggfortify)) install.packages("ggfortify")
+
+# Cargar librerías necesarias
+library(ggplot2)
+library(ggfortify)
+
+# Definir los parámetros de la distribución
+media <- 60  # Media de la distribución
+desviacion <- 4  # Desviación estándar
+
+# Crear un data frame con valores para la distribución normal
+x_vals <- seq(media - 4 * desviacion, media + 4 * desviacion, length.out = 100)
+y_vals <- dnorm(x_vals, mean = media, sd = desviacion)
+data <- data.frame(x = x_vals, y = y_vals)
+
+# Calcular el área bajo la curva a partir de 70 minutos
+x_shade <- seq(70, max(x_vals), length.out = 100)
+y_shade <- dnorm(x_shade, mean = media, sd = desviacion)
+data_shade <- data.frame(x = x_shade, y = y_shade)
+
+# Crear el gráfico con ggplot2 y ggfortify
+ggplot(data, aes(x = x, y = y)) +
+  geom_line(color = "blue", size = 1) +  # Línea de la distribución
+  geom_area(data = data_shade, aes(x = x, y = y), fill = c6, alpha = 0.4) +  # Área sombreada para > 70
+  geom_vline(xintercept = 70, linetype = "dashed", color = "#696969") +  # Línea vertical en 70
+  labs(title = "Distribución Normal de Tiempo de Aprobación de Solicitudes",
+       x = "Tiempo de aprobación (minutos)",
+       y = "Densidad") +
+  theme_minimal()
+
+```
+
+
+<br/><br/>
+
+En R se utiliza el siguiente código: 
+
+```{r }
+pnorm(70, mean=60, sd=4, lower.tail=FALSE)
 ```
 
 <br/><br/>
 
-## **binomial negativo**
+<div class="box3 with-label">
+<div class="label">Nota: </div>
+
+Para la solución del problema se puede tambien emplear la tabla de la distribución normal estandar
+
+</div>
+
+<br/><br/>
+
+
+## **exponencial** 
+
+Este modelo fue  planteado por el matemático estadístico e ingeniero Agner Kraru Erlang, experto en el trafico de las comunicaciones y la teoría de colas. 
+Distribución utilizada para modelar el tiempo entre dos eventos consecutivos. 
+
 
 <br/>
-
-La distribución binomial negativa esta relacionada con la distribución geométrica
-
-<br/>
-
 
 <div class="box2 with-label">
-<div class="label">Distribución binomial negativa</div>
-	
-Se considera una generalización de la distribución Geométrica. En este caso la variable objeto de estudio corresponde a $X$: **número de ensayos requeridos para obtener $r$ éxitos**. Esta variable se obtiene al sumar $r$ variables con distribución Geométrica con igual parámetro $p$.
-	
-Su función de masa está dada por :
-
+<div class="label">Distribución exponencial</div>
 	
 $$\begin{equation*}
 		f(x)=\left\lbrace
 		\begin{array}{lll}
-			\displaystyle \binom{x-1}{r-1} p^{r} (1-p)^{x-r}	 &,& x= r, r+1,  \ldots    \\
+			\lambda e^{-\lambda x}  &,& x > 0   \\
 			&&\\
-			0 &,& \mbox{en otro caso}
+			0 &,& x \leq 0 
 		\end{array}
 		\right.
 	\end{equation*}$$
-
-$$E[X]=\dfrac{r}{p}$$
-
-$$V[X]=\dfrac{r(1-p)}{p^{2}}$$	
+	
+	
+$$E[X]=\dfrac{1}{\lambda}$$
+	
+$$V[X]=\dfrac{1}{\lambda^{2}}$$
+	
+Observación: algunos autores utilizan $\frac{1}{\beta}$ en lugar de $\lambda$
+	
+$$F(x)=P(X \leq x)=1-e^{-\lambda x} \hspace{1cm} x > 0$$
 
 </div> 
 
 <br/><br/>
 
 
-**Distribución binomial negativa ($k=2, p=0.50$)**
-
+Distribuciones exponenciales : <span style="color:#2C5697"> $exp(1)$</span>, <span style="color:#E1286F"> $exp(2)$</span> y <span style="color:#FFAD42"> $exp(5)$</span>
 
 ```{r, echo=FALSE, fig.height=3.5, fig.align='center'}
-# nbiom
-library(ggplot2)
-x=2:10
-fx=dnbinom(x,2,0.50)
-dat=data.frame(x,fx)
-
-
-ggplot(dat) + geom_point(aes(x, fx),colour = c3, size = 2) +
-  scale_x_continuous(limits = c(2, 10),
-                     breaks = c(2,3,4,5,6,7,8,9,10), 
-                     labels = c('2','3','4','5','6','7','8','9','10'))
+#exponencial
+library(ggfortify)
+p=ggdistribution(dexp, seq(0, 10, 0.1),rate=1 ,colour = c6)
+p=ggdistribution(dexp, seq(0, 10, 0.1),rate=2 ,colour = c3, p=p)
+ggdistribution(dexp, seq(0, 10, 0.1),rate=0.5,colour = c1, p=p)
 ```
-
-	
-<br/><br/>
-
-<div class="box1 with-label">
-<div class="label">Ejemplo 6</div>
-
-Un sitio Web está soportado por tres servidores idénticos. Sólo uno de ellos se utiliza para operar el sitio, y los otros dos son de repuesto, los  cuales se activan en caso de que el sistema principal falle. La probabilidad de falla en el sistema principal (o cualquier otro sistema de repuesto activado) ante una solicitud de servicio es 0,0005. Suponiendo que cada solicitud representa un juicio independiente, cuál es el número medio de solicitudes que se espera hasta el fracaso de los tres servidores? 
-
-
-</div>
  
 <br/><br/>
 
-### **Solución**
+### **Distribuciones exponenciales acumuladas**
 
-$$E[X]=\dfrac{3}{0.0005}= 6000 $$
+
+```{r, echo=FALSE, fig.height=3.5, fig.align='center'}
+library(ggfortify)
+ggdistribution(pexp, seq(0, 10, 0.1),rate=1 ,colour = c6)
+```
+
+$$F(x)=P(X \leq x)=1-\exp\{-\lambda x\} \hspace{1cm} x > 0$$
+
+
 <br/><br/>
+
+<div class="box1 with-label">
+<div class="label">Ejemplo 6</div> 
+
+El tiempo entre llamadas de los clientes a una empresa de turismo ecológico tiene una distribución exponencial con un tiempo medio entre llamadas de 15 minutos. ¿Cuál es la probabilidad de que transcurra más de 20 minutos antes de que se realiza una nueva llamada? (Ejemplo 8 4-77 Mongomery) 
+
+</div>
+
+<br/><br/>
+
+**Solución**
+
+$X$: el tiempo entre dos llamadas consecutivas $\lambda=\frac{1}{15}$ minutos. 
+
+$$\begin{eqnarray}
+	P(X \geq 20) &=& 1-P(X < 20) \\
+	&=& 1-(1-e^{-\frac{20}{15}}) \\
+	&=& 0.2636 
+\end{eqnarray}$$
+
+En R se utiliza el siguiente código: 
+
+```{r}
+ pexp(20,1/15, lower.tail=FALSE)
+```

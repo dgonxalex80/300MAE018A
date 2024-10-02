@@ -12,7 +12,7 @@
 <meta name="author" content="dgonzalez" />
 
 
-<title>Unidad 2.4</title>
+<title> </title>
 
 <script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -476,17 +476,15 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><span style="color:#235784"><strong>Unidad
-2.4</strong></span></h1>
-<h3 class="subtitle"><span style="color:#235784"><strong>Módulo
-2</strong></span></h3>
+<h1 class="title toc-ignore"><span style="color:#235784"> </span></h1>
+<h3 class="subtitle"><span style="color:#235784"><strong>Unidad
+2.4</strong></span></h3>
 <h4 class="author">dgonzalez</h4>
 
 </div>
 
 
 <p><img src="img/codigo2.png" width="100%" style="display: block; margin: auto;" /></p>
-<p><br/><br/><br/></p>
 <p><br/><br/></p>
 <div id="funciones-modelos" class="section level1">
 <h1><strong>Funciones modelos</strong></h1>
@@ -508,6 +506,25 @@ principales modelos:</p>
 <li>geometrico,</li>
 <li>hipergeometrico,</li>
 <li>binomial negativo.</li>
+</ul>
+<p><br/><br/></p>
+</div>
+<div id="modelos-continuos" class="section level4">
+<h4><strong>Modelos continuos</strong>:</h4>
+<ul>
+<li>uniforme</li>
+<li>normal</li>
+<li>exponencial</li>
+<li>lognormal</li>
+<li>gamma</li>
+<li>beta</li>
+<li>Weibull</li>
+<li>Cauchy</li>
+<li>Gumbel</li>
+<li>t-Student</li>
+<li>Ji-cuadrado</li>
+<li>F de Fisher</li>
+<li>Empirica o Kernel</li>
 </ul>
 <p><br/><br/></p>
 <p>En <span class="math inline">\(R\)</span> los nombre de las funciones
@@ -576,6 +593,76 @@ modelos tanto discretos como continuos</p>
 <td>dnbionom</td>
 <td>rnbinom</td>
 </tr>
+<tr class="even">
+<td>beta</td>
+<td>pbeta</td>
+<td>qbeta</td>
+<td>dbeta</td>
+<td>rbeta</td>
+</tr>
+<tr class="odd">
+<td>Cauchy</td>
+<td>pcauchy</td>
+<td>qcauchy</td>
+<td>dcauchy</td>
+<td>rcauchy</td>
+</tr>
+<tr class="even">
+<td>exponencial</td>
+<td>pexp</td>
+<td>qexp</td>
+<td>dexp</td>
+<td>rexp</td>
+</tr>
+<tr class="odd">
+<td>gamma</td>
+<td>pgamma</td>
+<td>qgamma</td>
+<td>dgamma</td>
+<td>rgamma</td>
+</tr>
+<tr class="even">
+<td>lognormal</td>
+<td>plnorm</td>
+<td>qlnorm</td>
+<td>dlnorm</td>
+<td>rlnorm</td>
+</tr>
+<tr class="odd">
+<td>uniforme</td>
+<td>punif</td>
+<td>qunif</td>
+<td>dunif</td>
+<td>runif</td>
+</tr>
+<tr class="even">
+<td>Weibull</td>
+<td>pweibull</td>
+<td>qweibull</td>
+<td>dweibull</td>
+<td>rweibull</td>
+</tr>
+<tr class="odd">
+<td>t-Student</td>
+<td>pt</td>
+<td>qt</td>
+<td>dt</td>
+<td>rt</td>
+</tr>
+<tr class="even">
+<td>Ji-cuadrado</td>
+<td>pchisq</td>
+<td>qchisq</td>
+<td>dchisq</td>
+<td>rchisq</td>
+</tr>
+<tr class="odd">
+<td>F</td>
+<td>pf</td>
+<td>qf</td>
+<td>df</td>
+<td>rf</td>
+</tr>
 </tbody>
 </table>
 <p><br/><br/></p>
@@ -624,7 +711,8 @@ class="math inline">\(p=0.30\)</span> , lo cual se puede simbolizar como
 : <span class="math inline">\(X\sim b(x; 20,0.30)\)</span></p>
 <p>En este caso se requieren realizar los siguientes procesos:</p>
 <ol style="list-style-type: decimal">
-<li>Calcular la probabilidad de $ P(X=7)$</li>
+<li>Calcular la probabilidad de <span
+class="math inline">\(P(X=7)\)</span></li>
 <li>Calcular la probabilidad acumulada <span class="math inline">\(P(X
 \leq 7)\)</span></li>
 <li>Construir la tabla de los valores de <span
@@ -730,7 +818,101 @@ ggplot(dat) + geom_point(aes(x, fx),colour = c3, size = 2) +
         labels = c(&#39;0&#39;,&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;,&#39;6&#39;,&#39;7&#39;,&#39;8&#39;,&#39;9&#39;,&#39;10&#39;,&#39;11&#39;,&#39;12&#39;,&#39;13&#39;,&#39;14&#39;, &#39;15&#39;,&#39;16&#39;,&#39;17&#39;,&#39;18&#39;,&#39;19&#39;,&#39;20&#39;))</code></pre>
 <p><img src="codigo24_files/figure-html/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><br/><br/><br/></p>
+<p><br/><br/></p>
+<div class="box2 with-label">
+<div class="label">
+Ejemplo 2
 </div>
+<p>Ahora supongamos que se tiene una variable continua con distribución
+normal, con media 50 y varianza 100, es decir desviación estándar 10, lo
+cual se puede representar como <span class="math inline">\(X\sim
+N(50,100)\)</span>.</p>
+<p>En este caso vamos a hallar los siguientes valores:</p>
+<p><br/></p>
+<ol style="list-style-type: decimal">
+<li>Calcular la probabilidad de que un valor de <span
+class="math inline">\(X\)</span> sea menor o igual a 70,</li>
+<li>Calcular la probabilidad de que la variable sea mayor a 70: <span
+class="math inline">\(P(X&gt;70)\)</span></li>
+<li>Genere 10 números aleatorios de la variables <span
+class="math inline">\(X\)</span></li>
+<li>Generar la gráfica de la función de densidad de la variable <span
+class="math inline">\(X\)</span>, <span
+class="math inline">\(f(x)\)</span></li>
+<li>Generar la gráfica de la función de probabilidad acumulada de la
+variable <span class="math inline">\(X\)</span>, <span
+class="math inline">\(F(x)\)</span></li>
+</ol>
+</div>
+<p><br/><br/><br/></p>
+</div>
+<div id="solución-1" class="section level3">
+<h3><strong>Solución</strong></h3>
+<p><br/></p>
+<ol style="list-style-type: decimal">
+<li>Calcular la probabilidad de que un valor de <span
+class="math inline">\(X\)</span> sea menor o igual a 70,</li>
+</ol>
+<p><span class="math display">\[
+P(X&lt;70) =\displaystyle\int_{-\infty}^{70} \dfrac{1}{\sqrt{200 \pi }}
+\exp{\frac{1}{200 }(x-50)^{2}} \:dx
+\]</span></p>
+<pre class="r"><code> pnorm(70,50,sqrt(100))</code></pre>
+<pre><code>[1] 0.9772499</code></pre>
+<p><br/></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Calcular la probabilidad de que la variable sea mayor a 70: <span
+class="math inline">\(P(X&gt;70)\)</span></li>
+</ol>
+<pre class="r"><code>pnorm(70,50,sqrt(100),lower.tail=FALSE)</code></pre>
+<pre><code>[1] 0.02275013</code></pre>
+<p><br/></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Genere 10 números aleatorios de la variables <span
+class="math inline">\(X\)</span></li>
+</ol>
+<pre class="r"><code>rnorm(10,70,sqrt(100))</code></pre>
+<pre><code> [1] 65.04015 65.38150 81.50927 57.80083 77.77920 65.42652 52.79047 63.08919
+ [9] 58.48887 73.36456</code></pre>
+<p><br/></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Generar la gráfica de la función de densidad de la variable <span
+class="math inline">\(X\)</span>, <span
+class="math inline">\(f(x)\)</span></li>
+</ol>
+<pre class="r"><code>curve(dnorm(x,50,sqrt(100)), from=20, to=80, 
+col=c3, main=&quot;Distribución Normal(50,100)&quot;,
+ylab=&quot;f(x)&quot;, las=1)</code></pre>
+<p><img src="codigo24_files/figure-html/unnamed-chunk-13-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Generar la gráfica de la función de probabilidad acumulada de la
+variable <span class="math inline">\(X\)</span>, <span
+class="math inline">\(F(x)\)</span></li>
+</ol>
+<pre class="r"><code>curve(pnorm(x,50,sqrt(100)), from=20, to=80, 
+col=c3, main=&quot;Distribución Normal(50,100)&quot;,las=1,
+ylab=&quot;f(x)&quot;)</code></pre>
+<p><img src="codigo24_files/figure-html/unnamed-chunk-14-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/><br/></p>
+</div>
+<div id="código" class="section level3">
+<h3><strong>Código</strong></h3>
+<pre class="r"><code># install.package(&quot;ggfortify&quot;)
+library(ggfortify)
+ggdistribution(dnorm, seq(-4, 4, 0.1), mean = 0, sd = 1,fill = c4)</code></pre>
+<p><img src="codigo24_files/figure-html/unnamed-chunk-15-1.png" width="672" style="display: block; margin: auto;" /></p>
+<pre class="r"><code># install.package(&quot;ggfortify&quot;)
+library(ggfortify)
+ggdistribution(pnorm, seq(-4, 4, 0.1), mean = 0, sd = 1)</code></pre>
+<p><img src="codigo24_files/figure-html/unnamed-chunk-16-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+</div>
+</div>
+<div id="app-probability-distributions" class="section level1">
+<h1><strong>App Probability Distributions</strong></h1>
+<p>Esta aplicación permite calcular probabilidades desde el celular</p>
+<p><img src="img/AppPD.png" /></p>
 </div>
 
 

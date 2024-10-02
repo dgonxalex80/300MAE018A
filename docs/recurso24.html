@@ -12,7 +12,7 @@
 <meta name="author" content="dgonzalez" />
 
 
-<title>Unidad 2.4</title>
+<title> </title>
 
 <script src="site_libs/header-attrs/header-attrs.js"></script>
 <script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
@@ -476,10 +476,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><span style="color:#2C5697"><strong>Unidad
-2.4</strong></span></h1>
-<h3 class="subtitle"><span style="color:#2C5697"><strong>Módulo
-2</strong></span></h3>
+<h1 class="title toc-ignore"><span style="color:#2C5697"> </span></h1>
+<h3 class="subtitle"><span style="color:#2C5697"><strong>Estadística
+para la toma de decisiones</strong></span></h3>
 <h4 class="author">dgonzalez</h4>
 
 </div>
@@ -625,33 +624,37 @@ de distribución de probabilidad $</p>
 <div class="label">
 Ejemplo 1
 </div>
-<p>Un biólogo realiza una salida de campo para estudiar el
-comportamiento del cucarachero común. Se considera éxito si puede filmar
-al animal y fracaso si no puede hacerlo. Por información suministrada en
-artículos científicos la probabilidad de lograrlo se estima en 0.20.</p>
+<p>Un gerente de ventas realiza una visita a diferentes empresas para
+presentar un nuevo producto. Se considera éxito si logra concretar una
+reunión con un decisor clave de la empresa y fracaso si no puede agendar
+la reunión. Con base en estudios previos de mercado, la probabilidad de
+lograr agendar una reunión se estima en 0.20.</p>
+<p>El gerente desea saber la probabilidad de éxito al contactar a un
+conjunto de empresas durante su campaña.</p>
 </div>
 <p><br/><br/></p>
 <p><strong>Solución</strong></p>
 <p>Se requiere examinar si dentro de este contexto existe una variable
-que proceda de un experimento Bernoulli y ese caso como se podría
-caracterizar.</p>
-<p>Primero es necesario revisar las características de un experimento
-Bernoulli y confrontarlas contra el contexto presentado en el
+que provenga de un experimento de Bernoulli y cómo se podría
+caracterizar en términos administrativos.</p>
+<p>Primero, es necesario revisar las características de un experimento
+de Bernoulli y confrontarlas contra el contexto presentado en el
 ejemplo.</p>
-<p>Primero existe un solo ensayo o salida de campo, durante después de
-la salida de campo se pueden obtener dos resultados posibles: lograr el
-objetivo de visualizar y filmar al animal (Éxito) y por otro lado el no
-lograrlo (Fracaso). También se posee la probabilidad de éxito (<span
-class="math inline">\(0.20\)</span>), este caso establecida mediante el
-enfoque subjetivo de un experto en un artículo científico. Lo anterior
-nos permite poder asociar la variable que llamaremos <span
-class="math inline">\(X\)</span> asociada con el poder o no realizar la
-filmación.</p>
+<p>En este caso, existe un solo intento de contactar a una empresa,
+durante el cual se pueden obtener dos resultados posibles: lograr
+concretar una reunión con el decisor clave (éxito) o no lograrlo
+(fracaso). Además, se posee la probabilidad de éxito (<span
+class="math inline">\(0.20\)</span>), establecida mediante el análisis
+de estudios previos de mercado. Lo anterior nos permite poder asociar la
+variable que llamaremos <span class="math inline">\(X\)</span> con la
+capacidad o no de concretar la reunión.</p>
 <p>La variable aleatoria se define en este caso como:</p>
 <p><span class="math display">\[X =\left\lbrace
 \begin{array}{lll}
-    1 &amp; \mbox{si se realiza la filmación del ave}   \\
-    0 &amp; \mbox{si no se logra realizar la filmación}
+    1 &amp; \mbox{si logra concretar una reunión con el decisor clave
+(éxito)}   \\
+    0 &amp; \mbox{si no logra concretar una reunión con el decisor clave
+(fracaso)}
 \end{array}
 \right.\]</span></p>
 <p>y su función de distribución de probabilidad está dada por:</p>
@@ -718,34 +721,41 @@ x=0,1,2, \ldots, n   \\
 <div class="label">
 Ejemplo 2
 </div>
-<p>Un sistema de seguridad para casas está diseñado para tener una
-confiabilidad del 90% . Suponga que nueve casas equipadas con este
-dispositivo sufrieron tentativa de robo. Se requiere calcular la
-probabilidad de que en siete de las nueve, la alarma se activará.</p>
+<p>Una empresa ha lanzado una campaña de marketing para promocionar su
+nuevo software de gestión de clientes (CRM), y la efectividad de esta
+campaña se ha estimado en un 90% en cuanto a captar el interés de los
+clientes potenciales. Supongamos que la campaña fue presentación a nueve
+empresas diferentes. Se requiere calcular la probabilidad de que
+exactamente siete de estas empresas muestren interés en el producto y
+acepten una reunión de demostración con el equipo de técnico de la
+empresa.</p>
 </div>
 <p><br/><br/></p>
 <p><strong>Solución</strong></p>
 <p>En este caso la variable <span class="math inline">\(X\)</span> se
-define como el número de casas de las nueve en las que se activa el
-sistema de alarma. Observe que en cada caso se puede presentar dos
-posibles resultados frente a la tentativa de robo :</p>
+define como el número de empresas que muestren interés en el producto y
+acepten una reunión de demostración con el equipo de técnico de la
+empresa. Observe que en cada caso se puede presentar dos posibles
+resultados frente a la tentativa de robo :</p>
 <ul>
-<li><p>La alarma se active (E) o que el sistema falle y no se active
-(F), los cuales conforman los eventos de exito (E) y fracaso
-(F).</p></li>
-<li><p>Los sistemas operan de manera independiente y se pueden
-considerar como idénticos.</p></li>
-<li><p>La probabilidad de que un equipo se active frente a una tentativa
-de robo es de 0.9 (<span class="math inline">\(p\)</span>) y por tanto
-la probabilidad de que no funcione será de 0.1 (<span
+<li><p>Muestran interés en el producto y acepten una reunión de
+demostración con el equipo de técnico de la empresa o que no muestran
+interés en el producto, los cuales conforman los eventos de exito (E) y
+fracaso (F).</p></li>
+<li><p>Las empresas conforman eventos independiente y se pueden
+considerar como idénticos, dado que todas tienen la misma
+necesidad.</p></li>
+<li><p>La probabilidad de que una empresa muestre interes en el software
+es de 0.9 (<span class="math inline">\(p\)</span>) y mientras que no
+muestre interes es de 0.1 (<span
 class="math inline">\(q\)</span>)</p></li>
-<li><p>Se tienen nueve casas, que representaría la realización de nueve
-ensayos, bajo las mismas condiciones.</p></li>
+<li><p>Se tienen nueve empresas, que representaría la realización de
+nueve ensayos, bajo las mismas condiciones.</p></li>
 </ul>
 <p>Por las anteriores razones, el proceso enunciado corresponde a un
 experimento binomial y por tanto podemos afirmar que la variable X:
-número de sistemas que se activan ante la tentativa de robo, es una
-variable con distribución binomial con parámetros <span
+número de em`resas que muesrtan interes en el software, corresponde a
+una variable con distribución binomial con parámetros <span
 class="math inline">\(n=9\)</span> y <span
 class="math inline">\(p=0.90\)</span>.</p>
 <p>Para calcular la probabilidad requerida utilizamos la función de
@@ -840,241 +850,323 @@ el modelo Poisson:</p>
 <pre class="r"><code>dpois(0,2)</code></pre>
 <pre><code>[1] 0.1353353</code></pre>
 <p><br/><br/><br/></p>
-<hr />
+</div>
+</div>
+<div id="modelos-continuos" class="section level1">
+<h1><strong>Modelos continuos</strong></h1>
 <p><br/><br/></p>
-</div>
-<div id="hipergeometrico" class="section level2">
-<h2><strong>hipergeometrico</strong></h2>
-<p>Este modelo nace de la necesidad de modelar eventos Bernoulli con
-probabilidad no constante generados en elecciones sin repetición.</p>
-<p><br/></p>
-<div class="box2 with-label">
-<div class="label">
-Distribución hipergeometrica
-</div>
-<p>Se tiene un conjunto de <span class="math inline">\(N\)</span>
-objetos que contiene <span class="math inline">\(K\)</span> objetos
-clasificados como éxitos y <span class="math inline">\(N-K\)</span>
-objetos clasificados como fracasos. Una muestra de tamaño <span
-class="math inline">\(n\)</span> objetos es seleccionada al azar (sin
-reemplazo) de la población de <span class="math inline">\(N\)</span>
-objetos, donde <span class="math inline">\(K \leq N\)</span> y $n N $.
-La variable de interés <span class="math inline">\(X\)</span>
-corresponde al <strong>número de éxitos obtenidos en la
-muestra</strong>.</p>
-<p>Su función de masa de probabilidad esta dada por</p>
-<p><span class="math display">\[\begin{equation*}
-        f(x)=\left\lbrace
-        \begin{array}{lll}
-            \dfrac{\displaystyle\binom{K}{x}
-\displaystyle\binom{N-K}{n-x}}{\displaystyle\binom{N}{n}} &amp;, {\text{
-si }\max(0,K+n-N) \leq x \leq \min(n,K) }&amp;   \\
-            &amp;\\
-            0, \mbox{en otro caso}
-        \end{array}
-        \right.
-    \end{equation*}\]</span></p>
-<p><span class="math display">\[E[X]=\dfrac{nK}{N}\]</span> <span
-class="math display">\[V[X]=n\Bigg(\frac{K}{N}\Bigg)
-\Bigg(1-\dfrac{K}{N}\Bigg)\Bigg(\dfrac{N-n}{N-1}\Bigg)\]</span></p>
-</div>
-<p><strong>Distribución binomial hipergeometrica (<span
-class="math inline">\(m=95, n=5, k=10\)</span>)</strong></p>
-<p><img src="recurso24_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p><br/><br/></p>
-<p><br/></p>
-<div class="box1 with-label">
-<div class="label">
-Ejemplo 4
-</div>
-<p>Las tarjetas de circuito impreso se someten a una prueba de
-funcionamiento antes de ser ensambladas en un dispositivo de seguridad,
-después de ser rellenado con chips semiconductores. Un lote de estas
-tarjetas contiene 140 unidades y se seleccionan aleatoriamente 20 sin
-reemplazo para realizar una prueba de control de calidad internacional.
-Si 5 tarjetas son defectuosas, ¿cuál es la probabilidad de que al menos
-1 tarjeta defectuosa aparezca en la muestra? (3-92. Mongomery)</p>
-</div>
-<div id="solución" class="section level3">
-<h3><strong>Solución</strong></h3>
-<p><span class="math inline">\(\begin{eqnarray*}
-    P(X\geq 1)=1-P(X=0)
-    &amp;=&amp; 1 -
-\dfrac{\displaystyle\binom{5}{0}\displaystyle\binom{135}{20}}{\displaystyle\binom{140}{20}}\\
-    &amp;=&amp; 1-\big[ 0.4570594  \big] \\
-    &amp;=&amp; 0.5429406
-\end{eqnarray*}\)</span></p>
-<pre class="r"><code>phyper(0,5,135,20, lower.tail = FALSE)</code></pre>
-<pre><code>[1] 0.5429406</code></pre>
-<p><br/><br/></p>
-</div>
-</div>
-<div id="geométrico-o-de-pascal" class="section level2">
-<h2><strong>geométrico o de Pascal</strong></h2>
-<p>La distribución geométrica también conocida como distribución de
-Pascal, fue esbozada en el escrito El arte de la conjetura, escrita por
-Jakob Bernoulli. Esta distribución modela el número de ensayos Bernoulli
-necesarios para obtener el primer éxito. Los valores que puede tomar
-esta variable son:</p>
-<p><br/></p>
-<table>
-<thead>
-<tr class="header">
-<th align="left"><span class="math inline">\(x\)</span></th>
-<th align="left">eventos</th>
-<th align="left"><span class="math inline">\(f(x)\)</span></th>
-</tr>
-</thead>
+<div id="algunos-modelos-continuos" class="section level2">
+<h2><strong>Algunos modelos continuos</strong></h2>
+<p>Las variables continuas proceden en su mayoría de la medición y se
+clasifican así debido a que su rango esta formado por un conjunto
+infinito no numerable. <br/></p>
+<table style="width:100%;">
+<colgroup>
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+</colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><span class="math inline">\(1\)</span></td>
-<td align="left"><span class="math inline">\(E\)</span></td>
-<td align="left"><span class="math inline">\(p\)</span></td>
+<td align="center"><strong>Uniforme</strong></td>
+<td align="center"><strong>Normal</strong></td>
+<td align="center"><strong>Exponencial</strong></td>
+<td align="center">Gamma</td>
+<td align="center">Weibull</td>
+<td align="center">Cauchy</td>
 </tr>
 <tr class="even">
-<td align="left"><span class="math inline">\(2\)</span></td>
-<td align="left"><span class="math inline">\(FE\)</span></td>
-<td align="left"><span class="math inline">\(p(1-p)\)</span></td>
+<td align="center">Lognormal</td>
+<td align="center">Beta</td>
+<td align="center">Erlang</td>
+<td align="center">Gumbel</td>
+<td align="center">Kernel</td>
+<td align="center"></td>
 </tr>
 <tr class="odd">
-<td align="left"><span class="math inline">\(3\)</span></td>
-<td align="left"><span class="math inline">\(FFE\)</span></td>
-<td align="left"><span class="math inline">\(p(1-p)^{2}\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"><span class="math inline">\(4\)</span></td>
-<td align="left"><span class="math inline">\(FFFE\)</span></td>
-<td align="left"><span class="math inline">\(p(1-p)^{3}\)</span></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(5\)</span></td>
-<td align="left"><span class="math inline">\(FFFFE\)</span></td>
-<td align="left"><span class="math inline">\(p(1-b)^{4}\)</span></td>
-</tr>
-<tr class="even">
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><span class="math inline">\(x\)</span></td>
-<td align="left">$FFFF FE</td>
-<td align="left"><span class="math inline">\(p(1-p)^{x-1}\)</span></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
 </tr>
 </tbody>
 </table>
-<p><br/></p>
-<p>La variable <span class="math inline">\(X\)</span> toma el valor de
-<span class="math inline">\(1\)</span> cuando el éxito ocurre en el
-primer intento. Cuando el primer éxito ocurre en el evento dos, <span
-class="math inline">\(X\)</span> es igual a <span
-class="math inline">\(2\)</span>, es decir que la variable con
-distribución geométrica corresponde al <strong>número del evento donde
-ocurre el primer éxito</strong>.</p>
+<p><br/><br/></p>
+<p>A continuación se presentan los principales modelos continuos.</p>
+</div>
+<div id="uniforme" class="section level2">
+<h2><strong>uniforme</strong></h2>
 <p><br/></p>
 <div class="box2 with-label">
 <div class="label">
-Distribución geométrica
+Distribución uniforme
 </div>
+<p>Se caracteriza porque su función de densidad es constante en su
+recorrido o dominio de definición (intervalo [a,b])</p>
 <p><span class="math display">\[\begin{equation*}
         f(x)=\left\lbrace
         \begin{array}{lll}
-            p(1-p)^{x-1}     &amp;,&amp; x \geq 1   \\
+            \dfrac{1}{b-a}   &amp;,&amp; a \leq x \leq b   \\
             &amp;&amp;\\
             0 &amp;,&amp; \mbox{en otro caso}
         \end{array}
         \right.
-\end{equation*}\]</span></p>
-<p><span class="math display">\[E[X]=\dfrac{1}{p}\]</span></p>
-<p><span class="math display">\[V[X]=\dfrac{1-p}{p^{2}} \]</span></p>
+    \end{equation*}\]</span></p>
 </div>
-<p>Nota: En R la variable corresponde al <strong>número de fracasos
-necesarios para obtener el primer exito</strong> <br/><br/></p>
-<p><strong>Distribución geométrica o de Pascal (<span
-class="math inline">\(p=0.5\)</span>)</strong></p>
+<p><br/><br/></p>
+<p><strong>Distribución uniforme (<span
+class="math inline">\(0,1\)</span>)</strong></p>
+<p><img src="recurso24_files/figure-html/unnamed-chunk-8-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="box1 with-label">
+<div class="label">
+Ejemplo 4
+</div>
+<p>Una empresa de producción de tabletas de chocolate gourmet se enfoca
+en garantizar la uniformidad del grosor de sus productos para cumplir
+con los estándares de calidad. Cada tableta se fabrica con un grosor
+nominal de 1 cm, pero debido a variaciones en el proceso de producción,
+el grosor real (<span class="math inline">\(X\)</span>) puede variar
+uniformemente entre 0,95 cm y 1,05 cm. Una de las preocupaciones del
+departamento de calidad es evitar que las tabletas sean demasiado
+gruesas, ya que esto podría generar un incremento en los costos de
+insumos y empa.</p>
+<p>Se requiere calcular la probabilidad de que una tableta seleccionada
+al azar tenga un grosor superior a 1.|</p>
+</div>
+<p><br/><br/></p>
+<p><strong>Solución</strong></p>
+<p><span class="math display">\[P(X\geq 1.03)= (1.05-1.03) \times
+\frac{1}{0.10}=0.20 \]</span></p>
+<p><br/><br/></p>
+</div>
+<div id="distribución-normal" class="section level2">
+<h2><strong>Distribución normal</strong></h2>
+<p>La distribución normal es uno de los modelos más utilizados en las
+aplicaciones de la Estadística. Estas aplicaciones están relacionadas
+con:</p>
+<p>Usos de la distribución normal</p>
+<ul>
+<li><p>La mayoría de variables en la naturaleza, se distribuyen
+aproximadamente de manera normal</p></li>
+<li><p>A partir de la distribución normal se originan las distribuciones
+<span class="math inline">\(t-student\)</span>, <span
+class="math inline">\(\chi^{2}\)</span> y <span
+class="math inline">\(F\)</span>-Fisher, utilizadas en inferencia
+estadística</p></li>
+<li><p>En general la media muestral de variables que no tienen
+distribución normal, tiende a aproximarse a una distribución normal, a
+medida que el tamaño de muestra aumenta. (Teorema del Límite
+Central)</p></li>
+<li><p>La regla empírica establece que:</p>
+<ul>
+<li><p>Aproximadamente el 68% de la población se encuentra en el
+intervalo centrado <span class="math display">\[(\mu - \sigma ; \mu +
+\sigma)\]</span></p>
+<ul>
+<li><p>Aproximadamente el 95% de la población se encuentra en el
+intervalo centrado <span class="math display">\[(\mu - 2\sigma ; \mu +
+2\sigma)\]</span></p></li>
+<li><p>Aproximadamente el 99.7% de la población se encuentra en el
+intervalo centrado <span class="math display">\[(\mu - 3\sigma ; \mu +
+3\sigma)\]</span></p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>Su distribución fué planteada por el matemático francés del siglo 18,
+Abraham de Moivre, quien a partir de la distribución Binomial, con <span
+class="math inline">\(n=2\)</span> empezó a aumentar su tamaño hasta
+observar que se formaba una distribución en forma de campana. Este mismo
+comportamiento fué detectado por Galileo en el siglo 17, al observar los
+errores producto de sus mediciones en astronomía. El modelo como se
+conoce actualmente fue propuesto de manera simultánea por los
+cientificos Robert Adrain y Carl Friedrich Gauss, quien finalmente le
+dió el nombre.</p>
+<p>Su función de densidad esta dada por:</p>
+<p><br/></p>
+<div class="box2 with-label">
+<div class="label">
+Distribución normal
+</div>
+<p><span class="math display">\[f(x)= \dfrac{1}{\sqrt{2\pi \sigma^{2}}}
+\hspace{.1cm}
+e^{-\big(\frac{1}{2\sigma^{2}}(x-\mu)^{2}\big)}  \hspace{.5cm}  -\infty
+\leq  x \leq \infty \]</span></p>
+<p><span class="math display">\[E[X]=\mu\]</span> <span
+class="math display">\[V[X]=\sigma^{2}\]</span></p>
+</div>
+<p><br/><br/></p>
+<p>En la siguente gráfica se muestra el efecto en la curva normal,
+producto de cambios en la media o en la varianza. A mayor valor de la
+media la curva se desplaza a la derecha, mientras que a menor varianza
+la curva se vuelve mas angosta o puntiaguda</p>
+<p>Distribuciones normales : <span style="color:#2C5697"><span
+class="math inline">\(N(0,1)\)</span></span>, <span
+style="color:#E1286F"> <span
+class="math inline">\(N(0,1.5)\)</span></span> y <span
+style="color:#FFAD42"> <span
+class="math inline">\(N(2,1.5)\)</span></span></p>
+<p><img src="recurso24_files/figure-html/unnamed-chunk-9-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Dentro del sin número de posibles curvas que se pueden obtener con
+los parámetros <span class="math inline">\(\mu\)</span> y <span
+class="math inline">\(\sigma^{2}\)</span>, existe una muy especial.
+Normal estándar (<span class="math inline">\(N(0,1)\)</span>) con <span
+class="math inline">\(\mu=0\)</span> y <span
+class="math inline">\(\sigma^{2}=1\)</span>. La gran mayoría de libros
+de Estadística poseen tablas de la función de distribución acumulada de
+la normal estándar.\</p>
+<div class="box2 with-label">
+<div class="label">
+Distribución normal estandar N(0,1)
+</div>
+<p>Su función de distribución esta dada por :</p>
+<p><span class="math display">\[f(x)= \dfrac{1}{\sqrt{2\pi}}
+\hspace{.1cm} e^{-\big(\frac{1}{2}(x)^{2}\big)}   \hspace{.5cm}  -\infty
+\leq  x \leq \infty \]</span></p>
+<p>Si <span class="math inline">\(X \sim N(\mu, \sigma^{2})\)</span>,
+entonces <span class="math inline">\(Z= \dfrac{X-\mu}{\sigma} \sim
+N(0,1)\)</span></p>
+<p>a este proceso se le llama comúnmente estandarizar.</p>
+</div>
+<p><br/><br/></p>
 <p><img src="recurso24_files/figure-html/unnamed-chunk-10-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/><br/></p>
+<p>La propiedad empírica de la distribución normal es de gran ayuda
+cuando una variable de interés se puede aproximar al modelo normal. Ella
+establece un intervalo formado por la media mas o menos una desviación
+estándar contiene el 68% de los datos. Si el intervalo tiene un ancho de
+4 desviaciones estándar contendrá el 95% de los datos y si este
+intervalo corresponde a los valores de la media mas o menos 3
+desviaciones estándar contendrá el 99% de los datos que se representa en
+la siguiente gráfica.</p>
+<div class="box2 with-label">
+<div class="label">
+Propiedad empírica de la distribución normal estandar
+</div>
+<ul>
+<li><span class="math inline">\(P(\mu - \sigma \leq X \leq \mu + \sigma)
+= 0.68\)</span></li>
+<li><span class="math inline">\(P(\mu - 2\sigma \leq X \leq \mu +
+2\sigma) = 0.95\)</span></li>
+<li><span class="math inline">\(P(\mu - 3\sigma \leq X \leq \mu +
+3\sigma) = 0.99\)</span></li>
+</ul>
+<p><br/><br/></p>
+<p><img src="img/norm01.png" width="60%" style="display: block; margin: auto;" /></p>
+</div>
 <p><br/><br/></p>
 <div class="box1 with-label">
 <div class="label">
 Ejemplo 5
 </div>
-<p>En un estudio realizado en peces, los animales son sometidos a
-pruebas para determinar si poseen o no un gen que aumenta el riesgo de
-una enfermedad mortal. la probabilidad de que una animal de la especie
-en estudio tenga el gen es 0,5. Cuál es la probabilidad de que 3 o más
-animales deban ser sometidos a pruebas antes de detectar el primer pez
-con el gen objeto de estudio?</p>
+<p>El tiempo que tarda un gerente en revisar y aprobar solicitudes de
+reembolso para los empleados se distribuye normalmente con una media de
+60 minutos y una desviación estándar de 4 minutos. Debido a la alta
+carga de trabajo, la gerencia desea calcular la probabilidad de que una
+solicitud específica se apruebe en un tiempo de 70 minutos o más, con el
+fin de evaluar si es necesario implementar mejoras en el proceso de
+aprobación.</p>
 </div>
 <p><br/><br/></p>
-<div id="solución-1" class="section level3">
-<h3><strong>Solución</strong></h3>
+<p><strong>Solución</strong></p>
+<p>Para una variable <span class="math inline">\(X\)</span> con
+distribución <span class="math inline">\(N(60,16)\)</span>, debemos
+calcular la probabilidad <span class="math inline">\(P(X \geq
+70)\)</span> \</p>
 <p><span class="math display">\[\begin{eqnarray*}
-    P(X\geq 3)&amp;=&amp; 1-P(X\leq 2)\\
-    &amp;=&amp; 1-[p(1)+p(2)] \\
-    &amp;=&amp; 1-[0.5+0.5 \times 0.5] \\
-    &amp;=&amp;0.25
+    P(X \geq 70)&amp;=&amp;P\Bigg(\dfrac{X-\mu}{\sigma} \geq
+\dfrac{70-60}{4}\Bigg)\\
+    &amp;=&amp; P\Bigg(Z \geq \dfrac{70-60}{4}\Bigg)\\
+    &amp;=&amp; P(Z\geq 2.5)=1-P(Z &lt; 2.5 )\\
+    &amp;=&amp; 1-0.9938=0.0062
 \end{eqnarray*}\]</span></p>
-<pre class="r"><code>dgeom(2, 0.50)</code></pre>
-<pre><code>[1] 0.125</code></pre>
-<pre class="r"><code>0.50*0.50</code></pre>
-<pre><code>[1] 0.25</code></pre>
+<p><br/><br/></p>
+<p><img src="recurso24_files/figure-html/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/><br/></p>
+<p>En R se utiliza el siguiente código:</p>
+<pre class="r"><code>pnorm(70, mean=60, sd=4, lower.tail=FALSE)</code></pre>
+<pre><code>[1] 0.006209665</code></pre>
+<p><br/><br/></p>
+<div class="box3 with-label">
+<div class="label">
+Nota:
+</div>
+<p>Para la solución del problema se puede tambien emplear la tabla de la
+distribución normal estandar</p>
+</div>
 <p><br/><br/></p>
 </div>
-</div>
-<div id="binomial-negativo" class="section level2">
-<h2><strong>binomial negativo</strong></h2>
-<p><br/></p>
-<p>La distribución binomial negativa esta relacionada con la
-distribución geométrica</p>
+<div id="exponencial" class="section level2">
+<h2><strong>exponencial</strong></h2>
+<p>Este modelo fue planteado por el matemático estadístico e ingeniero
+Agner Kraru Erlang, experto en el trafico de las comunicaciones y la
+teoría de colas. Distribución utilizada para modelar el tiempo entre dos
+eventos consecutivos.</p>
 <p><br/></p>
 <div class="box2 with-label">
 <div class="label">
-Distribución binomial negativa
+Distribución exponencial
 </div>
-<p>Se considera una generalización de la distribución Geométrica. En
-este caso la variable objeto de estudio corresponde a <span
-class="math inline">\(X\)</span>: <strong>número de ensayos requeridos
-para obtener <span class="math inline">\(r\)</span> éxitos</strong>.
-Esta variable se obtiene al sumar <span class="math inline">\(r\)</span>
-variables con distribución Geométrica con igual parámetro <span
-class="math inline">\(p\)</span>.</p>
-<p>Su función de masa está dada por :</p>
 <p><span class="math display">\[\begin{equation*}
         f(x)=\left\lbrace
         \begin{array}{lll}
-            \displaystyle \binom{x-1}{r-1} p^{r}
-(1-p)^{x-r}     &amp;,&amp; x= r, r+1,  \ldots    \\
+            \lambda e^{-\lambda x}  &amp;,&amp; x &gt; 0   \\
             &amp;&amp;\\
-            0 &amp;,&amp; \mbox{en otro caso}
+            0 &amp;,&amp; x \leq 0
         \end{array}
         \right.
     \end{equation*}\]</span></p>
-<p><span class="math display">\[E[X]=\dfrac{r}{p}\]</span></p>
-<p><span class="math display">\[V[X]=\dfrac{r(1-p)}{p^{2}}\]</span></p>
+<p><span class="math display">\[E[X]=\dfrac{1}{\lambda}\]</span></p>
+<p><span class="math display">\[V[X]=\dfrac{1}{\lambda^{2}}\]</span></p>
+<p>Observación: algunos autores utilizan <span
+class="math inline">\(\frac{1}{\beta}\)</span> en lugar de <span
+class="math inline">\(\lambda\)</span></p>
+<p><span class="math display">\[F(x)=P(X \leq x)=1-e^{-\lambda x}
+\hspace{1cm} x &gt; 0\]</span></p>
 </div>
 <p><br/><br/></p>
-<p><strong>Distribución binomial negativa (<span
-class="math inline">\(k=2, p=0.50\)</span>)</strong></p>
-<p><img src="recurso24_files/figure-html/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Distribuciones exponenciales : <span style="color:#2C5697"> <span
+class="math inline">\(exp(1)\)</span></span>, <span
+style="color:#E1286F"> <span
+class="math inline">\(exp(2)\)</span></span> y <span
+style="color:#FFAD42"> <span
+class="math inline">\(exp(5)\)</span></span></p>
+<p><img src="recurso24_files/figure-html/unnamed-chunk-14-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><br/><br/></p>
+<div id="distribuciones-exponenciales-acumuladas"
+class="section level3">
+<h3><strong>Distribuciones exponenciales acumuladas</strong></h3>
+<p><img src="recurso24_files/figure-html/unnamed-chunk-15-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><span class="math display">\[F(x)=P(X \leq x)=1-\exp\{-\lambda x\}
+\hspace{1cm} x &gt; 0\]</span></p>
 <p><br/><br/></p>
 <div class="box1 with-label">
 <div class="label">
 Ejemplo 6
 </div>
-<p>Un sitio Web está soportado por tres servidores idénticos. Sólo uno
-de ellos se utiliza para operar el sitio, y los otros dos son de
-repuesto, los cuales se activan en caso de que el sistema principal
-falle. La probabilidad de falla en el sistema principal (o cualquier
-otro sistema de repuesto activado) ante una solicitud de servicio es
-0,0005. Suponiendo que cada solicitud representa un juicio
-independiente, cuál es el número medio de solicitudes que se espera
-hasta el fracaso de los tres servidores?</p>
+<p>El tiempo entre llamadas de los clientes a una empresa de turismo
+ecológico tiene una distribución exponencial con un tiempo medio entre
+llamadas de 15 minutos. ¿Cuál es la probabilidad de que transcurra más
+de 20 minutos antes de que se realiza una nueva llamada? (Ejemplo 8 4-77
+Mongomery)</p>
 </div>
 <p><br/><br/></p>
-<div id="solución-2" class="section level3">
-<h3><strong>Solución</strong></h3>
-<p><span class="math display">\[E[X]=\dfrac{3}{0.0005}= 6000 \]</span>
-<br/><br/></p>
+<p><strong>Solución</strong></p>
+<p><span class="math inline">\(X\)</span>: el tiempo entre dos llamadas
+consecutivas <span class="math inline">\(\lambda=\frac{1}{15}\)</span>
+minutos.</p>
+<p><span class="math display">\[\begin{eqnarray}
+    P(X \geq 20) &amp;=&amp; 1-P(X &lt; 20) \\
+    &amp;=&amp; 1-(1-e^{-\frac{20}{15}}) \\
+    &amp;=&amp; 0.2636
+\end{eqnarray}\]</span></p>
+<p>En R se utiliza el siguiente código:</p>
+<pre class="r"><code> pexp(20,1/15, lower.tail=FALSE)</code></pre>
+<pre><code>[1] 0.2635971</code></pre>
 </div>
 </div>
 </div>

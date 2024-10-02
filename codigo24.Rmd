@@ -1,6 +1,6 @@
 ---
-title: <span style="color:#235784">**Unidad 2.4**</span>  
-subtitle: <span style="color:#235784">**Módulo 2**</span> 
+title: <span style="color:#235784"> </span>  
+subtitle: <span style="color:#235784">**Unidad 2.4**</span> 
 author: "dgonzalez "
 output:
   html_document:
@@ -49,8 +49,6 @@ c7= "#F7F7F7" # FONDO GRIS CLARO WEB
 knitr::include_graphics("img/codigo2.png")
 ```
 
-<br/><br/><br/>
-
 <br/><br/>
 
 # **Funciones modelos**
@@ -72,6 +70,23 @@ Existe un grupo de modelos identificados para las variables aleatorias tanto dis
 + hipergeometrico,
 + binomial negativo.
 
+<br/><br/>
+
+#### **Modelos continuos**:
+
++ uniforme
++ normal
++ exponencial
++ lognormal
++ gamma
++ beta
++ Weibull
++ Cauchy
++ Gumbel
++ t-Student
++ Ji-cuadrado
++ F de Fisher
++ Empirica o  Kernel
 
 <br/><br/>
 
@@ -102,8 +117,16 @@ gometrico           | pgeom    | qgeom    | dgeom    | rgeom       |
 hipergeometrico     | phyper   | qhyper   | dhyper   | rhyper      |
 Poisson             | ppois    | qpois    | dpois    | rpois       |
 binomial negativo   | pnbinom  | qnbinom  | dnbionom | rnbinom     |      
-
-
+beta                | pbeta    | qbeta    | dbeta    | rbeta       |
+Cauchy              | pcauchy  | qcauchy  | dcauchy  | rcauchy     |
+exponencial         | pexp     | qexp     | dexp     | rexp        |
+gamma               | pgamma   | qgamma   | dgamma   | rgamma      |
+lognormal           | plnorm   | qlnorm   | dlnorm   | rlnorm      |
+uniforme            | punif    | qunif    | dunif    | runif       |
+Weibull             | pweibull | qweibull | dweibull | rweibull    |
+t-Student           | pt       | qt       | dt       | rt          |
+Ji-cuadrado         | pchisq   | qchisq   | dchisq   | rchisq      |
+F                   | pf       | qf       | df       | rf          |
 
 <br/><br/>
 
@@ -138,7 +161,7 @@ Sea una variables con distribución binomial con parámetros $n=20$ y $p=0.30$ ,
 
 En este caso se requieren realizar los siguientes procesos:
 
-1. Calcular la probabilidad de $ P(X=7)$
+1. Calcular la probabilidad de $P(X=7)$
 2. Calcular la probabilidad acumulada $P(X \leq 7)$
 3. Construir la tabla de los  valores de $f(x)$ y $F(x)$ para todo el rango de la variable
 4. Generar 15 números aleatorios a partir de esta distribución 
@@ -224,4 +247,102 @@ ggplot(dat) + geom_point(aes(x, fx),colour = c3, size = 2) +
 
 
 <br/><br/><br/>
+
+<br/><br/>
+
+<div class="box2 with-label">
+<div class="label">Ejemplo 2</div>
+
+Ahora supongamos que se tiene una variable continua con distribución normal, con media 50 y varianza 100, es decir desviación estándar 10, lo cual se puede representar como $X\sim N(50,100)$.  
+
+En este caso vamos a hallar los siguientes valores: 
+
+<br/>
+
+1. Calcular la probabilidad de que un valor de $X$ sea menor o igual a 70, 
+2. Calcular la probabilidad de que la variable sea mayor a 70: $P(X>70)$
+3. Genere 10 números aleatorios de la variables $X$
+4. Generar la gráfica de la función de densidad de la variable $X$,  $f(x)$
+5. Generar la gráfica de la función de probabilidad acumulada de la variable $X$,  $F(x)$
+
+</div>
+
+<br/><br/><br/>
+
+### **Solución**
+
+<br/>
+
+1. Calcular la probabilidad de que un valor de $X$ sea menor o igual a 70, 
+
+$$
+P(X<70) =\displaystyle\int_{-\infty}^{70} \dfrac{1}{\sqrt{200 \pi }} \exp{\frac{1}{200 }(x-50)^{2}} \:dx
+$$ 
+
+```{r}
+ pnorm(70,50,sqrt(100))
+```
+
+<br/>
+
+2. Calcular la probabilidad de que la variable sea mayor a 70: $P(X>70)$
+
+```{r}
+pnorm(70,50,sqrt(100),lower.tail=FALSE)
+```
+
+<br/>
+
+3. Genere 10 números aleatorios de la variables $X$
+
+
+```{r}
+rnorm(10,70,sqrt(100))
+```
+
+
+<br/>
+
+4. Generar la gráfica de la función de densidad de la variable $X$,  $f(x)$
+
+```{r, fig.align='center'}
+curve(dnorm(x,50,sqrt(100)), from=20, to=80, 
+col=c3, main="Distribución Normal(50,100)",
+ylab="f(x)", las=1)
+```
+
+<br/>
+
+5. Generar la gráfica de la función de probabilidad acumulada de la variable $X$,  $F(x)$
+
+```{r, fig.align='center'}
+curve(pnorm(x,50,sqrt(100)), from=20, to=80, 
+col=c3, main="Distribución Normal(50,100)",las=1,
+ylab="f(x)")
+```
+
+<br/><br/>
+
+### **Código**
+
+```{r, fig.align='center'}
+# install.package("ggfortify")
+library(ggfortify)
+ggdistribution(dnorm, seq(-4, 4, 0.1), mean = 0, sd = 1,fill = c4)
+```
+
+```{r, fig.align='center'}
+# install.package("ggfortify")
+library(ggfortify)
+ggdistribution(pnorm, seq(-4, 4, 0.1), mean = 0, sd = 1)
+```
+
+<br/><br/><br/>
+
+
+# **App Probability Distributions** 
+
+Esta aplicación permite calcular probabilidades desde el celular
+
+![](img/AppPD.png)
 

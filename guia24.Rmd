@@ -1,7 +1,7 @@
 ---
-title: <span style="color:#2C5697">**Unidad 2.4**</span>  
+title: <span style="color:#2C5697"> </span>  
 author: "dgonzalez "
-subtitle: <span style="color:#2C5697">**Módulo 2**</span> 
+subtitle: <span style="color:#2C5697">**Módulo 2- Unidad 2.4**</span> 
 output:
   html_document:
     toc: no
@@ -44,24 +44,21 @@ knitr::include_graphics("img/guia2.png")
 
 En las unidad anterior hemos recorrido los principales conceptos relacionados caracterización de las variables aleatorias tanto discretas como continuas.  Características como:  $f(x)$, $F(x)$, $E[X]$, $V[X]$, en el caso univariado. 
 
-En esta unidad se presentan los principales modelos estadísticos tanto para variables discretas como continuas y sus aplicaciones. En el caso de los modelos discretas se deberá identificar el modelo a través de  las características del experimento que la genera la variable. Para el caso continuo los ejemplos indicaran el modelo correspondiente que genera la variable.
-
-En esta unidad trataremos los modelo discretos como : Bernoulli, binomial, Poisson, geométrico, hipergeométrico y binomial negativo.
-
+En esta unidad se presentan los principales modelos estadísticos tanto para variables **DISCRETAS**  como **CONTINUAS** y sus aplicaciones. En el caso de los modelos discretas se deberá identificar el modelo a través de  las características del experimento que la genera la variable. Para el caso continuo los ejemplos indicaran el modelo correspondiente que genera la variable.
 
 
 <br/><br/>
 
 ## **Objetivos de la unidad**
 
-Al finalizar la unidad los estudiantes estarán  en  capacidad de  IDENTIFICAR, CALCULAR y APLICAR los diferentes modelos de probabilidad DISCRETOS para la solución de problemas en contexto  y su representación a través de la simulación.
+Al finalizar la unidad los estudiantes estarán  en  capacidad de  IDENTIFICAR, CALCULAR y APLICAR los diferentes modelos de probabilidad para la solución de problemas en contexto.
 
 <br/><br/>
 
 ## **Duración**
 
-La presente  unidad será desarrollada durante la comprendida entre 23 al 30 de septiembre.        
-Ademas del material suministrado  contaran con el acompañamiento del profesor en dos sesiones y de un monitor. Los entegables  de esta unidad podrán enviarse a través de la plataforma Brightspace hasta el  30 de septiembre.
+La presente  unidad será desarrollada durante la comprendida entre 23 de septiembre al 11 de octubre.        
+Ademas del material suministrado  contaran con el acompañamiento del profesor en dos sesiones y de un monitor. Los entegables  de esta unidad podrán enviarse a través de la plataforma Brightspace hasta el  de septiembre.
 
 Para alcanzar los objetivos planteados se propone realizar las siguientes actividades
 
@@ -71,10 +68,10 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |                |                                                                         | 
 |:---------------|:------------------------------------------------------------------------|
-|**Taller 241**  | Desarrollar el taller y publiclar su solucion en **RPub**. Su enlace copiado en la plataforma **Bs**|
+|**Mapa mental**  | Construir un mapa mental a mano que contenga las principales conceptos desarrollados en el Módulo 2 |
 |                | Trabajo individual                       |
-|Fechas          | 30 de septiembre                         |            
-|Hora            | 23:59                                    |
+|Fechas          | 11 de octubre - al finalizar el segundo parcial se debe entregar con el cuestionario y el cuadernillo de respuestas                       |            
+|Hora            | al finalizar el segundo parcial                                  |
 
 <br/><br/>
 
@@ -83,12 +80,8 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 <br/><br/>
 
 
-* Reconoce los modelos especiales asociados a contextos  y problemas reales
+* Reconoce los modelos especiales asociados y sus principales caracteristicas y relaciones
 
-* Utiliza las herramientas estadística apropiadas en el calculo de probabilidades en la solución de problemas en contexto
-
-* Utiliza herramientas computacionales que le permita  la solución de problemas en contexto a través de la simulación
-	
 <br/><br/>
 
 ## **Entregables** 
@@ -97,13 +90,8 @@ Para alcanzar los objetivos planteados se propone realizar las siguientes activi
 
 |Actividad      | Descripción                      | 
 |:--------------|:---------------------------------|
-| Taller 241    | enlace de Rmd publicado en **RPub** con el desarrollo del problema asignado |
+| Mapa mental   | Se debe entregar al finalizar el segundo parcial se debe entregar con el cuestionario y el cuadernillo de respuestas           |
 
 
 <br/><br/><br/><br/>
-
-
-
-
-
 
