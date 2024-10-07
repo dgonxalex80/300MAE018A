@@ -106,6 +106,9 @@ navbar:
         - text: "Módulo 3"
           href: modulo3.html
         - text: "---------" 
+        - text: "Inferencia Estadística"
+          href: recurso31.html        
+        
   
     - text: "Módulo 4"
       menu:
