@@ -253,9 +253,7 @@ En caso de poder realizar una prueba piloto (observación de una muestra, digamo
 
 ## **Tipos de muestreo** 
 
-</center>
 ![](img/muestreo.png)
-</center>
 
 <br/>
 
@@ -440,10 +438,8 @@ Con la siguiente figura se representa de manera figurativa lo que pueden ser las
 
 Por otro lado la gráfica 3 representa el estimador con las mejores condiciones, sesgado y de menor varianza, lo cual representa un estimador insesgado y eficiente.
 
-<center>
-![](img/estimador.png){width=70%}
+![](img/estimador.png){width=50%}
 
-</center>
 <br/><br/>
 
 **Ejemplo**
@@ -1168,12 +1164,4 @@ kable(matrix(c(
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jbrnCa3jq0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
-
-
-
-
-
-
-
-
 
