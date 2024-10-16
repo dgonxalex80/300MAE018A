@@ -428,6 +428,19 @@ $(document).ready(function () {
     </li>
     <li class="divider"></li>
     <li>
+      <a href="guia32.html">Guía 3.2</a>
+    </li>
+    <li>
+      <a href="recurso32.html">Intervalos de confianza</a>
+    </li>
+    <li>
+      <a href="codigo32.html">Código 3.2</a>
+    </li>
+    <li>
+      <a href="taller321.html">Taller 321</a>
+    </li>
+    <li class="divider"></li>
+    <li>
       <a href="monitoria3.html">Monitoria 3</a>
     </li>
   </ul>
@@ -516,7 +529,7 @@ población, censo, parámetro, muestra, muestreo, estimador, estimación,
 métodos de estimación, propiedades de los estimadores como la
 insesgadez, la eficiencia, la consistencia .Las distribuciones
 muestrales : normal, t-student, chi-cuadrado y f de Fisher. Todos
-trabajados y tratados en la unidad 4.1.</p>
+trabajados y tratados en la unidad 3.1.</p>
 <p>El siguiente documento te oriente sobre los pasos a seguir para
 alcanzar el objetivo planteado</p>
 <p><br/><br/></p>
@@ -562,7 +575,7 @@ siguientes actividades</p>
 enlace correspondiente de Brightspace</td>
 </tr>
 <tr class="even">
-<td align="left">Trabajo individual</td>
+<td align="left">Trabajo en parejas</td>
 <td align="left"></td>
 </tr>
 <tr class="odd">
@@ -605,6 +618,75 @@ sobre intervalos de confianza</th>
 </tr>
 </tbody>
 </table>
+<p><br/><br/></p>
+</div>
+<div id="instrucciones-para-su-desarrollo" class="section level2">
+<h2><strong>Instrucciones para su desarrollo</strong></h2>
+<p>La unidad 3.2 contará con los siguientes recursos para su
+desarrollo:</p>
+<ul>
+<li><p>Taller 321. En parejas deberán desarrollar el taller 321 que
+contiene problemas relacionados con la estimación de intervalos de
+confianza para la media, varianza, proporción, diferencia de
+medias,diferencia de proporciones y razón de varianzas</p></li>
+<li><p>Para el desarrollo de este taller se recomienda:</p>
+<ul>
+<li>Ver los videos contenidos <code>recursos 3.2</code></li>
+<li>Realizar los <strong>tutoriales</strong> con tenidos en el paquete
+<code>paqueteDEG</code>- revisar indicaciones en
+<code>recursos 3.2</code> -</li>
+</ul></li>
+</ul>
+<p>Los tutoriales conforma una herramienta de apoyo al aprendizaje,
+mediante el desarrollo de problemas utilizando para ello código R para
+luego realizar la interpretacón de los resulados.</p>
+<p>Para trabajar los tutoriales se deben seguir los siguientes
+pasos:</p>
+<ol style="list-style-type: decimal">
+<li>Instala el paquete <code>learnr</code></li>
+</ol>
+<pre>
+        install.packages("learnr") # solo una vez
+</pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Instala el paquete `remotes``</li>
+</ol>
+<pre>
+        install.packages('remotes')  # solo una vez
+</pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Activa el paquiete <code>remotes</code></li>
+</ol>
+<pre>
+        library(remotes) # solo una vez
+</pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Instala el paquete <code>paqueteDEG</code></li>
+</ol>
+<pre>
+        install_github("dgonxalex80/paqueteDEG", force = TRUE) # solo una vez
+</pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Activa el tutorial <code>Taller-Intervalos1</code></li>
+</ol>
+<pre>
+         learnr::run_tutorial("Taller-Intervalos1", "paqueteDEG")
+</pre>
+<div class="box3 with-label">
+<div class="label">
+Resumen de código
+</div>
+<pre>
+install.packages("learnr") # solo una vez
+install.packages('remotes')  # solo una vez
+library(remotes) # solo una vez
+install_github("dgonxalex80/paqueteDEG", force = TRUE) # solo una vez
+
+learnr::run_tutorial("Taller-Intervalos1", "paqueteDEG") # para correr el tutorial1
+
+learnr::run_tutorial("Taller-Intervalos2", "paqueteDEG") # para correr el tutorial2
+</pre>
+</div>
 </div>
 </div>
 
