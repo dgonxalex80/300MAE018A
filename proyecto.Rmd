@@ -109,7 +109,7 @@ Cada equipo, conformado por hasta 4 estudiantes , seleccionará un tema específ
 #### **Segunda Entrega (Parcial 2)**: 
 
 * Análisis Descriptivo
-* Fecha de Entrega Sugerida : **octubre 11**.
+* Fecha de Entrega Sugerida : **octubre 25**.
 * Contenido :
   * Análisis Descriptivo : El equipo debe presentar un análisis descriptivo de los datos recolectados. Esto incluye:
   * Medidas de tendencia central (media, mediana, moda).
