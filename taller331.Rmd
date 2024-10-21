@@ -22,7 +22,8 @@ knitr::opts_chunk$set(
   echo = TRUE,
   message = FALSE, 
   warning = FALSE,
-  hiline = TRUE
+  hiline = TRUE,
+  comment = NA
 )
 # colores
 c0= "#FFCC00"
@@ -74,6 +75,11 @@ Suponga que se estudia la compra de una nueva maquina para una empresa. Se compr
 
 Los ingenieros de una ensambladora de automóviles requieren decidir sobre cuál de dos de las marcas de neumáticos deben comprar. La marca FB o la marca KT. Con el fin de tomar una decisión basada en evidencias estadísticas, deciden realizar un experimento en el que usan 12 neumáticos de cada marca. Los neumáticos se utilizan hasta su terminación. Los resultados obtenidos son los siguientes:
 
+<pre>
+FB =c(41.8, 41.6, 31.5, 48.7, 40.8, 31.2, 36.5, 36.2, 32.8, 36.3, 38.6, 30.5)
+KT =c(40.5, 38.4, 44.0, 34.9, 44.0, 44.7, 44.0, 47.1, 39.8, 43.9, 44.2, 40.2)
+</pre>
+
 ```{r}
 library(ggplot2)
 FB =c(41.8, 41.6, 31.5, 48.7, 40.8, 31.2, 36.5, 36.2, 32.8, 36.3, 38.6, 30.5)
@@ -107,6 +113,14 @@ Cuál marca de neumáticos recomendaría comprar. Justifique su respuesta. Supon
 
 
 Un ingeniero desea establecer si existen diferencias entre dos métodos diferentes de realizar el ensamble de una casa prefabricada. Para comprobarlo recoge información la producción de ambos métodos que se presentan a continuación: \\
+
+<pre>
+ # Procedimiento estándar:
+x1 = c(32, 37, 35, 28, 41, 44, 35, 31, 34)
+
+# Nuevo procedimiento:
+x2 = c(35, 31, 29, 25, 34, 40, 27, 32, 31) 
+</pre>
 
 ```{r}
 
@@ -164,8 +178,10 @@ Emplee y realice las pruebas de hipótesis a un nivel de significancia del 0.01 
 Se realizan pruebas de un nuevo lector láser manual para uso en inventarios y el lector utilizado actualmente, con el fin de decidir si se adquiere el primero. Se obtienen los datos siguientes sobre el número de códigos de barra de 7 pulgadas que pueden leerse por segundo. Sea $X_{1}$: número de códigos leído por segundo con el dispositivo nuevo y $X_{2}$ el correspondiente al dispositivo antiguo.
 
 	
-$n_{1}=61$ ;\hspace{1cm} $\bar{x}_{1}=40$ ;\hspace{1cm} $s^{2}_{1}=24.9$ 
-$n_{2}=61$ ; \hspace{1cm}$\bar{x}_{2}=29$ ;\hspace{1cm} $s^{2}_{2}=22.7$ 
+|               |                    |                   |
+|--------------:|-------------------:|------------------:|
+|$n_{1}=61$     | $\bar{x}_{1}=40$   |  $s^{2}_{1}=24.9$ | 
+|$n_{2}=61$     | $\bar{x}_{2}=29$   |  $s^{2}_{2}=22.7$ |
 
 	
 De acuerdo con la información suministrada, es posible preferir alguno de ellos?. En caso de poderlo realizar con cual se quedaría? Justifique su respuesta. En cada caso determine las pruebas de hipótesis, el estadístico de prueba apropiado, el $valor-p$ obtenido y las conclusiones resultantes.
@@ -249,15 +265,15 @@ La compañía de dulces Mars publica en su sitio web información relacionada co
 
 <br/><br/>
 
-```{r, echo=FALSE, out.width="60%", fig.align = "center"}
-knitr::include_graphics("img/tabla_p10.png")
-```
+<!-- ```{r, echo=FALSE, out.width="60%", fig.align = "center"} -->
+<!-- knitr::include_graphics("img/tabla_p10.png") -->
+<!-- ``` -->
 
 <br/><br/>
 
-<!-- |Color contenido en la bolsa | café       | amarillo  | rojo    | azul     | naranja  | verde     | -->
-<!-- |:---------------------------|:----------:|:---------:|:-------:|:--------:|:---------|:---------:| -->
-<!-- |Porcentaje (\%)             | 13         | 14        | 13      | 24       | 20       | 16        | -->
+|Color contenido en la bolsa | café       | amarillo  | rojo    | azul     | naranja  | verde     |
+|:---------------------------|:----------:|:---------:|:-------:|:--------:|:---------|:---------:|
+|Porcentaje (\%)             | 13         | 14        | 13      | 24       | 20       | 16        |
 
 	
 Se realiza una verificación mediante el conteo delos dulces contenidos e n una bolsa de 14 onzas de dulces M\|M, obteniendo los siguientes resultados: 70 duces cafés, 72 amarillos, 61 rojos, 118 azules, 108 naranjas y 85 verdes. 
@@ -294,7 +310,7 @@ En una planta ensambladora de camiones la supervisión diaria de las soldaduras 
 
 <br/><br/>
 
-```{r, echo=FALSE, out.width="35%", fig.align = "center"}
+```{r, echo=FALSE, out.width="40%", fig.align = "center"}
 knitr::include_graphics("img/tabla_p12.png")
 ```
 
@@ -303,7 +319,7 @@ knitr::include_graphics("img/tabla_p12.png")
 ```{r}
 x=c(470,445,257,191,171,139,42,28,17)
 m=matrix(x, ncol = 3)
-colnames(m) = c("alta", "moderada", "baja")
+colnames(m) = c("  alta", "  moderada", "  baja")
 rownames(m) = c("dia", "tarde", "noche")
 m
 ```
@@ -341,11 +357,13 @@ x=c(3.4, 2.8, 4.2, 2.1, 2.8, 2.4, 3.5, 4.2, 3.1, 4.1, 2.4, 3.4, 4.1, 4.0, 2.4,
 
 <br/><br/><br/>
 
+# **FORMULARIO PRUEBAS DE HIPÓTESIS PARAMÉTRICA**
+
 <div class="box3 with-label">
-<div class="label">FORMULARIO PRUEBAS DE HIPÓTESIS PARAMÉTRICA</div>
+<div class="label">Una población</div>
 
 
-####  **Una población**
+
 
 $$Z_{o} = \dfrac{\bar{X}-\mu_{o}}{\sigma/\sqrt{n}}\sim N(0,1)$$
 
@@ -365,10 +383,15 @@ $$X^{2}_{o}=\dfrac{(n-1)S^{2}}{\sigma_{o}^{2}} \sim \chi^{2}_{v=n-1}$$
 <br/>
 
 $$Z_{o}= \dfrac{X-n \hspace{.1cm} p_{o}}{\sqrt{n \hspace{.1cm }p_{o}}} \sim N(0,1)$$
+</div>
 
 <br/><br/><br/>
 
-#### **Dos poblaciones**
+<div class="box3 with-label">
+<div class="label">Dos poblaciones</div>
+
+
+
 
 $$Z_{o}=\dfrac{\widehat{p}-p_{0}}{\sqrt{p_{o}(1-p_{o})/n}} \sim N(0,1)$$
 
