@@ -265,9 +265,9 @@ La compañía de dulces Mars publica en su sitio web información relacionada co
 
 <br/><br/>
 
-<!-- ```{r, echo=FALSE, out.width="60%", fig.align = "center"} -->
-<!-- knitr::include_graphics("img/tabla_p10.png") -->
-<!-- ``` -->
+```{r, echo=FALSE, out.width="60%", fig.align = "center"}
+knitr::include_graphics("img/peanutmm.png")
+```
 
 <br/><br/>
 
