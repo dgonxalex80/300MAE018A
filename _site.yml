@@ -133,6 +133,8 @@ navbar:
         - text: "--------"           
         - text: "Monitoria 3"
           href: monitoria4.html   
+        - text: "Problemas resueltos"
+          href: pruebaAudio.html     
 
 
     - text: "Módulo 4"

@@ -12,7 +12,7 @@
 <meta name="author" content="dgonzalez" />
 
 
-<title>Unidad 2.4</title>
+<title> </title>
 
 <script src="site_libs/header-attrs/header-attrs.js"></script>
 <script src="site_libs/jquery/jquery-3.6.0.min.js"></script>
@@ -518,220 +518,50 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore"><span style="color:#235784"><strong>Unidad
-2.4</strong></span></h1>
+<h1 class="title toc-ignore"><span style="color:#235784"> </span></h1>
 <h3 class="subtitle"><span style="color:#235784"><strong>Módulo
-2</strong></span></h3>
+3</strong></span></h3>
 <h4 class="author">dgonzalez</h4>
 
 </div>
 
 
-<p></br></br></br></p>
-<p><img src="img/banner002.png" width="100%" style="display: block; margin: auto auto auto 0;" />
-</br></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 1
-</div>
-<p>Para una variable con distribución bonomial <span
-class="math inline">\(X \sim binom(x, n=10, p=0.40)\)</span>, Determinar
-utilizando la función de distribución de probabilidad asociada a <span
-class="math inline">\(X\)</span> las siguientes probabilidades: .</p>
-<ul>
-<li>(a.) <span class="math inline">\(P(X = 5)\)</span></li>
-<li>(b.) <span class="math inline">\(P(X \leq 2)\)</span></li>
-<li>(c.) <span class="math inline">\(P(3 \leq X \leq 5 )\)</span></li>
-<li>(d.) <span class="math inline">\(P(X \geq 8)\)</span></li>
-<li>(e.) Coonstruya una gráfica para <span
-class="math inline">\(f(x)\)</span></li>
-</ul>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 2
-</div>
-<p>Suponga que <span class="math inline">\(X\)</span> tiene una
-distriubución Posson con media <span class="math inline">\(\lambda =
-4\)</span> , <span class="math inline">\(X \sim pois(x, \lambda
-=4)\)</span></p>
-<ul>
-<li>(a.) <span class="math inline">\(P(X = 0)\)</span></li>
-<li>(b.) <span class="math inline">\(P(X = 4)\)</span></li>
-<li>(c.) <span class="math inline">\(P(X \geq 2 )\)</span></li>
-<li>(d.) <span class="math inline">\(P(X \leq 2)\)</span></li>
-<li>(e.) Construya una gráfica para <span
-class="math inline">\(f(x)\)</span></li>
-</ul>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 3
-</div>
-<p>Sea una variable geométrica <span class="math inline">\(X \sim
-geomn,(x,p=0.05)\)</span> . Determine :</p>
-<ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 1)\)</span></li>
-<li><span class="math inline">\(P(X \leq 2)\)</span></li>
-<li><span class="math inline">\(P(X = 8)\)</span></li>
-<li><span class="math inline">\(P(X \geq 2)\)</span></li>
-<li>Construya la gráfica de <span
-class="math inline">\(f(x)\)</span></li>
-</ol>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 4
-</div>
-<p>Suponga que <span class="math inline">\(X\)</span> tiene una
-distribución hipergeometrica con <span
-class="math inline">\(N=100\)</span>, <span
-class="math inline">\(n=4\)</span> y <span
-class="math inline">\(K=20\)</span>. (<span class="math inline">\(X\sim
-hyper(x,N=100,n=4,k=20)\)</span>) Determine:</p>
-<ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 1)\)</span></li>
-</ol>
-<pre class="r"><code># dhyper(x,   # valor de x
-#        m,   # casos existoros : k = 20
-#        n,   # casos no exitosos : N-k = 80
-#        k)   # muestra que se extrae  :n = 4
-# m*n = N : total de la urna  : 100
-#
-dhyper(1, m=20, n=80, k=4 )</code></pre>
-<ol start="2" style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 6)\)</span></li>
-<li><span class="math inline">\(P(X \geq 1)\)</span></li>
-<li><span class="math inline">\(P(X = 4)\)</span></li>
-<li>Construya la gráfica de <span
-class="math inline">\(f(x)\)</span></li>
-</ol>
+<p><img src="img/banner003.png" width="100%" style="display: block; margin: auto;" /></p>
 <p><br/><br/></p>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 5
-</div>
-<p><strong>5. Modelo binomial negativo</strong> Sea la variable <span
-class="math inline">\(X\)</span> con distribución binomial negativa con
-<span class="math inline">\(p=0.20\)</span> y <span
-class="math inline">\(k=3\)</span>, <span
-class="math inline">\(n=5\)</span>. Determine:</p>
-<ol style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 3)\)</span></li>
-</ol>
-<pre class="r"><code># dnbinom(x,     # valor de x
-#         size,  # numero de exitos requeridos
-#         prob)  # probabilidad de exito
-
-dnbinom(3,3,0.20)</code></pre>
-<ol start="2" style="list-style-type: lower-alpha">
-<li><span class="math inline">\(P(X = 6)\)</span></li>
-<li><span class="math inline">\(P(X \geq 10)\)</span></li>
-<li><span class="math inline">\(P(X \leq 12)\)</span></li>
-<li><span class="math inline">\(EX\)</span> y <span
-class="math inline">\(VX\)</span></li>
-<li>Construya la gráfica de <span
-class="math inline">\(f(x)\)</span></li>
-</ol>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 6
-</div>
-<p>Los clientes llegan al mostrador de una tienda de acuerdo con una
-variable aleatoria Poisson con una frecuencia promedio de ocho clientes
-por hora.</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Calcule la probabilidad de que entre las 8 AM y las 9 AM lleguen
-exactamente cinco clientes.</p></li>
-<li><p>Calcule la probabilidad de que entre las 2:30 PM y las 3:30 PM no
-lleguen más de tres clientes.</p></li>
-<li><p>Calcule la probabilidad de que lleguen exactamente dos clientes
-dentro de un intervalo de dos horas continuas, por ejemplo entre 10 AM y
-12 M.</p></li>
-<li><p>Calcule el valor esperado del número de personas que llegan a la
-tienda entre las 2 PM y las 4:30 PM.</p></li>
-</ol>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 7
-</div>
-<p>El gerente de una compañia especializada en encuestas de opinión
-afirma que al rededor del 70% de las personas a quienes la agencia envía
-un cuestrionario responden llenando y devolviendo el cuestionario. Se
-envian 20 cuestionarios. Ante lo anterior el grupo de directivos hacen
-la siguiente apuesta:</p>
-<ul>
-<li>Carlos afirma que exactamente retornaran 10 formularios llenos</li>
-<li>Juan no mas de 12 seran llenados</li>
-<li>Ana indica que a los sumo 10 seran llenados</li>
-<li>Carolina que todos entregaran el formulario lleno</li>
-<li>Andres indica que ninguno entregará el formulario</li>
-</ul>
-<p>Quien tiene mayor probabilidad de acertar?</p>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 8
-</div>
-<p>Una empresa de servicios ha implementado nuevas estrategias para
-mejorar la satisfacción de sus clientes. Basándose en encuestas
-anteriores, la empresa sabe que el 80% de los clientes solían quedar
-satisfechos antes de los cambios. Como parte de su política de
-evaluación, la empresa tiene como objetivo que al menos el 85% de los
-clientes seleccionados al azar muestren satisfacción para considerar que
-las nuevas estrategias son efectivas.</p>
-<p>Para evaluar el éxito de las estrategias, la empresa selecciona 10
-clientes al azar y registra cuántos de ellos están satisfechos.</p>
-<p>Si 8 de los 10 clientes seleccionados están satisfechos, ¿debería la
-empresa concluir que las nuevas estrategias están funcionando, o debe
-realizar cambios adicionales para alcanzar su objetivo?</p>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 9
-</div>
-<p>Una empresa de mercadeo está realizando una campaña de telemercadeo
-para promocionar un nuevo producto. Basado en experiencias anteriores,
-la empresa sabe que la probabilidad de cerrar una venta en una llamada
-es del 10%. Dado que el equipo de ventas debe realizar llamadas
-consecutivas hasta conseguir una venta, están interesados en saber
-cuántas llamadas, en promedio, se deben realizar antes de lograr la
-primera venta.</p>
-<p>El equipo conformado por 3 vendedores obtuvo el siguiente
-resultado</p>
-<p>Jose debió de realizar 5 llamada antes de obtener la primera venta
-Miguel en cambio realizó 3 antes de obtener la primer venta Adriana
-debió realizar 4 llamadas para porder realizar la primera venta</p>
-<p>Que modelo se ajusta a este problema?</p>
-<p>Determine el orden de efectividad de los 3 vendedores, indicando en
-cada caso su respectiva probabilidad</p>
-</div>
-<p></br></br></p>
-<div class="box1 with-label">
-<div class="label">
-Problema 10
-</div>
-<p>Una empresa de mercadeo está lanzando una campaña de ventas
-telefónicas para un nuevo producto. Según su experiencia, la
-probabilidad de cerrar una venta en cada llamada es del 15%. La empresa
-se ha propuesto cerrar 3 ventas por cada equipo de telemercadeo y quiere
-saber cuántas llamadas, en promedio, tendrá que hacer un equipo para
-alcanzar esas 3 ventas.</p>
-<p>¿Cuántas llamadas debe esperar realizar un equipo de ventas antes de
-alcanzar 3 ventas exitosas, si la probabilidad de cerrar una venta en
-cada llamada es del 15%?</p>
-</div>
+<p><img src="capturas/p22.png" width="100%" style="display: block; margin: auto;" />
+<audio controls> <source src="audio/problema1.mp4" type="audio/mpeg"> Tu
+navegador no soporta el elemento de audio. </audio></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p23.png" width="100%" style="display: block; margin: auto;" />
+<audio controls> <source src="audio/problema1a.mp4" type="audio/mpeg">
+Tu navegador no soporta el elemento de audio. </audio></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p24.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p25.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p26.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p27.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p28.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p29.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p30.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p31.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p32.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p33.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p34.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p40.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/><br/><br/></p>
+<p><img src="capturas/p41.png" width="100%" style="display: block; margin: auto;" /></p>
 
 
 
